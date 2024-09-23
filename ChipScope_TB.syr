@@ -1,0 +1,785 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: ChipScope_TB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ChipScope_TB.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ChipScope_TB"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-2-ff1156
+
+---- Source Options
+Top Module Name                    : ChipScope_TB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\fiber_gtx.v" into library work
+Parsing module <Fiber_gtx>.
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter.v" into library work
+Parsing module <counter>.
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\clock_divider.v" into library work
+Parsing module <clock_divider>.
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" into library work
+Parsing module <Top>.
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" into library work
+Parsing module <ChipScope_TB>.
+Parsing module <icon>.
+Parsing module <data_vio>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 55: Port async_in is not connected to this instance
+
+Elaborating module <ChipScope_TB>.
+
+Elaborating module <Top>.
+WARNING:HDLCompiler:413 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 57: Result of 8-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 57: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
+
+Elaborating module <IBUFDS(DIFF_TERM="FALSE",IBUF_LOW_PWR="TRUE",IOSTANDARD="LVDS_25")>.
+
+Elaborating module <clock_divider>.
+
+Elaborating module <counter>.
+WARNING:HDLCompiler:413 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter.v" Line 31: Result of 7-bit expression is truncated to fit in 6-bit target.
+
+Elaborating module <IBUFDS_GTXE1>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <Fiber_gtx(GTX_SIM_GTXRESET_SPEEDUP=0,GTX_TX_CLK_SOURCE="TXPLL",GTX_POWER_SAVE=10'b0110000)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\fiber_gtx.v" Line 152: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
+
+Elaborating module
+<GTXE1(SIM_RECEIVER_DETECT_PASS="TRUE",SIM_TX_ELEC_IDLE_LEVEL="X",SIM_GTXRESET_SPEEDUP=0,SIM_VERSION="2.0",SIM_TXREFCLK_SOURCE=3'b0,SIM_RXREFCLK_SOURCE=3'b0,TX_CLK_SOURCE="TXPLL",TX_OVERSAMPLE_MODE="FALSE",TXPLL_COM_CFG=24'b01000010110100000001010,TXPLL_CP_CFG=8'b01101,TXPLL_DIVSEL_FB=2,TXPLL_DIVSEL_OUT=1,TXPLL_DIVSEL_REF=1,TXPLL_DIVSEL45_FB=5,TXPLL_LKDET_CFG=3'b111,TX_CLK25_DIVIDER=7,TXPLL_SATA=2'b0,TX_TDCC_CFG=2'b11,PMA_CAS_CLK_EN="FALSE",POWER_SAVE=10'b0110000,GEN_TXUSRCLK="TRUE",TX_DATA_WIDTH=16,TX_USRCLK_CFG=6'b0,TXOUTCLK_CTRL="TXOUTCLKPMA_DIV2",TXOUTCLK_DLY=10'b0,TX_PMADATA_OPT=1'b0,PMA_TX_CFG=20'b10000000000010000010,TX_BUFFER_USE="TRUE",TX_BYTECLK_CFG=6'b0,TX_EN_RATE_RESET_BUF="TRUE",TX_XCLK_SEL="TXOUT",TX_DLYALIGN_CTRINC=4'b0100,TX_DLYALIGN_LPFINC=4'b0110,TX_DLYALIGN_MONSEL=3'b0,TX_DLYALIGN_OVRDSETTING=8'b10000000,GEARBOX_ENDEC=3'b0,TXGEARBOX_USE="FALSE",TX_DRIVE_MODE="DIRECT",TX_IDLE_ASSERT_DELAY=3'b100,TX_IDLE_DEASSERT_DELAY=3'b010,TXDRIVE_LOOPBACK_HIZ="FALSE",TXDRIVE_LOOPBACK_PD="FALSE",COM_BURST_
+VAL=4'b1111,TX_DEEMPH_0=5'b11010,TX_DEEMPH_1=5'b10000,TX_MARGIN_FULL_0=7'b1001110,TX_MARGIN_FULL_1=7'b1001001,TX_MARGIN_FULL_2=7'b1000101,TX_MARGIN_FULL_3=7'b1000010,TX_MARGIN_FULL_4=7'b1000000,TX_MARGIN_LOW_0=7'b1000110,TX_MARGIN_LOW_1=7'b1000100,TX_MARGIN_LOW_2=7'b1000010,TX_MARGIN_LOW_3=7'b1000000,TX_MARGIN_LOW_4=7'b1000000,RX_OVERSAMPLE_MODE="FALSE",RXPLL_COM_CFG=24'b01000010110100000001010,RXPLL_CP_CFG=8'b01101,RXPLL_DIVSEL_FB=2,RXPLL_DIVSEL_OUT=1,RXPLL_DIVSEL_REF=1,RXPLL_DIVSEL45_FB=5,RXPLL_LKDET_CFG=3'b111,RX_CLK25_DIVIDER=7,GEN_RXUSRCLK="TRUE",RX_DATA_WIDTH=16,RXRECCLK_CTRL="RXRECCLKPMA_DIV2",RXRECCLK_DLY=10'b0,RXUSRCLK_DLY=16'b0,AC_CAP_DIS="TRUE",CDR_PH_ADJ_TIME=5'b10100,OOBDETECT_THRESHOLD=3'b011,PMA_CDR_SCAN=27'b110010000000100000001001100,PMA_RX_CFG=25'b010111001110000001001001,RCV_TERM_GND="FALSE",RCV_TERM_VTTRX="TRUE",RX_EN_IDLE_HOLD_CDR="FALSE",RX_EN_IDLE_RESET_FR="TRUE",RX_EN_IDLE_RESET_PH="TRUE",TX_DETECT_RX_CFG=14'b01100000110010,TERMINATION_CTRL=5'b0,TERMINATION_OVRD="FALSE",CM_TRIM=2'b01,P
+MA_RXSYNC_CFG=7'b0,PMA_CFG=76'b01000000000000000000000001000000000000000000000000000000000000000011,BGTEST_CFG=2'b0,BIAS_CFG=17'b0,DFE_CAL_TIME=5'b01100,DFE_CFG=8'b011011,RX_EN_IDLE_HOLD_DFE="TRUE",RX_EYE_OFFSET=8'b01001100,RX_EYE_SCANMODE=2'b0,RXPRBSERR_LOOPBACK=1'b0,ALIGN_COMMA_WORD=1,COMMA_10B_ENABLE=10'b1111111111,COMMA_DOUBLE="FALSE",DEC_MCOMMA_DETECT="FALSE",DEC_PCOMMA_DETECT="FALSE",DEC_VALID_COMMA_ONLY="FALSE",MCOMMA_10B_VALUE=10'b1010000011,MCOMMA_DETECT="TRUE",PCOMMA_10B_VALUE=10'b0101111100,PCOMMA_DETECT="TRUE",RX_DECODE_SEQ_MATCH="FALSE",RX_SLIDE_AUTO_WAIT=5,RX_SLIDE_MODE="OFF",SHOW_REALIGN_COMMA="FALSE",RX_LOS_INVALID_INCR=8,RX_LOS_THRESHOLD=128,RX_LOSS_OF_SYNC_FSM="FALSE",RXGEARBOX_USE="FALSE",RX_BUFFER_USE="TRUE",RX_EN_IDLE_RESET_BUF="TRUE",RX_EN_MODE_RESET_BUF="TRUE",RX_EN_RATE_RESET_BUF="TRUE",RX_EN_REALIGN_RESET_BUF="FALSE",RX_EN_REALIGN_RESET_BUF2="FALSE",RX_FIFO_ADDR_MODE="FAST",RX_IDLE_HI_CNT=4'b1000,RX_IDLE_LO_CNT=4'b0,RX_XCLK_SEL="RXREC",RX_DLYALIGN_CTRINC=4'b1110,RX_DLYALIGN_EDGESET=5'
+b010,RX_DLYALIGN_LPFINC=4'b1110,RX_DLYALIGN_MONSEL=3'b0,RX_DLYALIGN_OVRDSETTING=8'b10000000,CLK_COR_ADJ_LEN=1,CLK_COR_DET_LEN=1,CLK_COR_INSERT_IDLE_FLAG="FALSE",CLK_COR_KEEP_IDLE="FALSE",CLK_COR_MAX_LAT=16,CLK_COR_MIN_LAT=14,CLK_COR_PRECEDENCE="TRUE",CLK_COR_REPEAT_WAIT=0,CLK_COR_SEQ_1_1=10'b0,CLK_COR_SEQ_1_2=10'b0,CLK_COR_SEQ_1_3=10'b0,CLK_COR_SEQ_1_4=10'b0,CLK_COR_SEQ_1_ENABLE=4'b1111,CLK_COR_SEQ_2_1=10'b0,CLK_COR_SEQ_2_2=10'b0,CLK_COR_SEQ_2_3=10'b0,CLK_COR_SEQ_2_4=10'b0,CLK_COR_SEQ_2_ENABLE=4'b1111,CLK_COR_SEQ_2_USE="FALSE",CLK_CORRECT_USE="FALSE",CHAN_BOND_1_MAX_SKEW=1,CHAN_BOND_2_MAX_SKEW=1,CHAN_BOND_KEEP_ALIGN="FALSE",CHAN_BOND_SEQ_1_1=10'b0,CHAN_BOND_SEQ_1_2=10'b0,CHAN_BOND_SEQ_1_3=10'b0,CHAN_BOND_SEQ_1_4=10'b0,CHAN_BOND_SEQ_1_ENABLE=4'b1111,CHAN_BOND_SEQ_2_1=10'b0,CHAN_BOND_SEQ_2_2=10'b0,CHAN_BOND_SEQ_2_3=10'b0,CHAN_BOND_SEQ_2_4=10'b0,CHAN_BOND_SEQ_2_CFG=5'b0,CHAN_BOND_SEQ_2_ENABLE=4'b1111,CHAN_BOND_SEQ_2_USE="FALSE",CHAN_BOND_SEQ_LEN=1,PCI_EXPRESS_MODE="FALSE",SAS_MAX_COMSAS=52,SAS_MIN_COMSAS=40,SATA
+_BURST_VAL=3'b100,SATA_IDLE_VAL=3'b100,SATA_MAX_BURST=8,SATA_MAX_INIT=23,SATA_MAX_WAKE=8,SATA_MIN_BURST=4,SATA_MIN_INIT=13,SATA_MIN_WAKE=4,TRANS_TIME_FROM_P2=12'b0111100,TRANS_TIME_NON_P2=8'b011001,TRANS_TIME_RATE=8'b11111111,TRANS_TIME_TO_P2=10'b01100100>.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 299: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 351: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 403: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 455: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 507: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 559: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 611: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 662: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 713: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 765: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+
+Elaborating module <data_vio>.
+WARNING:HDLCompiler:1499 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 77: Empty module <data_vio> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 59: Size mismatch in connection of port <sync_in>. Formal port size is 32-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 60: Size mismatch in connection of port <sync_out>. Formal port size is 32-bit while actual signal size is 2-bit.
+
+Elaborating module <icon>.
+WARNING:HDLCompiler:1499 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 70: Empty module <icon> remains a black box.
+WARNING:HDLCompiler:552 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 55: Input port async_in[31] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ChipScope_TB>.
+    Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v".
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" line 55: Output port <async_out> of the instance <shared_vio_i> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ChipScope_TB> synthesized.
+
+Synthesizing Unit <Top>.
+    Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v".
+        WRAPPER_SIM_GTXRESET_SPEEDUP = 0
+WARNING:Xst:647 - Input <inject> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 278: Output port <RXDATA_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 278: Output port <RXPLLLKDET_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 278: Output port <TXN_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 278: Output port <TXP_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 278: Output port <TXPLLLKDET_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 278: Output port <TXRESETDONE_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <RXDATA_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <RXPLLLKDET_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <TXOUTCLK_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <TXN_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <TXP_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <TXPLLLKDET_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 330: Output port <TXRESETDONE_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 382: Output port <RXDATA_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 382: Output port <RXPLLLKDET_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 382: Output port <TXOUTCLK_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 382: Output port <TXPLLLKDET_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 434: Output port <RXDATA_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 434: Output port <RXPLLLKDET_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 434: Output port <TXOUTCLK_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 434: Output port <TXPLLLKDET_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 486: Output port <RXDATA_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 486: Output port <RXPRBSERR_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 486: Output port <RXPLLLKDET_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 486: Output port <RXRESETDONE_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 486: Output port <TXOUTCLK_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 486: Output port <TXPLLLKDET_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 538: Output port <RXDATA_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 538: Output port <RXPRBSERR_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 538: Output port <RXPLLLKDET_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 538: Output port <RXRESETDONE_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 538: Output port <TXOUTCLK_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 538: Output port <TXPLLLKDET_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 590: Output port <RXDATA_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 590: Output port <RXPLLLKDET_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 590: Output port <TXOUTCLK_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 590: Output port <TXPLLLKDET_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <RXDATA_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <RXPLLLKDET_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <TXOUTCLK_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <TXPLLLKDET_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <RXDATA_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <RXPLLLKDET_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <TXOUTCLK_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <TXPLLLKDET_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 744: Output port <RXDATA_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 744: Output port <RXPLLLKDET_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 744: Output port <TXOUTCLK_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 744: Output port <TXPLLLKDET_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <latched_error>.
+    Found 8-bit register for signal <blinker>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 27                                             |
+    | Clock              | slow_clk40 (rising_edge)                       |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <PRBS_reset>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <boot_up_counter_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_tx_reset<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full_rx_reset<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PRBS_error_inject>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 6-bit comparator greater for signal <n0007> created at line 142
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  27 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <Top> synthesized.
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\clock_divider.v".
+        DIVISOR = 28'b0000001111010000100100000000
+    Found 1-bit register for signal <clock_out>.
+    Found 28-bit register for signal <counter>.
+    Found 28-bit adder for signal <counter[27]_GND_4_o_add_1_OUT> created at line 34.
+    Found 28-bit comparator greater for signal <n0001> created at line 35
+    Found 28-bit comparator greater for signal <counter[27]_GND_4_o_LessThan_5_o> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <clock_divider> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter.v".
+    Found 6-bit register for signal <out>.
+    Found 6-bit adder for signal <out[0]_GND_5_o_add_1_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <Fiber_gtx>.
+    Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\fiber_gtx.v".
+        GTX_SIM_GTXRESET_SPEEDUP = 0
+        GTX_TX_CLK_SOURCE = "TXPLL"
+        GTX_POWER_SAVE = 10'b0000110000
+    Summary:
+	no macro.
+Unit <Fiber_gtx> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 28-bit adder                                          : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 28-bit register                                       : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 2
+# Latches                                              : 27
+ 1-bit latch                                           : 27
+# Comparators                                          : 3
+ 28-bit comparator greater                             : 2
+ 6-bit comparator greater                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <blinker_3> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <blinker_2> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <blinker_1> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <blinker_0> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <latched_error_3> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <latched_error_2> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <latched_error_1> of sequential type is unconnected in block <top_tb>.
+WARNING:Xst:2677 - Node <latched_error_0> of sequential type is unconnected in block <top_tb>.
+
+Synthesizing (advanced) Unit <clock_divider>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clock_divider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <out>: 1 register on signal <out>.
+Unit <counter> synthesized (advanced).
+WARNING:Xst:2677 - Node <latched_error_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <latched_error_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <latched_error_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <latched_error_0> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <blinker_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <blinker_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <blinker_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <blinker_0> of sequential type is unconnected in block <Top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 28-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 3
+ 28-bit comparator greater                             : 2
+ 6-bit comparator greater                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <top_tb/FSM_0> on signal <state[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00000001
+ 0001  | 00000010
+ 0100  | 00000100
+ 0101  | 00001000
+ 0011  | 00010000
+ 0010  | 00100000
+ 0110  | 01000000
+ 0111  | 10000000
+-------------------
+INFO:Xst:2261 - The FF/Latch <full_tx_reset_1> in Unit <Top> is equivalent to the following 7 FFs/Latches, which will be removed : <full_tx_reset_0> <full_tx_reset_4> <full_tx_reset_2> <full_tx_reset_3> <full_tx_reset_7> <full_tx_reset_5> <full_tx_reset_6> 
+INFO:Xst:2261 - The FF/Latch <full_rx_reset_2> in Unit <Top> is equivalent to the following 7 FFs/Latches, which will be removed : <full_rx_reset_0> <full_rx_reset_1> <full_rx_reset_5> <full_rx_reset_3> <full_rx_reset_4> <full_rx_reset_6> <full_rx_reset_7> 
+
+Optimizing unit <ChipScope_TB> ...
+
+Optimizing unit <Top> ...
+INFO:Xst:2261 - The FF/Latch <top_tb/blinker_4> in Unit <ChipScope_TB> is equivalent to the following 3 FFs/Latches, which will be removed : <top_tb/blinker_5> <top_tb/blinker_6> <top_tb/blinker_7> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ChipScope_TB, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ChipScope_TB.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 157
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 27
+#      LUT2                        : 10
+#      LUT3                        : 11
+#      LUT4                        : 10
+#      LUT5                        : 16
+#      LUT6                        : 10
+#      MUXCY                       : 38
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 61
+#      FD                          : 3
+#      FDR                         : 44
+#      FDS                         : 1
+#      LD                          : 13
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 36
+#      IBUF                        : 18
+#      IBUFDS                      : 1
+#      IBUFDS_GTXE1                : 1
+#      OBUF                        : 16
+# GigabitIOs                       : 10
+#      GTXE1                       : 10
+# Others                           : 2
+#      data_vio                    : 1
+#      icon                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  301440     0%  
+ Number of Slice LUTs:                   89  out of  150720     0%  
+    Number used as Logic:                89  out of  150720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     92
+   Number with an unused Flip Flop:      31  out of     92    33%  
+   Number with an unused LUT:             3  out of     92     3%  
+   Number of fully used LUT-FF pairs:    58  out of     92    63%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    600     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+-----------------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)             | Load  |
+-------------------------------------+-----------------------------------+-------+
+clk40p                               | IBUFDS+BUFG                       | 29    |
+top_tb/clk40_display/clock_out       | NONE(top_tb/boot_up_counter/out_0)| 15    |
+top_tb/_n0137(top_tb/state__n0137:O) | NONE(*)(top_tb/full_rx_reset_2)   | 9     |
+clk160p                              | IBUF+IBUFDS_GTXE1+BUFG            | 4     |
+top_tb/_n0193(top_tb/state__n0193:O) | NONE(*)(top_tb/led_fp_7)          | 3     |
+top_tb/_n0138(top_tb/state__n01381:O)| NONE(*)(top_tb/PRBS_error_inject) | 1     |
+-------------------------------------+-----------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.341ns (Maximum Frequency: 427.095MHz)
+   Minimum input arrival time before clock: 0.743ns
+   Maximum output required time after clock: 0.734ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk40p'
+  Clock period: 2.341ns (frequency: 427.095MHz)
+  Total number of paths / destination ports: 1731 / 57
+-------------------------------------------------------------------------
+Delay:               2.341ns (Levels of Logic = 7)
+  Source:            top_tb/clk40_display/counter_8 (FF)
+  Destination:       top_tb/clk40_display/clock_out (FF)
+  Source Clock:      clk40p rising
+  Destination Clock: clk40p rising
+
+  Data Path: top_tb/clk40_display/counter_8 to top_tb/clk40_display/clock_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.317   0.717  top_tb/clk40_display/counter_8 (top_tb/clk40_display/counter_8)
+     LUT5:I0->O            1   0.061   0.000  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_lut<0> (top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.248   0.000  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<0> (top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.017   0.000  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<1> (top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.017   0.000  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<2> (top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.017   0.000  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<3> (top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.190   0.339  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<4> (top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<4>)
+     INV:I->O              1   0.079   0.339  top_tb/clk40_display/Mcompar_counter[27]_GND_4_o_LessThan_5_o_cy<4>_inv1_INV_0 (top_tb/clk40_display/counter[27]_GND_4_o_LessThan_5_o)
+     FD:D                     -0.002          top_tb/clk40_display/clock_out
+    ----------------------------------------
+    Total                      2.341ns (0.946ns logic, 1.395ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_tb/clk40_display/clock_out'
+  Clock period: 1.746ns (frequency: 572.623MHz)
+  Total number of paths / destination ports: 71 / 14
+-------------------------------------------------------------------------
+Delay:               1.746ns (Levels of Logic = 2)
+  Source:            top_tb/boot_up_counter/out_3 (FF)
+  Destination:       top_tb/state_FSM_FFd3 (FF)
+  Source Clock:      top_tb/clk40_display/clock_out rising
+  Destination Clock: top_tb/clk40_display/clock_out rising
+
+  Data Path: top_tb/boot_up_counter/out_3 to top_tb/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.317   0.724  top_tb/boot_up_counter/out_3 (top_tb/boot_up_counter/out_3)
+     LUT6:I0->O            4   0.061   0.583  top_tb/n00071 (top_tb/n0007)
+     LUT4:I0->O            1   0.061   0.000  top_tb/state_FSM_FFd3-In1 (top_tb/state_FSM_FFd3-In)
+     FDR:D                    -0.002          top_tb/state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.746ns (0.439ns logic, 1.307ns route)
+                                       (25.1% logic, 74.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk160p'
+  Clock period: 0.747ns (frequency: 1338.599MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               0.747ns (Levels of Logic = 1)
+  Source:            top_tb/latched_error_4 (FF)
+  Destination:       top_tb/latched_error_4 (FF)
+  Source Clock:      clk160p rising
+  Destination Clock: clk160p rising
+
+  Data Path: top_tb/latched_error_4 to top_tb/latched_error_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.317   0.369  top_tb/latched_error_4 (top_tb/latched_error_4)
+     LUT2:I1->O            1   0.061   0.000  top_tb/PRBS_error[0]_latched_error[0]_or_69_OUT<3>1 (top_tb/PRBS_error[0]_latched_error[0]_or_69_OUT<3>)
+     FDR:D                    -0.002          top_tb/latched_error_4
+    ----------------------------------------
+    Total                      0.747ns (0.378ns logic, 0.369ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'top_tb/clk40_display/clock_out'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.743ns (Levels of Logic = 0)
+  Source:            shared_vio_i:sync_out<1> (PAD)
+  Destination:       top_tb/state_FSM_FFd2 (FF)
+  Destination Clock: top_tb/clk40_display/clock_out rising
+
+  Data Path: shared_vio_i:sync_out<1> to top_tb/state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    data_vio:sync_out<1>    8   0.000   0.378  shared_vio_i (n0006<1>)
+     FDS:S                     0.365          top_tb/state_FSM_FFd8
+    ----------------------------------------
+    Total                      0.743ns (0.365ns logic, 0.378ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'top_tb/_n0137'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              0.323ns (Levels of Logic = 0)
+  Source:            top_tb/led_fp_0 (LATCH)
+  Destination:       shared_vio_i:sync_in<7> (PAD)
+  Source Clock:      top_tb/_n0137 falling
+
+  Data Path: top_tb/led_fp_0 to shared_vio_i:sync_in<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               0   0.323   0.000  top_tb/led_fp_0 (top_tb/led_fp_0)
+    data_vio:sync_in<7>        0.000          shared_vio_i
+    ----------------------------------------
+    Total                      0.323ns (0.323ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'top_tb/_n0193'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.323ns (Levels of Logic = 0)
+  Source:            top_tb/led_fp_5 (LATCH)
+  Destination:       shared_vio_i:sync_in<2> (PAD)
+  Source Clock:      top_tb/_n0193 falling
+
+  Data Path: top_tb/led_fp_5 to shared_vio_i:sync_in<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               0   0.323   0.000  top_tb/led_fp_5 (top_tb/led_fp_5)
+    data_vio:sync_in<2>        0.000          shared_vio_i
+    ----------------------------------------
+    Total                      0.323ns (0.323ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk40p'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.734ns (Levels of Logic = 0)
+  Source:            top_tb/clk40_display/clock_out (FF)
+  Destination:       shared_vio_i:clk (PAD)
+  Source Clock:      clk40p rising
+
+  Data Path: top_tb/clk40_display/clock_out to shared_vio_i:clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.317   0.417  top_tb/clk40_display/clock_out (top_tb/clk40_display/clock_out)
+    data_vio:clk               0.000          shared_vio_i
+    ----------------------------------------
+    Total                      0.734ns (0.317ns logic, 0.417ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            i_icon:control0<35> (PAD)
+  Destination:       shared_vio_i:control<35> (PAD)
+
+  Data Path: i_icon:control0<35> to shared_vio_i:control<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    icon:control0<35>      0   0.000   0.000  i_icon (data_vio_control<35>)
+    data_vio:control<35>        0.000          shared_vio_i
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk160p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk160p        |    0.747|         |         |         |
+top_tb/_n0137  |         |    1.099|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk40p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk40p         |    2.341|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/_n0137
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+clk160p                       |         |         |    1.303|         |
+top_tb/clk40_display/clock_out|         |         |    1.422|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/_n0138
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+top_tb/clk40_display/clock_out|         |         |    0.849|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/_n0193
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+clk160p                       |         |         |    0.747|         |
+top_tb/clk40_display/clock_out|         |         |    1.005|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/clk40_display/clock_out
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+top_tb/_n0137                 |         |    1.055|         |         |
+top_tb/clk40_display/clock_out|    1.746|         |         |         |
+------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.73 secs
+ 
+--> 
+
+Total memory usage is 4520796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :   54 (   0 filtered)
+

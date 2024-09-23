@@ -33,7 +33,8 @@ module Top(
 	input wire clk40n,
 		   
 	input wire reset,
-	input wire inject
+	input wire inject,
+	output wire slow_clk40
 
 
 	
@@ -61,7 +62,7 @@ module Top(
 	// misc wire
 	wire q1_clk1_refclk_i_bufg;
 	wire clk40;
-	wire slow_clk40;
+	
 
 	wire txoutclk;
 	wire txusrclk2;
@@ -130,10 +131,10 @@ module Top(
 				
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b1;
-				//full_tx_reset[0:7] <= 8'b1111_1111;
-				full_tx_reset[0:7] <= 8'b0000_0000;
-				//full_rx_reset[0:7] <= 8'b1111_1111;
-				full_rx_reset[0:7] <= 8'b0000_0000;
+				full_tx_reset[0:7] <= 8'b1111_1111;
+				//full_tx_reset[0:7] <= 8'b0000_0000;
+				full_rx_reset[0:7] <= 8'b1111_1111;
+				//full_rx_reset[0:7] <= 8'b0000_0000;
 
 				led_fp[0:7] <= 8'b001_0000;
 			end 
@@ -143,8 +144,8 @@ module Top(
 				
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b0;
-				//full_tx_reset[0:7] <= 8'b0000_0000;
-				//full_rx_reset[0:7] <= 8'b1111_1111;
+				full_tx_reset[0:7] <= 8'b0000_0000;
+				full_rx_reset[0:7] <= 8'b1111_1111;
 				led_fp[0:7] <= 8'b0010_0000;
 			end
 			EN_TX_DONE : begin
@@ -153,8 +154,8 @@ module Top(
 				
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b1;
-				//full_tx_reset[0:7] <= 8'b0000_0000;
-				//full_rx_reset[0:7] <= 8'b1111_1111;
+				full_tx_reset[0:7] <= 8'b0000_0000;
+				full_rx_reset[0:7] <= 8'b1111_1111;
 				led_fp[0:7] <= 8'b0011_0000;
 			end
 			EN_RX : begin

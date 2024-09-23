@@ -4,14 +4,14 @@
 #
 #----------------------------------------------------------------------------------------------------------
 
-NET "led_fp[0]"		LOC = "AF24";	# I/O_521	** Dual use output: BPI Flash PROM Data D00
-NET "led_fp[1]"		LOC = "AF25";	# I/O_522	** Dual use output: BPI Flash PROM Data D01
-NET "led_fp[2]"		LOC = "W24";	# I/O_523	** Dual use output: BPI Flash PROM Data D02
-NET "led_fp[3]"		LOC = "V24";	# I/O_524	** Dual use output: BPI Flash PROM Data D03
-NET "led_fp[4]"		LOC = "H24";	# I/O_525	** Dual use output: BPI Flash PROM Data D04
-NET "led_fp[5]"		LOC = "H25";	# I/O_526	** Dual use output: BPI Flash PROM Data D05
-NET "led_fp[6]"		LOC = "P24";	# I/O_527	** Dual use output: BPI Flash PROM Data D06
-NET "led_fp[7]"		LOC = "R24";	# I/O_528	** Dual use output: BPI Flash PROM Data D07
+#NET "led_fp[0]"		LOC = "AF24";	# I/O_521	** Dual use output: BPI Flash PROM Data D00
+#NET "led_fp[1]"		LOC = "AF25";	# I/O_522	** Dual use output: BPI Flash PROM Data D01
+#NET "led_fp[2]"		LOC = "W24";	# I/O_523	** Dual use output: BPI Flash PROM Data D02
+#NET "led_fp[3]"		LOC = "V24";	# I/O_524	** Dual use output: BPI Flash PROM Data D03
+#NET "led_fp[4]"		LOC = "H24";	# I/O_525	** Dual use output: BPI Flash PROM Data D04
+#NET "led_fp[5]"		LOC = "H25";	# I/O_526	** Dual use output: BPI Flash PROM Data D05
+#NET "led_fp[6]"		LOC = "P24";	# I/O_527	** Dual use output: BPI Flash PROM Data D06
+#NET "led_fp[7]"		LOC = "R24";	# I/O_528	** Dual use output: BPI Flash PROM Data D07
 
 NET "clk160p" LOC = "AB6" ; #MGTREFCLK1P_113
 NET "clk160n" LOC = "AB5" ; 
@@ -68,5 +68,5 @@ NET "txp[7]" LOC = AM1;
 NET "rxn[7]" LOC = R4;  #MGTRXN3_114
 NET "rxp[7]" LOC = R3;
 
-NET "reset"  LOC = U25;
-NET "inject" LOC = U26;
+#NET "reset"  LOC = U25;
+#NET "inject" LOC = U26;
