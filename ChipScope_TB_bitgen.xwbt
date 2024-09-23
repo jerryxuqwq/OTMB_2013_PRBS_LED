@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.ncd
+OUTFILE=C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.bit
+FAMILY=Virtex6
+PART=xc6vlx240t-2ff1156
+WORKINGDIR=C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB
+LICENSE=ISE
+USER_INFO=__0_0_0

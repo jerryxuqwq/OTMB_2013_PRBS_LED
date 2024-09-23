@@ -34,9 +34,8 @@ module Top(
 		   
 	input wire reset,
 	input wire inject,
-	output wire slow_clk40
-
-
+	output wire slow_clk40,
+	input wire   [50:0] _ccb_rx
 	
     );
 	
@@ -81,7 +80,48 @@ module Top(
 	reg [0:7] full_rx_reset;
 	reg [0:7] latched_error;	
 	reg [0:7] blinker;
+
+	// Deal with ccb
 	
+	reg   [33:0]  ccb_rx_iobff_a = {34{1'b1}}; // synthesis attribute IOB of ccb_rx_iobff_a is "true";
+	reg   [50:36] ccb_rx_iobff_b = {15{1'b1}}; // synthesis attribute IOB of ccb_rx_iobff_b is "true";
+	wire [50:0]   ccb_rx;
+	
+	always @(posedge clk40) begin
+		ccb_rx_iobff_a[33:0]  <= _ccb_rx[33:0];
+		ccb_rx_iobff_b[50:36] <= _ccb_rx[50:36];
+	end
+	assign ccb_rx_iobff = {~ccb_rx_iobff_b[50:36],2'b00,~ccb_rx_iobff_a[33:0]};
+	assign ccb_rx[50:0] = ccb_rx_iobff;
+	
+	wire  [7:0]      ccb_cmd;
+	assign ccb_cmd[5:0] = ~ccb_rx[7:2];
+	assign  ccb_cmd_strobe =  ccb_rx[10];
+	assign  ccb_evcntres    =  ccb_rx[ 8];
+	assign  ccb_bcntres      =  ccb_rx[ 9];
+	assign ccb_cmd[7]     =  ccb_bcntres;  // don't use for cmd decoding
+	assign ccb_cmd[6]     =  ccb_evcntres;  // don't use for cmd decoding
+
+	
+	integer i;
+	parameter MXDEC = 'h32;    // Highest CCB Command decode
+	reg  [MXDEC:0] ccb_cmd_dec =0;
+	
+	always @(posedge clk40) begin
+		i=0;
+		while (i<=MXDEC)
+		begin
+		ccb_cmd_dec[i] <= (ccb_cmd[5:0]==i) && ccb_cmd_strobe;
+		i=i+1;
+		end
+	end
+	
+	wire ttc_bx0_dec        = ccb_cmd_dec['h01];  // Bunch Crossing Zero   
+	wire ttc_resync          = ccb_cmd_dec['h03];  // Reset L1 readout buffers and resynchronize optical links   
+  
+  
+  
+  
 	IBUFDS #(
 		.DIFF_TERM("FALSE"),       // Differential Termination
 		.IBUF_LOW_PWR("TRUE"),     // Low power="TRUE", Highest performance="FALSE"
@@ -98,6 +138,7 @@ module Top(
 		blinker = ~blinker;
 	end
 	
+
 	clock_divider clk40_display(clk40,slow_clk40);
 	// counter
 	counter boot_up_counter(slow_clk40,
@@ -189,7 +230,7 @@ module Top(
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				led_fp[0:3] <= 4'b0110;
-				led_fp[0:4] <= latched_error[4:7] | blinker[4:7];
+				led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
 			end
 			
 			PRBS_INJECT_CLEAR :  begin
@@ -211,7 +252,7 @@ module Top(
 				boot_up_counter_rst <= 1'b0;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
-				PRBS_error_inject <= 1'b0; //connect to inject later
+				PRBS_error_inject <= inject; //connect to inject later
 				led_fp[0:3] <= 4'b1010;
 				
 				led_fp[4:7] <= latched_error[4:7] | blinker[4:7];

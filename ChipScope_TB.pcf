@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Sep 23 13:45:51 2024
+// Written by: Map P.20131013 on Mon Sep 23 18:41:52 2024
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -39,5 +39,39 @@ COMP "txp<4>" LOCATE = SITE "V1" LEVEL 1;
 COMP "txp<5>" LOCATE = SITE "T1" LEVEL 1;
 COMP "txp<6>" LOCATE = SITE "P1" LEVEL 1;
 COMP "txp<7>" LOCATE = SITE "AM1" LEVEL 1;
+COMP "_ccb_rx<10>" LOCATE = SITE "AE27" LEVEL 1;
+COMP "_ccb_rx<11>" LOCATE = SITE "AD25" LEVEL 1;
+COMP "_ccb_rx<12>" LOCATE = SITE "AD26" LEVEL 1;
+COMP "_ccb_rx<20>" LOCATE = SITE "AK33" LEVEL 1;
+COMP "_ccb_rx<13>" LOCATE = SITE "AE26" LEVEL 1;
+COMP "_ccb_rx<21>" LOCATE = SITE "AK34" LEVEL 1;
+COMP "_ccb_rx<14>" LOCATE = SITE "AM30" LEVEL 1;
+COMP "_ccb_rx<22>" LOCATE = SITE "AL33" LEVEL 1;
+COMP "_ccb_rx<30>" LOCATE = SITE "AM33" LEVEL 1;
+COMP "_ccb_rx<15>" LOCATE = SITE "AP29" LEVEL 1;
+COMP "_ccb_rx<23>" LOCATE = SITE "AL31" LEVEL 1;
+COMP "_ccb_rx<31>" LOCATE = SITE "AN34" LEVEL 1;
+COMP "_ccb_rx<16>" LOCATE = SITE "AM28" LEVEL 1;
+COMP "_ccb_rx<24>" LOCATE = SITE "AL30" LEVEL 1;
+COMP "_ccb_rx<32>" LOCATE = SITE "AN33" LEVEL 1;
+COMP "_ccb_rx<17>" LOCATE = SITE "AK31" LEVEL 1;
+COMP "_ccb_rx<25>" LOCATE = SITE "AK32" LEVEL 1;
+COMP "_ccb_rx<33>" LOCATE = SITE "AP33" LEVEL 1;
+COMP "_ccb_rx<18>" LOCATE = SITE "AB28" LEVEL 1;
+COMP "_ccb_rx<26>" LOCATE = SITE "AL34" LEVEL 1;
+COMP "_ccb_rx<19>" LOCATE = SITE "AH30" LEVEL 1;
+COMP "_ccb_rx<27>" LOCATE = SITE "AJ30" LEVEL 1;
+COMP "_ccb_rx<28>" LOCATE = SITE "AJ29" LEVEL 1;
+COMP "_ccb_rx<29>" LOCATE = SITE "AH29" LEVEL 1;
+COMP "_ccb_rx<0>" LOCATE = SITE "AG28" LEVEL 1;
+COMP "_ccb_rx<1>" LOCATE = SITE "AM32" LEVEL 1;
+COMP "_ccb_rx<2>" LOCATE = SITE "AN32" LEVEL 1;
+COMP "_ccb_rx<3>" LOCATE = SITE "AG27" LEVEL 1;
+COMP "_ccb_rx<4>" LOCATE = SITE "AC25" LEVEL 1;
+COMP "_ccb_rx<5>" LOCATE = SITE "AD27" LEVEL 1;
+COMP "_ccb_rx<6>" LOCATE = SITE "AP32" LEVEL 1;
+COMP "_ccb_rx<7>" LOCATE = SITE "AM31" LEVEL 1;
+COMP "_ccb_rx<8>" LOCATE = SITE "AP30" LEVEL 1;
+COMP "_ccb_rx<9>" LOCATE = SITE "AF26" LEVEL 1;
 SCHEMATIC END;
 

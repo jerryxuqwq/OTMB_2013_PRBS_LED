@@ -55,8 +55,8 @@ Clock to Setup on destination clock clk160n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk160n        |    0.650|         |         |         |
-clk160p        |    0.650|         |         |         |
+clk160n        |    0.641|         |         |         |
+clk160p        |    0.641|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk160p
@@ -64,19 +64,19 @@ Clock to Setup on destination clock clk160p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk160n        |    0.650|         |         |         |
-clk160p        |    0.650|         |         |         |
+clk160n        |    0.641|         |         |         |
+clk160p        |    0.641|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Sep 23 13:46:50 2024 
+Analysis completed Mon Sep 23 18:42:50 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 5013 MB
+Peak Memory Usage: 5014 MB
 
 
 

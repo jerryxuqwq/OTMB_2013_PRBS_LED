@@ -27,7 +27,9 @@ module ChipScope_TB(
 	input wire clk160n,
 		   
 	input wire clk40p,
-	input wire clk40n
+	input wire clk40n,
+	
+	input wire [50:0] _ccb_rx
     );
 	
 	wire [0:7]led_fp;
@@ -47,7 +49,8 @@ Top top_tb(
 	.clk160n(clk160n),
 	.clk40p(clk40p),
 	.clk40n(clk40n),
-	.slow_clk40(slow_clk40)
+	.slow_clk40(slow_clk40),
+	._ccb_rx(_ccb_rx)
     );
 	
 	wire [35:0] data_vio_control;
