@@ -1,0 +1,42 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Sep 23 13:58:42 2024
+
+drc -z ChipScope_TB.ncd ChipScope_TB.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0193 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0137 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0138 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_UPDATE_OUT[15].UPDATE_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete.
+   The signal does not drive any load pins in the design.
+DRC detected 0 errors and 11 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

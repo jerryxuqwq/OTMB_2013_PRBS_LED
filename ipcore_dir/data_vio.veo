@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : data_vio.veo
-// /___/   /\     Timestamp  : Mon Sep 23 02:03:13 Central Daylight Time 2024
+// /___/   /\     Timestamp  : Mon Sep 23 13:43:20 Central Daylight Time 2024
 // \   \  /  \
 //  \___\/\___\
 //
@@ -22,8 +22,9 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 data_vio YourInstanceName (
     .CONTROL(CONTROL), // INOUT BUS [35:0]
-    .ASYNC_IN(ASYNC_IN), // IN BUS [7:0]
-    .ASYNC_OUT(ASYNC_OUT) // OUT BUS [1:0]
+    .CLK(CLK), // IN
+    .SYNC_IN(SYNC_IN), // IN BUS [7:0]
+    .SYNC_OUT(SYNC_OUT) // OUT BUS [7:0]
 );
 
 // INST_TAG_END ------ End INSTANTIATION Template ---------

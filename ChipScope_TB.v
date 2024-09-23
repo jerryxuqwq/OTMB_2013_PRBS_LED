@@ -54,41 +54,18 @@ Top top_tb(
 	
     data_vio shared_vio_i
     (
-	.control                        (data_vio_control),
-	.clk							(slow_clk40),
-	.sync_in							(led_fp),
-	.sync_out							({reset,inject}),
+	.CONTROL                        (data_vio_control),
+	.CLK							(slow_clk40),
+	.SYNC_IN							(led_fp),
+	.SYNC_OUT							({reset,inject})
     );
 	
     icon i_icon
     (
-      .control0                         (data_vio_control)
+      .CONTROL0                         (data_vio_control)
     );
 
 endmodule
 
-module icon
-  (
-      control0
-  );
-  inout [35:0] control0;
-endmodule
-
-module data_vio
-  (
-    control,
-    clk,
-    async_in,
-    async_out,
-    sync_in,
-    sync_out
-  );
-  inout  [35:0] control;
-  input         clk;
-  input  [31:0] async_in;
-  output [31:0] async_out;
-  input  [31:0] sync_in;
-  output [31:0] sync_out;
-endmodule
 
 

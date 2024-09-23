@@ -1,0 +1,20 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Sep 23 13:46:38 2024
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 8 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp
+   shared_vio_i/U0/I_VIO/GEN_UPDATE_OUT[15].UPDATE_CELL/out_temp
+
+

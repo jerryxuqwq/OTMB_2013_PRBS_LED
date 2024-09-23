@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 23 13:45:51 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk160n" LOCATE = SITE "AB5" LEVEL 1;
+COMP "clk160p" LOCATE = SITE "AB6" LEVEL 1;
+COMP "clk40n" LOCATE = SITE "B10" LEVEL 1;
+COMP "clk40p" LOCATE = SITE "A10" LEVEL 1;
+COMP "rxn<0>" LOCATE = SITE "AP6" LEVEL 1;
+COMP "rxn<1>" LOCATE = SITE "AM6" LEVEL 1;
+COMP "rxn<2>" LOCATE = SITE "AL4" LEVEL 1;
+COMP "rxn<3>" LOCATE = SITE "AJ4" LEVEL 1;
+COMP "rxn<4>" LOCATE = SITE "AA4" LEVEL 1;
+COMP "rxn<5>" LOCATE = SITE "W4" LEVEL 1;
+COMP "rxn<6>" LOCATE = SITE "U4" LEVEL 1;
+COMP "rxn<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "rxp<0>" LOCATE = SITE "AP5" LEVEL 1;
+COMP "rxp<1>" LOCATE = SITE "AM5" LEVEL 1;
+COMP "rxp<2>" LOCATE = SITE "AL3" LEVEL 1;
+COMP "rxp<3>" LOCATE = SITE "AJ3" LEVEL 1;
+COMP "rxp<4>" LOCATE = SITE "AA3" LEVEL 1;
+COMP "rxp<5>" LOCATE = SITE "W3" LEVEL 1;
+COMP "rxp<6>" LOCATE = SITE "U3" LEVEL 1;
+COMP "rxp<7>" LOCATE = SITE "R3" LEVEL 1;
+COMP "txn<0>" LOCATE = SITE "AK2" LEVEL 1;
+COMP "txn<1>" LOCATE = SITE "AH2" LEVEL 1;
+COMP "txn<2>" LOCATE = SITE "AB2" LEVEL 1;
+COMP "txn<3>" LOCATE = SITE "Y2" LEVEL 1;
+COMP "txn<4>" LOCATE = SITE "V2" LEVEL 1;
+COMP "txn<5>" LOCATE = SITE "T2" LEVEL 1;
+COMP "txn<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "txn<7>" LOCATE = SITE "AM2" LEVEL 1;
+COMP "txp<0>" LOCATE = SITE "AK1" LEVEL 1;
+COMP "txp<1>" LOCATE = SITE "AH1" LEVEL 1;
+COMP "txp<2>" LOCATE = SITE "AB1" LEVEL 1;
+COMP "txp<3>" LOCATE = SITE "Y1" LEVEL 1;
+COMP "txp<4>" LOCATE = SITE "V1" LEVEL 1;
+COMP "txp<5>" LOCATE = SITE "T1" LEVEL 1;
+COMP "txp<6>" LOCATE = SITE "P1" LEVEL 1;
+COMP "txp<7>" LOCATE = SITE "AM1" LEVEL 1;
+SCHEMATIC END;
+

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: ChipScope_TB.prj
 
@@ -99,6 +99,9 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
 =========================================================================
 
 
@@ -113,15 +116,16 @@ Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_US
 Parsing module <clock_divider>.
 Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" into library work
 Parsing module <Top>.
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ipcore_dir\icon.v" into library work
+Parsing module <icon>.
+Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ipcore_dir\data_vio.v" into library work
+Parsing module <data_vio>.
 Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" into library work
 Parsing module <ChipScope_TB>.
-Parsing module <icon>.
-Parsing module <data_vio>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 55: Port async_in is not connected to this instance
 
 Elaborating module <ChipScope_TB>.
 
@@ -161,13 +165,9 @@ WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker
 WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 765: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
 
 Elaborating module <data_vio>.
-WARNING:HDLCompiler:1499 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 77: Empty module <data_vio> remains a black box.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 59: Size mismatch in connection of port <sync_in>. Formal port size is 32-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 60: Size mismatch in connection of port <sync_out>. Formal port size is 32-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 60: Size mismatch in connection of port <SYNC_OUT>. Formal port size is 8-bit while actual signal size is 2-bit.
 
 Elaborating module <icon>.
-WARNING:HDLCompiler:1499 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 70: Empty module <icon> remains a black box.
-WARNING:HDLCompiler:552 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 55: Input port async_in[31] is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -175,7 +175,6 @@ WARNING:HDLCompiler:552 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker
 
 Synthesizing Unit <ChipScope_TB>.
     Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v".
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" line 55: Output port <async_out> of the instance <shared_vio_i> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <ChipScope_TB> synthesized.
@@ -341,6 +340,10 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/data_vio.ngc>.
+Reading core <ipcore_dir/icon.ngc>.
+Loading core <data_vio> for timing and area information for instance <shared_vio_i>.
+Loading core <icon> for timing and area information for instance <i_icon>.
 WARNING:Xst:2677 - Node <blinker_3> of sequential type is unconnected in block <top_tb>.
 WARNING:Xst:2677 - Node <blinker_2> of sequential type is unconnected in block <top_tb>.
 WARNING:Xst:2677 - Node <blinker_1> of sequential type is unconnected in block <top_tb>.
@@ -410,6 +413,22 @@ INFO:Xst:2261 - The FF/Latch <top_tb/blinker_4> in Unit <ChipScope_TB> is equiva
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block ChipScope_TB, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0> in Unit <shared_vio_i> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG> 
 
 Final Macro Processing ...
 
@@ -441,25 +460,34 @@ Top Level Output File Name         : ChipScope_TB.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 157
-#      GND                         : 1
-#      INV                         : 5
-#      LUT1                        : 27
-#      LUT2                        : 10
-#      LUT3                        : 11
-#      LUT4                        : 10
-#      LUT5                        : 16
-#      LUT6                        : 10
+# BELS                             : 379
+#      GND                         : 3
+#      INV                         : 20
+#      LUT1                        : 45
+#      LUT2                        : 27
+#      LUT3                        : 52
+#      LUT4                        : 91
+#      LUT5                        : 17
+#      LUT6                        : 19
 #      MUXCY                       : 38
-#      VCC                         : 1
-#      XORCY                       : 28
-# FlipFlops/Latches                : 61
+#      MUXCY_L                     : 15
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      VCC                         : 3
+#      XORCY                       : 46
+# FlipFlops/Latches                : 274
 #      FD                          : 3
-#      FDR                         : 44
+#      FDC                         : 19
+#      FDCE                        : 12
+#      FDE                         : 114
+#      FDR                         : 69
+#      FDRE                        : 43
 #      FDS                         : 1
 #      LD                          : 13
-# Clock Buffers                    : 3
-#      BUFG                        : 3
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
+# Clock Buffers                    : 5
+#      BUFG                        : 5
 # IO Buffers                       : 36
 #      IBUF                        : 18
 #      IBUFDS                      : 1
@@ -467,9 +495,8 @@ Primitive and Black Box Usage:
 #      OBUF                        : 16
 # GigabitIOs                       : 10
 #      GTXE1                       : 10
-# Others                           : 2
-#      data_vio                    : 1
-#      icon                        : 1
+# Others                           : 1
+#      BSCAN_VIRTEX6               : 1
 
 Device utilization summary:
 ---------------------------
@@ -478,23 +505,25 @@ Selected Device : 6vlx240tff1156-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              61  out of  301440     0%  
- Number of Slice LUTs:                   89  out of  150720     0%  
-    Number used as Logic:                89  out of  150720     0%  
+ Number of Slice Registers:             274  out of  301440     0%  
+ Number of Slice LUTs:                  279  out of  150720     0%  
+    Number used as Logic:               271  out of  150720     0%  
+    Number used as Memory:                8  out of  58400     0%  
+       Number used as SRL:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     92
-   Number with an unused Flip Flop:      31  out of     92    33%  
-   Number with an unused LUT:             3  out of     92     3%  
-   Number of fully used LUT-FF pairs:    58  out of     92    63%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    434
+   Number with an unused Flip Flop:     160  out of    434    36%  
+   Number with an unused LUT:           155  out of    434    35%  
+   Number of fully used LUT-FF pairs:   119  out of    434    27%  
+   Number of unique control sets:        82
 
 IO Utilization: 
  Number of IOs:                          36
  Number of bonded IOBs:                  36  out of    600     6%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
 
 ---------------------------
 Partition Resource Summary:
@@ -514,16 +543,26 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------+-----------------------------------+-------+
-Clock Signal                         | Clock buffer(FF name)             | Load  |
--------------------------------------+-----------------------------------+-------+
-clk40p                               | IBUFDS+BUFG                       | 29    |
-top_tb/clk40_display/clock_out       | NONE(top_tb/boot_up_counter/out_0)| 15    |
-top_tb/_n0137(top_tb/state__n0137:O) | NONE(*)(top_tb/full_rx_reset_2)   | 9     |
-clk160p                              | IBUF+IBUFDS_GTXE1+BUFG            | 4     |
-top_tb/_n0193(top_tb/state__n0193:O) | NONE(*)(top_tb/led_fp_7)          | 3     |
-top_tb/_n0138(top_tb/state__n01381:O)| NONE(*)(top_tb/PRBS_error_inject) | 1     |
--------------------------------------+-----------------------------------+-------+
+---------------------------------------------+------------------------------------------------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)                                            | Load  |
+---------------------------------------------+------------------------------------------------------------------+-------+
+clk40p                                       | IBUFDS+BUFG                                                      | 29    |
+top_tb/clk40_display/clock_out               | BUFG                                                             | 114   |
+top_tb/_n0137(top_tb/state__n0137:O)         | NONE(*)(top_tb/full_rx_reset_2)                                  | 9     |
+clk160p                                      | IBUF+IBUFDS_GTXE1+BUFG                                           | 4     |
+top_tb/_n0193(top_tb/state__n0193:O)         | NONE(*)(top_tb/led_fp_7)                                         | 3     |
+top_tb/_n0138(top_tb/state__n01381:O)        | NONE(*)(top_tb/PRBS_error_inject)                                | 1     |
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL| BUFG                                                             | 105   |
+top_tb/led_fp_0                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_1                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_2                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_3                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_4                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_5                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_6                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/U_FALLING)| 2     |
+top_tb/led_fp_7                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/U_FALLING)| 2     |
+i_icon/U0/iUPDATE_OUT                        | NONE(i_icon/U0/U_ICON/U_iDATA_CMD)                               | 1     |
+---------------------------------------------+------------------------------------------------------------------+-------+
 (*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -537,10 +576,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.341ns (Maximum Frequency: 427.095MHz)
-   Minimum input arrival time before clock: 0.743ns
-   Maximum output required time after clock: 0.734ns
-   Maximum combinational path delay: 0.000ns
+   Minimum period: 3.926ns (Maximum Frequency: 254.738MHz)
+   Minimum input arrival time before clock: 3.456ns
+   Maximum output required time after clock: 0.317ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -576,26 +615,25 @@ Delay:               2.341ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_tb/clk40_display/clock_out'
-  Clock period: 1.746ns (frequency: 572.623MHz)
-  Total number of paths / destination ports: 71 / 14
+  Clock period: 2.121ns (frequency: 471.587MHz)
+  Total number of paths / destination ports: 236 / 132
 -------------------------------------------------------------------------
-Delay:               1.746ns (Levels of Logic = 2)
-  Source:            top_tb/boot_up_counter/out_3 (FF)
-  Destination:       top_tb/state_FSM_FFd3 (FF)
-  Source Clock:      top_tb/clk40_display/clock_out rising
+Delay:               1.060ns (Levels of Logic = 1)
+  Source:            shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/USER_REG (FF)
+  Destination:       top_tb/state_FSM_FFd2 (FF)
+  Source Clock:      top_tb/clk40_display/clock_out falling
   Destination Clock: top_tb/clk40_display/clock_out rising
 
-  Data Path: top_tb/boot_up_counter/out_3 to top_tb/state_FSM_FFd3
+  Data Path: shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/USER_REG to top_tb/state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.317   0.724  top_tb/boot_up_counter/out_3 (top_tb/boot_up_counter/out_3)
-     LUT6:I0->O            4   0.061   0.583  top_tb/n00071 (top_tb/n0007)
-     LUT4:I0->O            1   0.061   0.000  top_tb/state_FSM_FFd3-In1 (top_tb/state_FSM_FFd3-In)
-     FDR:D                    -0.002          top_tb/state_FSM_FFd3
+     FDE:C->Q              8   0.317   0.378  U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/USER_REG (SYNC_OUT<1>)
+     end scope: 'shared_vio_i:SYNC_OUT<1>'
+     FDS:S                     0.365          top_tb/state_FSM_FFd8
     ----------------------------------------
-    Total                      1.746ns (0.439ns logic, 1.307ns route)
-                                       (25.1% logic, 74.9% route)
+    Total                      1.060ns (0.682ns logic, 0.378ns route)
+                                       (64.3% logic, 35.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk160p'
@@ -620,97 +658,143 @@ Delay:               0.747ns (Levels of Logic = 1)
                                        (50.6% logic, 49.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'top_tb/clk40_display/clock_out'
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default period analysis for Clock 'i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 3.926ns (frequency: 254.738MHz)
+  Total number of paths / destination ports: 1479 / 137
 -------------------------------------------------------------------------
-Offset:              0.743ns (Levels of Logic = 0)
-  Source:            shared_vio_i:sync_out<1> (PAD)
-  Destination:       top_tb/state_FSM_FFd2 (FF)
-  Destination Clock: top_tb/clk40_display/clock_out rising
+Delay:               3.926ns (Levels of Logic = 6)
+  Source:            i_icon/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+  Destination:       shared_vio_i/U0/I_VIO/U_STATUS/U_TDO (FF)
+  Source Clock:      i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
 
-  Data Path: shared_vio_i:sync_out<1> to top_tb/state_FSM_FFd2
+  Data Path: i_icon/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to shared_vio_i/U0/I_VIO/U_STATUS/U_TDO
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    data_vio:sync_out<1>    8   0.000   0.378  shared_vio_i (n0006<1>)
-     FDS:S                     0.365          top_tb/state_FSM_FFd8
+     FDCE:C->Q            18   0.317   0.661  U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (U0/U_ICON/iCORE_ID<0>)
+     LUT4:I0->O           32   0.061   0.556  U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT (U0/U_ICON/iCORE_ID_SEL<0>)
+     LUT4:I2->O            1   0.061   0.696  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE (CONTROL0<15>)
+     end scope: 'i_icon:CONTROL0<15>'
+     begin scope: 'shared_vio_i:CONTROL<15>'
+     LUT6:I0->O            1   0.061   0.696  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O23 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O22)
+     LUT6:I0->O            1   0.061   0.694  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O29 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O28)
+     LUT5:I0->O            1   0.061   0.000  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O210 (U0/I_VIO/U_STATUS/TDO_next)
+     FDE:D                    -0.002          U0/I_VIO/U_STATUS/U_TDO
     ----------------------------------------
-    Total                      0.743ns (0.365ns logic, 0.378ns route)
-                                       (49.1% logic, 50.9% route)
+    Total                      3.926ns (0.622ns logic, 3.304ns route)
+                                       (15.8% logic, 84.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'top_tb/_n0137'
-  Total number of paths / destination ports: 5 / 5
--------------------------------------------------------------------------
-Offset:              0.323ns (Levels of Logic = 0)
-  Source:            top_tb/led_fp_0 (LATCH)
-  Destination:       shared_vio_i:sync_in<7> (PAD)
-  Source Clock:      top_tb/_n0137 falling
-
-  Data Path: top_tb/led_fp_0 to shared_vio_i:sync_in<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               0   0.323   0.000  top_tb/led_fp_0 (top_tb/led_fp_0)
-    data_vio:sync_in<7>        0.000          shared_vio_i
-    ----------------------------------------
-    Total                      0.323ns (0.323ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'top_tb/_n0193'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              0.323ns (Levels of Logic = 0)
-  Source:            top_tb/led_fp_5 (LATCH)
-  Destination:       shared_vio_i:sync_in<2> (PAD)
-  Source Clock:      top_tb/_n0193 falling
-
-  Data Path: top_tb/led_fp_5 to shared_vio_i:sync_in<2>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               0   0.323   0.000  top_tb/led_fp_5 (top_tb/led_fp_5)
-    data_vio:sync_in<2>        0.000          shared_vio_i
-    ----------------------------------------
-    Total                      0.323ns (0.323ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk40p'
+Timing constraint: Default period analysis for Clock 'i_icon/U0/iUPDATE_OUT'
+  Clock period: 1.086ns (frequency: 920.641MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              0.734ns (Levels of Logic = 0)
-  Source:            top_tb/clk40_display/clock_out (FF)
-  Destination:       shared_vio_i:clk (PAD)
-  Source Clock:      clk40p rising
+Delay:               1.086ns (Levels of Logic = 1)
+  Source:            i_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       i_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      i_icon/U0/iUPDATE_OUT rising
+  Destination Clock: i_icon/U0/iUPDATE_OUT rising
 
-  Data Path: top_tb/clk40_display/clock_out to shared_vio_i:clk
+  Data Path: i_icon/U0/U_ICON/U_iDATA_CMD to i_icon/U0/U_ICON/U_iDATA_CMD
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              15   0.317   0.417  top_tb/clk40_display/clock_out (top_tb/clk40_display/clock_out)
-    data_vio:clk               0.000          shared_vio_i
+     FDC:C->Q              3   0.317   0.351  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.079   0.339  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                    -0.002          U0/U_ICON/U_iDATA_CMD
     ----------------------------------------
-    Total                      0.734ns (0.317ns logic, 0.417ns route)
-                                       (43.2% logic, 56.8% route)
+    Total                      1.086ns (0.396ns logic, 0.690ns route)
+                                       (36.5% logic, 63.5% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 36 / 36
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 136 / 105
 -------------------------------------------------------------------------
-Delay:               0.000ns (Levels of Logic = 0)
-  Source:            i_icon:control0<35> (PAD)
-  Destination:       shared_vio_i:control<35> (PAD)
+Offset:              3.456ns (Levels of Logic = 6)
+  Source:            i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       shared_vio_i/U0/I_VIO/U_STATUS/U_TDO (FF)
+  Destination Clock: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
 
-  Data Path: i_icon:control0<35> to shared_vio_i:control<35>
+  Data Path: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to shared_vio_i/U0/I_VIO/U_STATUS/U_TDO
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    icon:control0<35>      0   0.000   0.000  i_icon (data_vio_control<35>)
-    data_vio:control<35>        0.000          shared_vio_i
+    BSCAN_VIRTEX6:SHIFT    3   0.000   0.369  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.061   0.696  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            1   0.061   0.696  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE (CONTROL0<15>)
+     end scope: 'i_icon:CONTROL0<15>'
+     begin scope: 'shared_vio_i:CONTROL<15>'
+     LUT6:I0->O            1   0.061   0.696  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O23 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O22)
+     LUT6:I0->O            1   0.061   0.694  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O29 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O28)
+     LUT5:I0->O            1   0.061   0.000  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O210 (U0/I_VIO/U_STATUS/TDO_next)
+     FDE:D                    -0.002          U0/I_VIO/U_STATUS/U_TDO
     ----------------------------------------
-    Total                      0.000ns (0.000ns logic, 0.000ns route)
+    Total                      3.456ns (0.305ns logic, 3.151ns route)
+                                       (8.8% logic, 91.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'top_tb/clk40_display/clock_out'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              2.343ns (Levels of Logic = 4)
+  Source:            i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       shared_vio_i/U0/I_VIO/GEN_TRANS.U_ARM/U_RFDRE (FF)
+  Destination Clock: top_tb/clk40_display/clock_out falling
+
+  Data Path: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to shared_vio_i/U0/I_VIO/GEN_TRANS.U_ARM/U_RFDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SHIFT    3   0.000   0.369  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.061   0.696  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            4   0.061   0.374  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_LCE (CONTROL0<6>)
+     end scope: 'i_icon:CONTROL0<6>'
+     begin scope: 'shared_vio_i:CONTROL<6>'
+     LUT2:I1->O            4   0.061   0.356  U0/I_VIO/GEN_TRANS.U_ARM/U_CLEAR (U0/I_VIO/GEN_TRANS.U_ARM/iCLR)
+     FDCE:CLR                  0.365          U0/I_VIO/GEN_TRANS.U_ARM/U_RFDRE
+    ----------------------------------------
+    Total                      2.343ns (0.548ns logic, 1.795ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_icon/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.127ns (Levels of Logic = 1)
+  Source:            i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       i_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: i_icon/U0/iUPDATE_OUT rising
+
+  Data Path: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to i_icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SEL      2   0.000   0.344  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.079   0.339  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.365          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.127ns (0.444ns logic, 0.683ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.317ns (Levels of Logic = 0)
+  Source:            i_icon/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: i_icon/U0/U_ICON/U_TDO_reg to i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.317   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_VIRTEX6:TDO          0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.317ns (0.317ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 
@@ -733,6 +817,32 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk40p         |    2.341|         |         |         |
 ---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    3.926|         |         |         |
+i_icon/U0/iUPDATE_OUT                        |    1.490|         |         |         |
+top_tb/clk40_display/clock_out               |         |    1.525|         |         |
+top_tb/led_fp_0                              |    0.890|    0.890|         |         |
+top_tb/led_fp_1                              |    0.890|    0.890|         |         |
+top_tb/led_fp_2                              |    0.890|    0.890|         |         |
+top_tb/led_fp_3                              |    0.890|    0.890|         |         |
+top_tb/led_fp_4                              |    0.890|    0.890|         |         |
+top_tb/led_fp_5                              |    0.890|    0.890|         |         |
+top_tb/led_fp_6                              |    0.890|    0.890|         |         |
+top_tb/led_fp_7                              |    0.890|    0.890|         |         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_icon/U0/iUPDATE_OUT
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+i_icon/U0/iUPDATE_OUT|    1.086|         |         |         |
+---------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock top_tb/_n0137
 ------------------------------+---------+---------+---------+---------+
@@ -761,25 +871,91 @@ top_tb/clk40_display/clock_out|         |         |    1.005|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock top_tb/clk40_display/clock_out
-------------------------------+---------+---------+---------+---------+
-                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------+---------+---------+---------+---------+
-top_tb/_n0137                 |         |    1.055|         |         |
-top_tb/clk40_display/clock_out|    1.746|         |         |         |
-------------------------------+---------+---------+---------+---------+
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|         |         |    2.812|         |
+top_tb/_n0137                                |         |    1.055|    0.685|         |
+top_tb/_n0193                                |         |         |    0.685|         |
+top_tb/clk40_display/clock_out               |    1.746|    1.060|    1.546|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_0
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_1
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_2
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_3
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_4
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_5
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_6
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/led_fp_7
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
+---------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.73 secs
+Total CPU time to Xst completion: 8.53 secs
  
 --> 
 
 Total memory usage is 4520796 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   64 (   0 filtered)
-Number of infos    :   54 (   0 filtered)
+Number of warnings :   59 (   0 filtered)
+Number of infos    :   69 (   0 filtered)
 

@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : data_vio.v
-// /___/   /\     Timestamp  : Mon Sep 23 02:03:13 Central Daylight Time 2024
+// /___/   /\     Timestamp  : Mon Sep 23 13:43:20 Central Daylight Time 2024
 // \   \  /  \
 //  \___\/\___\
 //
@@ -20,12 +20,14 @@
 
 module data_vio(
     CONTROL,
-    ASYNC_IN,
-    ASYNC_OUT) /* synthesis syn_black_box syn_noprune=1 */;
+    CLK,
+    SYNC_IN,
+    SYNC_OUT) /* synthesis syn_black_box syn_noprune=1 */;
 
 
 inout [35 : 0] CONTROL;
-input [7 : 0] ASYNC_IN;
-output [1 : 0] ASYNC_OUT;
+input CLK;
+input [7 : 0] SYNC_IN;
+output [7 : 0] SYNC_OUT;
 
 endmodule

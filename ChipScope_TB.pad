@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Sep 05 23:13:29 2024
+Mon Sep 23 13:46:38 2024
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -9,8 +9,8 @@ Thu Sep 05 23:13:29 2024
 # character is used as the data field separator. This file is also designed
 # to support parsing.
 #
-INPUT FILE:       Top_map.ncd
-OUTPUT FILE:      Top.pad
+INPUT FILE:       ChipScope_TB_map.ncd
+OUTPUT FILE:      ChipScope_TB.pad
 PART TYPE:        xc6vlx240t
 SPEED GRADE:      -2
 PACKAGE:          ff1156
@@ -177,7 +177,7 @@ AD19||IOBS|IO_L14N_VREF_22|UNUSED||22|||||||||
 AD20||IOBS|IO_L6N_22|UNUSED||22|||||||||
 AD21||IOBS|IO_L0N_22|UNUSED||22|||||||||
 AD22||IOBS|IO_L19N_24|UNUSED||24|||||||||
-AD23|||VCCO_24|||24|||||2.50||||
+AD23|||VCCO_24|||24|||||any******||||
 AD24||IOBM|IO_L11P_SRCC_24|UNUSED||24|||||||||
 AD25||IOBM|IO_L0P_12|UNUSED||12|||||||||
 AD26||IOBS|IO_L0N_12|UNUSED||12|||||||||
@@ -246,8 +246,8 @@ AF20||IOBM|IO_L11P_SRCC_22|UNUSED||22|||||||||
 AF21||IOBS|IO_L11N_SRCC_22|UNUSED||22|||||||||
 AF22|||GND||||||||||||
 AF23||IOBM|IO_L15P_FWE_B_24|UNUSED||24|||||||||
-AF24|led_fp<0>|IOB|IO_L13N_D0_FS0_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
-AF25|led_fp<1>|IOB|IO_L13P_D1_FS1_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
+AF24||IOBS|IO_L13N_D0_FS0_24|UNUSED||24|||||||||
+AF25||IOBM|IO_L13P_D1_FS1_24|UNUSED||24|||||||||
 AF26||IOBM|IO_L11P_SRCC_12|UNUSED||12|||||||||
 AF27|||VCCO_12|||12|||||any******||||
 AF28||IOBM|IO_L5P_12|UNUSED||12|||||||||
@@ -280,7 +280,7 @@ AG20||IOBM|IO_L18P_22|UNUSED||22|||||||||
 AG21||IOBS|IO_L18N_22|UNUSED||22|||||||||
 AG22||IOBM|IO_L2P_22|UNUSED||22|||||||||
 AG23||IOBS|IO_L15N_RS1_24|UNUSED||24|||||||||
-AG24|||VCCO_24|||24|||||2.50||||
+AG24|||VCCO_24|||24|||||any******||||
 AG25||IOBM|IO_L2P_23|UNUSED||23|||||||||
 AG26||IOBS|IO_L2N_23|UNUSED||23|||||||||
 AG27||IOBM|IO_L9P_MRCC_12|UNUSED||12|||||||||
@@ -722,7 +722,7 @@ G20||IOBS|IO_L10N_MRCC_26|UNUSED||26|||||||||
 G21||IOBM|IO_L2P_26|UNUSED||26|||||||||
 G22||IOBS|IO_L2N_26|UNUSED||26|||||||||
 G23||IOBS|IO_L5N_D8_24|UNUSED||24|||||||||
-G24|||VCCO_24|||24|||||2.50||||
+G24|||VCCO_24|||24|||||any******||||
 G25||IOBS|IO_L11N_SRCC_25|UNUSED||25|||||||||
 G26||IOBM|IO_L6P_25|UNUSED||25|||||||||
 G27||IOBS|IO_L6N_25|UNUSED||25|||||||||
@@ -756,8 +756,8 @@ H20||IOBS|IO_L11N_SRCC_26|UNUSED||26|||||||||
 H21|||VCCO_26|||26|||||any******||||
 H22||IOBM|IO_L14P_26|UNUSED||26|||||||||
 H23||IOBM|IO_L5P_D9_24|UNUSED||24|||||||||
-H24|led_fp<4>|IOB|IO_L7N_D4_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
-H25|led_fp<5>|IOB|IO_L7P_D5_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
+H24||IOBS|IO_L7N_D4_24|UNUSED||24|||||||||
+H25||IOBM|IO_L7P_D5_24|UNUSED||24|||||||||
 H26|||GND||||||||||||
 H27||IOBM|IO_L12P_25|UNUSED||25|||||||||
 H28||IOBM|IO_L18P_GC_25|UNUSED||25|||||||||
@@ -856,7 +856,7 @@ L18||IOBS|IO_L4N_VREF_36|UNUSED||36|||||||||
 L19||IOBM|IO_L4P_36|UNUSED||36|||||||||
 L20||IOBM|IO_L18P_26|UNUSED||26|||||||||
 L21||IOBS|IO_L18N_26|UNUSED||26|||||||||
-L22|||VCCO_24|||24|||||2.50||||
+L22|||VCCO_24|||24|||||any******||||
 L23||IOBM|IO_L0P_GC_24|UNUSED||24|||||||||
 L24||IOBS|IO_L2N_D14_24|UNUSED||24|||||||||
 L25||IOBM|IO_L18P_16|UNUSED||16|||||||||
@@ -960,7 +960,7 @@ P20|||GND||||||||||||
 P21|||VCCINT||||||||1.0||||
 P22|||GND||||||||||||
 P23|||VCCAUX||||||||2.5||||
-P24|led_fp<6>|IOB|IO_L6N_D6_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
+P24||IOBS|IO_L6N_D6_24|UNUSED||24|||||||||
 P25||IOBM|IO_L12P_SM13P_15|UNUSED||15|||||||||
 P26||IOBS|IO_L12N_SM13N_15|UNUSED||15|||||||||
 P27||IOBS|IO_L5N_SM10N_15|UNUSED||15|||||||||
@@ -994,7 +994,7 @@ R20|||VCCINT||||||||1.0||||
 R21|||GND||||||||||||
 R22|||VCCAUX||||||||2.5||||
 R23|||GND||||||||||||
-R24|led_fp<7>|IOB|IO_L6P_D7_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
+R24||IOBM|IO_L6P_D7_24|UNUSED||24|||||||||
 R25|||GND||||||||||||
 R26||IOBM|IO_L15P_SM15P_15|UNUSED||15|||||||||
 R27||IOBS|IO_L13N_SM14N_15|UNUSED||15|||||||||
@@ -1031,7 +1031,7 @@ T23||IOBS|IO_L8N_SRCC_24|UNUSED||24|||||||||
 T24||IOBM|IO_L8P_SRCC_24|UNUSED||24|||||||||
 T25||IOBS|IO_L0N_14|UNUSED||14|||||||||
 T26||IOBS|IO_L15N_SM15N_15|UNUSED||15|||||||||
-T27|||VCCO_14|||14|||||2.50||||
+T27|||VCCO_14|||14|||||any******||||
 T28||IOBM|IO_L1P_14|UNUSED||14|||||||||
 T29||IOBS|IO_L1N_14|UNUSED||14|||||||||
 T30||IOBM|IO_L3P_14|UNUSED||14|||||||||
@@ -1062,9 +1062,9 @@ U20|||VCCINT||||||||1.0||||
 U21|||GND||||||||||||
 U22|||VCCAUX||||||||2.5||||
 U23||IOBM|IO_L10P_MRCC_24|UNUSED||24|||||||||
-U24|||VCCO_24|||24|||||2.50||||
-U25|reset|IOB|IO_L0P_14|INPUT|LVCMOS25*|14||||NONE||LOCATED|NO|NONE|
-U26|inject|IOB|IO_L5P_14|INPUT|LVCMOS25*|14||||NONE||LOCATED|NO|NONE|
+U24|||VCCO_24|||24|||||any******||||
+U25||IOBM|IO_L0P_14|UNUSED||14|||||||||
+U26||IOBM|IO_L5P_14|UNUSED||14|||||||||
 U27||IOBS|IO_L5N_14|UNUSED||14|||||||||
 U28||IOBM|IO_L7P_14|UNUSED||14|||||||||
 U29|||GND||||||||||||
@@ -1072,7 +1072,7 @@ U30||IOBS|IO_L8N_SRCC_14|UNUSED||14|||||||||
 U31||IOBM|IO_L8P_SRCC_14|UNUSED||14|||||||||
 U32||IOBS|IO_L6N_14|UNUSED||14|||||||||
 U33||IOBM|IO_L6P_14|UNUSED||14|||||||||
-U34|||VCCO_14|||14|||||2.50||||
+U34|||VCCO_14|||14|||||any******||||
 V1|txp<4>|OPAD|MGTTXP1_114|||||||||LOCATED|NO||
 V2|txn<4>|OPAD|MGTTXN1_114|||||||||LOCATED|NO||
 V3|||GND||||||||||||
@@ -1096,14 +1096,14 @@ V20|||GND||||||||||||
 V21|||VCCINT||||||||1.0||||
 V22|||GND||||||||||||
 V23||IOBS|IO_L10N_MRCC_24|UNUSED||24|||||||||
-V24|led_fp<3>|IOB|IO_L12P_D3_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
+V24||IOBM|IO_L12P_D3_24|UNUSED||24|||||||||
 V25||IOBS|IO_L18N_14|UNUSED||14|||||||||
 V26|||GND||||||||||||
 V27||IOBS|IO_L11N_SRCC_14|UNUSED||14|||||||||
 V28||IOBM|IO_L11P_SRCC_14|UNUSED||14|||||||||
 V29||IOBS|IO_L7N_14|UNUSED||14|||||||||
 V30||IOBM|IO_L9P_MRCC_14|UNUSED||14|||||||||
-V31|||VCCO_14|||14|||||2.50||||
+V31|||VCCO_14|||14|||||any******||||
 V32||IOBM|IO_L12P_VRN_14|UNUSED||14|||||||||
 V33||IOBS|IO_L12N_VRP_14|UNUSED||14|||||||||
 V34||IOBM|IO_L10P_MRCC_14|UNUSED||14|||||||||
@@ -1130,11 +1130,11 @@ W20|||VCCINT||||||||1.0||||
 W21|||GND||||||||||||
 W22|||VCCAUX||||||||2.5||||
 W23|||GND||||||||||||
-W24|led_fp<2>|IOB|IO_L12N_D2_FS2_24|OUTPUT|LVCMOS25*|24|12|SLOW||||LOCATED|YES|NONE|
+W24||IOBS|IO_L12N_D2_FS2_24|UNUSED||24|||||||||
 W25||IOBM|IO_L18P_14|UNUSED||14|||||||||
 W26||IOBS|IO_L19N_14|UNUSED||14|||||||||
 W27||IOBM|IO_L19P_14|UNUSED||14|||||||||
-W28|||VCCO_14|||14|||||2.50||||
+W28|||VCCO_14|||14|||||any******||||
 W29||IOBM|IO_L15P_14|UNUSED||14|||||||||
 W30||IOBS|IO_L9N_MRCC_14|UNUSED||14|||||||||
 W31||IOBM|IO_L16P_14|UNUSED||14|||||||||
@@ -1165,7 +1165,7 @@ Y21|||VCCINT||||||||1.0||||
 Y22|||GND||||||||||||
 Y23|||VCCAUX||||||||2.5||||
 Y24||IOBM|IO_L14P_FCS_B_24|UNUSED||24|||||||||
-Y25|||VCCO_24|||24|||||2.50||||
+Y25|||VCCO_24|||24|||||any******||||
 Y26||IOBS|IO_L6N_13|UNUSED||13|||||||||
 Y27||IOBS|IO_L17N_14|UNUSED||14|||||||||
 Y28||IOBM|IO_L17P_14|UNUSED||14|||||||||
