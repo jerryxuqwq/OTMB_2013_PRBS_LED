@@ -1,0 +1,72 @@
+#----------------------------------------------------------------------------------------------------------
+#
+# TMB2019 UCF for Virtex6 XC6VLX240T, prototype mezzanine card schematic 2019
+#
+#----------------------------------------------------------------------------------------------------------
+
+NET "led_fp[0]"		LOC = "AF24";	# I/O_521	** Dual use output: BPI Flash PROM Data D00
+NET "led_fp[1]"		LOC = "AF25";	# I/O_522	** Dual use output: BPI Flash PROM Data D01
+NET "led_fp[2]"		LOC = "W24";	# I/O_523	** Dual use output: BPI Flash PROM Data D02
+NET "led_fp[3]"		LOC = "V24";	# I/O_524	** Dual use output: BPI Flash PROM Data D03
+NET "led_fp[4]"		LOC = "H24";	# I/O_525	** Dual use output: BPI Flash PROM Data D04
+NET "led_fp[5]"		LOC = "H25";	# I/O_526	** Dual use output: BPI Flash PROM Data D05
+NET "led_fp[6]"		LOC = "P24";	# I/O_527	** Dual use output: BPI Flash PROM Data D06
+NET "led_fp[7]"		LOC = "R24";	# I/O_528	** Dual use output: BPI Flash PROM Data D07
+
+NET "clk160p" LOC = "AB6" ; #MGTREFCLK1P_113
+NET "clk160n" LOC = "AB5" ; 
+
+# CERN QPLL
+NET "clk40p"		LOC = "A10" | IOSTANDARD = "LVDS_25";  # Differential 40 MHz from QPLL, aka lhc_ckp
+NET "clk40n"		LOC = "B10" | IOSTANDARD = "LVDS_25";  # Differential 40 MHz from QPLL, aka lhc_ckn
+
+# location for snap fiber1   mgt: gtx3/rx0 ;;;index 0
+NET "txn[0]" LOC = AK2; #MGTTXN3_112
+NET "txp[0]" LOC = AK1;
+NET "rxn[0]" LOC = AP6; #MGTRXN0_112
+NET "rxp[0]" LOC = AP5; #MGTRXP0_112
+
+# location for snap fiber2   mgt: gtx4/rx1 ;;;index 1
+NET "txn[1]" LOC = AH2;
+NET "txp[1]" LOC = AH1; #MGTTXN0_113
+NET "rxn[1]" LOC = AM6; #MGTRXN1_112
+NET "rxp[1]" LOC = AM5;
+
+# location for snap fiber3   mgt: gtx7/rx2 ;;;index 2
+NET "txn[2]" LOC = AB2;
+NET "txp[2]" LOC = AB1; #MGTTXN3_113
+NET "rxn[2]" LOC = AL4; #MGTRXN2_112
+NET "rxp[2]" LOC = AL3;
+
+# location for snap fiber4   mgt: gtx8/rx3 ;;;index 3
+NET "txn[3]" LOC = Y2;
+NET "txp[3]" LOC = Y1;  #MGTTXP0_114
+NET "rxn[3]" LOC = AJ4; #MGTRXN3_112
+NET "rxp[3]" LOC = AJ3;
+
+# location for snap fiber9   mgt: gtx9/rx8 ;;;index 4
+NET "txn[4]" LOC = V2;
+NET "txp[4]" LOC = V1;  #MGTTXP1_114
+NET "rxn[4]" LOC = AA4;
+NET "rxp[4]" LOC = AA3; #MGTRXP0_114
+
+# location for snap fiber10   mgt: gtx10/rx9 ;;;index 5
+NET "txn[5]" LOC = T2; #MGTTXN2_114
+NET "txp[5]" LOC = T1;
+NET "rxn[5]" LOC = W4; #MGTRXN1_114 # note that this Rx pair has N/P swapped due to routing mistake, so reverse polarity in Firmware to mitigate
+NET "rxp[5]" LOC = W3;
+
+# location for snap fiber11   mgt: gtx11/rx10 ;;;index 6
+NET "txn[6]" LOC = P2; #MGTTXN3_114
+NET "txp[6]" LOC = P1;
+NET "rxn[6]" LOC = U4; #MGTRXN2_114 # note that this Rx pair has N/P swapped due to routing mistake, so reverse polarity in Firmware to mitigate
+NET "rxp[6]" LOC = U3;
+
+# location for snap fiber12   mgt: gtx2/rx11 ;;;index 7
+NET "txn[7]" LOC = AM2; #MGTTXN2_112
+NET "txp[7]" LOC = AM1;
+NET "rxn[7]" LOC = R4;  #MGTRXN3_114
+NET "rxp[7]" LOC = R3;
+
+NET "reset"  LOC = U25;
+NET "inject" LOC = U26;
