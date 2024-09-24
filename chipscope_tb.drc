@@ -1,14 +1,14 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 23 18:43:13 2024
+Mon Sep 23 19:19:27 2024
 
 drc -z ChipScope_TB.ncd ChipScope_TB.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0154 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0148 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0153 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0185 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal

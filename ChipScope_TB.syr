@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: ChipScope_TB.prj
 
@@ -116,6 +116,7 @@ Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_US
 Parsing module <clock_divider>.
 Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" into library work
 Parsing module <Top>.
+WARNING:HDLCompiler:248 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 150: Block identifier is required on this block
 Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ipcore_dir\icon.v" into library work
 Parsing module <icon>.
 Analyzing Verilog file "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ipcore_dir\data_vio.v" into library work
@@ -154,16 +155,16 @@ VAL=4'b1111,TX_DEEMPH_0=5'b11010,TX_DEEMPH_1=5'b10000,TX_MARGIN_FULL_0=7'b100111
 MA_RXSYNC_CFG=7'b0,PMA_CFG=76'b01000000000000000000000001000000000000000000000000000000000000000011,BGTEST_CFG=2'b0,BIAS_CFG=17'b0,DFE_CAL_TIME=5'b01100,DFE_CFG=8'b011011,RX_EN_IDLE_HOLD_DFE="TRUE",RX_EYE_OFFSET=8'b01001100,RX_EYE_SCANMODE=2'b0,RXPRBSERR_LOOPBACK=1'b0,ALIGN_COMMA_WORD=1,COMMA_10B_ENABLE=10'b1111111111,COMMA_DOUBLE="FALSE",DEC_MCOMMA_DETECT="FALSE",DEC_PCOMMA_DETECT="FALSE",DEC_VALID_COMMA_ONLY="FALSE",MCOMMA_10B_VALUE=10'b1010000011,MCOMMA_DETECT="TRUE",PCOMMA_10B_VALUE=10'b0101111100,PCOMMA_DETECT="TRUE",RX_DECODE_SEQ_MATCH="FALSE",RX_SLIDE_AUTO_WAIT=5,RX_SLIDE_MODE="OFF",SHOW_REALIGN_COMMA="FALSE",RX_LOS_INVALID_INCR=8,RX_LOS_THRESHOLD=128,RX_LOSS_OF_SYNC_FSM="FALSE",RXGEARBOX_USE="FALSE",RX_BUFFER_USE="TRUE",RX_EN_IDLE_RESET_BUF="TRUE",RX_EN_MODE_RESET_BUF="TRUE",RX_EN_RATE_RESET_BUF="TRUE",RX_EN_REALIGN_RESET_BUF="FALSE",RX_EN_REALIGN_RESET_BUF2="FALSE",RX_FIFO_ADDR_MODE="FAST",RX_IDLE_HI_CNT=4'b1000,RX_IDLE_LO_CNT=4'b0,RX_XCLK_SEL="RXREC",RX_DLYALIGN_CTRINC=4'b1110,RX_DLYALIGN_EDGESET=5'
 b010,RX_DLYALIGN_LPFINC=4'b1110,RX_DLYALIGN_MONSEL=3'b0,RX_DLYALIGN_OVRDSETTING=8'b10000000,CLK_COR_ADJ_LEN=1,CLK_COR_DET_LEN=1,CLK_COR_INSERT_IDLE_FLAG="FALSE",CLK_COR_KEEP_IDLE="FALSE",CLK_COR_MAX_LAT=16,CLK_COR_MIN_LAT=14,CLK_COR_PRECEDENCE="TRUE",CLK_COR_REPEAT_WAIT=0,CLK_COR_SEQ_1_1=10'b0,CLK_COR_SEQ_1_2=10'b0,CLK_COR_SEQ_1_3=10'b0,CLK_COR_SEQ_1_4=10'b0,CLK_COR_SEQ_1_ENABLE=4'b1111,CLK_COR_SEQ_2_1=10'b0,CLK_COR_SEQ_2_2=10'b0,CLK_COR_SEQ_2_3=10'b0,CLK_COR_SEQ_2_4=10'b0,CLK_COR_SEQ_2_ENABLE=4'b1111,CLK_COR_SEQ_2_USE="FALSE",CLK_CORRECT_USE="FALSE",CHAN_BOND_1_MAX_SKEW=1,CHAN_BOND_2_MAX_SKEW=1,CHAN_BOND_KEEP_ALIGN="FALSE",CHAN_BOND_SEQ_1_1=10'b0,CHAN_BOND_SEQ_1_2=10'b0,CHAN_BOND_SEQ_1_3=10'b0,CHAN_BOND_SEQ_1_4=10'b0,CHAN_BOND_SEQ_1_ENABLE=4'b1111,CHAN_BOND_SEQ_2_1=10'b0,CHAN_BOND_SEQ_2_2=10'b0,CHAN_BOND_SEQ_2_3=10'b0,CHAN_BOND_SEQ_2_4=10'b0,CHAN_BOND_SEQ_2_CFG=5'b0,CHAN_BOND_SEQ_2_ENABLE=4'b1111,CHAN_BOND_SEQ_2_USE="FALSE",CHAN_BOND_SEQ_LEN=1,PCI_EXPRESS_MODE="FALSE",SAS_MAX_COMSAS=52,SAS_MIN_COMSAS=40,SATA
 _BURST_VAL=3'b100,SATA_IDLE_VAL=3'b100,SATA_MAX_BURST=8,SATA_MAX_INIT=23,SATA_MAX_WAKE=8,SATA_MIN_BURST=4,SATA_MIN_INIT=13,SATA_MIN_WAKE=4,TRANS_TIME_FROM_P2=12'b0111100,TRANS_TIME_NON_P2=8'b011001,TRANS_TIME_RATE=8'b11111111,TRANS_TIME_TO_P2=10'b01100100>.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 340: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 392: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 444: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 496: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 548: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 600: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 652: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 703: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 754: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 806: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 350: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 402: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 454: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 506: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 558: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 610: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 662: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 713: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 764: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 816: Size mismatch in connection of port <TXDATA_IN>. Formal port size is 16-bit while actual signal size is 1-bit.
 
 Elaborating module <data_vio>.
 WARNING:HDLCompiler:189 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 63: Size mismatch in connection of port <SYNC_OUT>. Formal port size is 8-bit while actual signal size is 2-bit.
@@ -187,55 +188,55 @@ Synthesizing Unit <Top>.
     Set property "IOB = TRUE" for signal <ccb_rx_iobff_a>.
     Set property "IOB = TRUE" for signal <ccb_rx_iobff_b>.
 WARNING:Xst:647 - Input <_ccb_rx<35:34>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 319: Output port <RXDATA_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 319: Output port <RXPLLLKDET_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 319: Output port <TXN_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 319: Output port <TXP_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 319: Output port <TXPLLLKDET_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 319: Output port <TXRESETDONE_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <RXDATA_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <RXPLLLKDET_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <TXOUTCLK_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <TXN_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <TXP_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <TXPLLLKDET_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 371: Output port <TXRESETDONE_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 423: Output port <RXDATA_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 423: Output port <RXPLLLKDET_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 423: Output port <TXOUTCLK_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 423: Output port <TXPLLLKDET_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 475: Output port <RXDATA_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 475: Output port <RXPLLLKDET_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 475: Output port <TXOUTCLK_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 475: Output port <TXPLLLKDET_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 527: Output port <RXDATA_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 527: Output port <RXPRBSERR_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 527: Output port <RXPLLLKDET_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 527: Output port <RXRESETDONE_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 527: Output port <TXOUTCLK_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 527: Output port <TXPLLLKDET_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 579: Output port <RXDATA_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 579: Output port <RXPRBSERR_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 579: Output port <RXPLLLKDET_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 579: Output port <RXRESETDONE_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 579: Output port <TXOUTCLK_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 579: Output port <TXPLLLKDET_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 631: Output port <RXDATA_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 631: Output port <RXPLLLKDET_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 631: Output port <TXOUTCLK_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 631: Output port <TXPLLLKDET_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 682: Output port <RXDATA_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 682: Output port <RXPLLLKDET_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 682: Output port <TXOUTCLK_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 682: Output port <TXPLLLKDET_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 733: Output port <RXDATA_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 733: Output port <RXPLLLKDET_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 733: Output port <TXOUTCLK_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 733: Output port <TXPLLLKDET_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 785: Output port <RXDATA_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 785: Output port <RXPLLLKDET_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 785: Output port <TXOUTCLK_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 785: Output port <TXPLLLKDET_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 329: Output port <RXDATA_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 329: Output port <RXPLLLKDET_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 329: Output port <TXN_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 329: Output port <TXP_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 329: Output port <TXPLLLKDET_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 329: Output port <TXRESETDONE_OUT> of the instance <gtx0_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <RXDATA_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <RXPLLLKDET_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <TXOUTCLK_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <TXN_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <TXP_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <TXPLLLKDET_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 381: Output port <TXRESETDONE_OUT> of the instance <gtx1_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 433: Output port <RXDATA_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 433: Output port <RXPLLLKDET_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 433: Output port <TXOUTCLK_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 433: Output port <TXPLLLKDET_OUT> of the instance <gtx2_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 485: Output port <RXDATA_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 485: Output port <RXPLLLKDET_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 485: Output port <TXOUTCLK_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 485: Output port <TXPLLLKDET_OUT> of the instance <gtx3_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 537: Output port <RXDATA_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 537: Output port <RXPRBSERR_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 537: Output port <RXPLLLKDET_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 537: Output port <RXRESETDONE_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 537: Output port <TXOUTCLK_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 537: Output port <TXPLLLKDET_OUT> of the instance <gtx4_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 589: Output port <RXDATA_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 589: Output port <RXPRBSERR_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 589: Output port <RXPLLLKDET_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 589: Output port <RXRESETDONE_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 589: Output port <TXOUTCLK_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 589: Output port <TXPLLLKDET_OUT> of the instance <gtx7_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <RXDATA_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <RXPLLLKDET_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <TXOUTCLK_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 641: Output port <TXPLLLKDET_OUT> of the instance <gtx8_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <RXDATA_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <RXPLLLKDET_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <TXOUTCLK_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 692: Output port <TXPLLLKDET_OUT> of the instance <gtx9_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 743: Output port <RXDATA_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 743: Output port <RXPLLLKDET_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 743: Output port <TXOUTCLK_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 743: Output port <TXPLLLKDET_OUT> of the instance <gtx10_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 795: Output port <RXDATA_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 795: Output port <RXPLLLKDET_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 795: Output port <TXOUTCLK_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" line 795: Output port <TXPLLLKDET_OUT> of the instance <gtx11_Fiber_i> is unconnected or connected to loadless signal.
     Found 8-bit register for signal <blinker>.
     Found 4-bit register for signal <state>.
     Found 8-bit register for signal <latched_error>.
@@ -279,7 +280,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<5>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <led_fp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <PRBS_error_inject>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator greater for signal <n0009> created at line 183
+    Found 6-bit comparator greater for signal <n0009> created at line 190
     Summary:
 	inferred  16 D-type flip-flop(s).
 	inferred  27 Latch(s).
@@ -323,13 +324,13 @@ Unit <Fiber_gtx> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 6
  28-bit adder                                          : 1
- 6-bit adder                                           : 1
-# Registers                                            : 5
+ 6-bit adder                                           : 5
+# Registers                                            : 9
  1-bit register                                        : 1
  28-bit register                                       : 1
- 6-bit register                                        : 1
+ 6-bit register                                        : 5
  8-bit register                                        : 2
 # Latches                                              : 27
  1-bit latch                                           : 27
@@ -350,8 +351,6 @@ Loading core <data_vio> for timing and area information for instance <shared_vio
 Loading core <icon> for timing and area information for instance <i_icon>.
 WARNING:Xst:2677 - Node <blinker_3> of sequential type is unconnected in block <top_tb>.
 WARNING:Xst:2677 - Node <blinker_2> of sequential type is unconnected in block <top_tb>.
-WARNING:Xst:2677 - Node <blinker_1> of sequential type is unconnected in block <top_tb>.
-WARNING:Xst:2677 - Node <blinker_0> of sequential type is unconnected in block <top_tb>.
 WARNING:Xst:2677 - Node <latched_error_3> of sequential type is unconnected in block <top_tb>.
 WARNING:Xst:2677 - Node <latched_error_2> of sequential type is unconnected in block <top_tb>.
 WARNING:Xst:2677 - Node <latched_error_1> of sequential type is unconnected in block <top_tb>.
@@ -370,18 +369,16 @@ WARNING:Xst:2677 - Node <latched_error_1> of sequential type is unconnected in b
 WARNING:Xst:2677 - Node <latched_error_0> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <blinker_3> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <blinker_2> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <blinker_1> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <blinker_0> of sequential type is unconnected in block <Top>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 2
+# Counters                                             : 6
  28-bit up counter                                     : 1
- 6-bit up counter                                      : 1
-# Registers                                            : 9
- Flip-Flops                                            : 9
+ 6-bit up counter                                      : 5
+# Registers                                            : 11
+ Flip-Flops                                            : 11
 # Comparators                                          : 3
  28-bit comparator greater                             : 2
  6-bit comparator greater                              : 1
@@ -406,13 +403,13 @@ Optimizing FSM <top_tb/FSM_0> on signal <state[1:8]> with one-hot encoding.
  0110  | 01000000
  0111  | 10000000
 -------------------
-INFO:Xst:2261 - The FF/Latch <full_rx_reset_2> in Unit <Top> is equivalent to the following 7 FFs/Latches, which will be removed : <full_rx_reset_0> <full_rx_reset_1> <full_rx_reset_5> <full_rx_reset_3> <full_rx_reset_4> <full_rx_reset_6> <full_rx_reset_7> 
-INFO:Xst:2261 - The FF/Latch <full_tx_reset_1> in Unit <Top> is equivalent to the following 7 FFs/Latches, which will be removed : <full_tx_reset_0> <full_tx_reset_4> <full_tx_reset_2> <full_tx_reset_3> <full_tx_reset_7> <full_tx_reset_5> <full_tx_reset_6> 
+INFO:Xst:2261 - The FF/Latch <full_rx_reset_1> in Unit <Top> is equivalent to the following 7 FFs/Latches, which will be removed : <full_rx_reset_0> <full_rx_reset_4> <full_rx_reset_2> <full_rx_reset_3> <full_rx_reset_5> <full_rx_reset_6> <full_rx_reset_7> 
+INFO:Xst:2261 - The FF/Latch <full_tx_reset_0> in Unit <Top> is equivalent to the following 7 FFs/Latches, which will be removed : <full_tx_reset_1> <full_tx_reset_2> <full_tx_reset_3> <full_tx_reset_6> <full_tx_reset_4> <full_tx_reset_5> <full_tx_reset_7> 
 
 Optimizing unit <ChipScope_TB> ...
 
 Optimizing unit <Top> ...
-INFO:Xst:2261 - The FF/Latch <top_tb/blinker_4> in Unit <ChipScope_TB> is equivalent to the following 3 FFs/Latches, which will be removed : <top_tb/blinker_5> <top_tb/blinker_6> <top_tb/blinker_7> 
+INFO:Xst:2261 - The FF/Latch <top_tb/blinker_0> in Unit <ChipScope_TB> is equivalent to the following 5 FFs/Latches, which will be removed : <top_tb/blinker_1> <top_tb/blinker_4> <top_tb/blinker_5> <top_tb/blinker_6> <top_tb/blinker_7> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -440,8 +437,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 48
- Flip-Flops                                            : 48
+# Registers                                            : 72
+ Flip-Flops                                            : 72
 
 =========================================================================
 
@@ -464,27 +461,27 @@ Top Level Output File Name         : ChipScope_TB.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 376
+# BELS                             : 403
 #      GND                         : 3
-#      INV                         : 20
+#      INV                         : 24
 #      LUT1                        : 45
-#      LUT2                        : 24
-#      LUT3                        : 52
-#      LUT4                        : 91
+#      LUT2                        : 30
+#      LUT3                        : 57
+#      LUT4                        : 93
 #      LUT5                        : 21
-#      LUT6                        : 15
+#      LUT6                        : 25
 #      MUXCY                       : 38
 #      MUXCY_L                     : 15
 #      MUXF5                       : 2
 #      MUXF6                       : 1
 #      VCC                         : 3
 #      XORCY                       : 46
-# FlipFlops/Latches                : 274
+# FlipFlops/Latches                : 298
 #      FD                          : 3
 #      FDC                         : 19
 #      FDCE                        : 12
 #      FDE                         : 114
-#      FDR                         : 69
+#      FDR                         : 93
 #      FDRE                        : 43
 #      FDS                         : 1
 #      LD                          : 13
@@ -509,18 +506,18 @@ Selected Device : 6vlx240tff1156-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             274  out of  301440     0%  
- Number of Slice LUTs:                  276  out of  150720     0%  
-    Number used as Logic:               268  out of  150720     0%  
+ Number of Slice Registers:             298  out of  301440     0%  
+ Number of Slice LUTs:                  303  out of  150720     0%  
+    Number used as Logic:               295  out of  150720     0%  
     Number used as Memory:                8  out of  58400     0%  
        Number used as SRL:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    431
-   Number with an unused Flip Flop:     157  out of    431    36%  
-   Number with an unused LUT:           155  out of    431    35%  
-   Number of fully used LUT-FF pairs:   119  out of    431    27%  
-   Number of unique control sets:        81
+ Number of LUT Flip Flop pairs used:    457
+   Number with an unused Flip Flop:     159  out of    457    34%  
+   Number with an unused LUT:           154  out of    457    33%  
+   Number of fully used LUT-FF pairs:   144  out of    457    31%  
+   Number of unique control sets:        85
 
 IO Utilization: 
  Number of IOs:                          87
@@ -550,11 +547,15 @@ Clock Information:
 ---------------------------------------------+------------------------------------------------------------------+-------+
 Clock Signal                                 | Clock buffer(FF name)                                            | Load  |
 ---------------------------------------------+------------------------------------------------------------------+-------+
+top_tb/PRBS_error<5>                         | NONE(top_tb/[1].error_counter/out_0)                             | 6     |
+top_tb/PRBS_error<6>                         | NONE(top_tb/[2].error_counter/out_0)                             | 6     |
+top_tb/PRBS_error<4>                         | NONE(top_tb/[0].error_counter/out_0)                             | 6     |
+top_tb/PRBS_error<7>                         | NONE(top_tb/[3].error_counter/out_0)                             | 6     |
 clk40p                                       | IBUFDS+BUFG                                                      | 29    |
 top_tb/clk40_display/clock_out               | BUFG                                                             | 114   |
-top_tb/_n0154(top_tb/state__n0154:O)         | NONE(*)(top_tb/full_rx_reset_2)                                  | 12    |
+top_tb/_n0148(top_tb/state__n0148:O)         | NONE(*)(top_tb/full_rx_reset_1)                                  | 12    |
 clk160p                                      | IBUF+IBUFDS_GTXE1+BUFG                                           | 4     |
-top_tb/_n0153(top_tb/state__n01531:O)        | NONE(*)(top_tb/PRBS_error_inject)                                | 1     |
+top_tb/_n0185(top_tb/state__n01851:O)        | NONE(*)(top_tb/PRBS_error_inject)                                | 1     |
 i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL| BUFG                                                             | 105   |
 top_tb/led_fp_0                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/U_FALLING)| 2     |
 top_tb/led_fp_1                              | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/U_FALLING)| 2     |
@@ -587,6 +588,94 @@ Speed Grade: -2
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<5>'
+  Clock period: 1.102ns (frequency: 907.153MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               1.102ns (Levels of Logic = 1)
+  Source:            top_tb/[1].error_counter/out_5 (FF)
+  Destination:       top_tb/[1].error_counter/out_5 (FF)
+  Source Clock:      top_tb/PRBS_error<5> rising
+  Destination Clock: top_tb/PRBS_error<5> rising
+
+  Data Path: top_tb/[1].error_counter/out_5 to top_tb/[1].error_counter/out_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.317   0.367  top_tb/[1].error_counter/out_5 (top_tb/[1].error_counter/out_5)
+     INV:I->O              1   0.079   0.339  top_tb/[1].error_counter/Mcount_out_xor<0>11_INV_0 (top_tb/Result<0>5)
+     FDR:D                    -0.002          top_tb/[1].error_counter/out_5
+    ----------------------------------------
+    Total                      1.102ns (0.396ns logic, 0.706ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<6>'
+  Clock period: 1.102ns (frequency: 907.153MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               1.102ns (Levels of Logic = 1)
+  Source:            top_tb/[2].error_counter/out_5 (FF)
+  Destination:       top_tb/[2].error_counter/out_5 (FF)
+  Source Clock:      top_tb/PRBS_error<6> rising
+  Destination Clock: top_tb/PRBS_error<6> rising
+
+  Data Path: top_tb/[2].error_counter/out_5 to top_tb/[2].error_counter/out_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.317   0.367  top_tb/[2].error_counter/out_5 (top_tb/[2].error_counter/out_5)
+     INV:I->O              1   0.079   0.339  top_tb/[2].error_counter/Mcount_out_xor<0>11_INV_0 (top_tb/Result<0>4)
+     FDR:D                    -0.002          top_tb/[2].error_counter/out_5
+    ----------------------------------------
+    Total                      1.102ns (0.396ns logic, 0.706ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<4>'
+  Clock period: 1.102ns (frequency: 907.153MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               1.102ns (Levels of Logic = 1)
+  Source:            top_tb/[0].error_counter/out_5 (FF)
+  Destination:       top_tb/[0].error_counter/out_5 (FF)
+  Source Clock:      top_tb/PRBS_error<4> rising
+  Destination Clock: top_tb/PRBS_error<4> rising
+
+  Data Path: top_tb/[0].error_counter/out_5 to top_tb/[0].error_counter/out_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.317   0.367  top_tb/[0].error_counter/out_5 (top_tb/[0].error_counter/out_5)
+     INV:I->O              1   0.079   0.339  top_tb/[0].error_counter/Mcount_out_xor<0>11_INV_0 (top_tb/Result<0>3)
+     FDR:D                    -0.002          top_tb/[0].error_counter/out_5
+    ----------------------------------------
+    Total                      1.102ns (0.396ns logic, 0.706ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<7>'
+  Clock period: 1.102ns (frequency: 907.153MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               1.102ns (Levels of Logic = 1)
+  Source:            top_tb/[3].error_counter/out_5 (FF)
+  Destination:       top_tb/[3].error_counter/out_5 (FF)
+  Source Clock:      top_tb/PRBS_error<7> rising
+  Destination Clock: top_tb/PRBS_error<7> rising
+
+  Data Path: top_tb/[3].error_counter/out_5 to top_tb/[3].error_counter/out_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.317   0.367  top_tb/[3].error_counter/out_5 (top_tb/[3].error_counter/out_5)
+     INV:I->O              1   0.079   0.339  top_tb/[3].error_counter/Mcount_out_xor<0>11_INV_0 (top_tb/Result<0>2)
+     FDR:D                    -0.002          top_tb/[3].error_counter/out_5
+    ----------------------------------------
+    Total                      1.102ns (0.396ns logic, 0.706ns route)
+                                       (35.9% logic, 64.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk40p'
@@ -654,7 +743,7 @@ Delay:               0.740ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              2   0.317   0.362  top_tb/latched_error_4 (top_tb/latched_error_4)
-     LUT2:I1->O            1   0.061   0.000  top_tb/PRBS_error[0]_latched_error[0]_or_130_OUT<3>1 (top_tb/PRBS_error[0]_latched_error[0]_or_130_OUT<3>)
+     LUT2:I1->O            1   0.061   0.000  top_tb/PRBS_error[0]_latched_error[0]_or_133_OUT<3>1 (top_tb/PRBS_error[0]_latched_error[0]_or_133_OUT<3>)
      FDR:D                    -0.002          top_tb/latched_error_4
     ----------------------------------------
     Total                      0.740ns (0.378ns logic, 0.362ns route)
@@ -810,7 +899,7 @@ Clock to Setup on destination clock clk160p
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk160p        |    0.740|         |         |         |
-top_tb/_n0154  |         |    1.099|         |         |
+top_tb/_n0148  |         |    1.158|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk40p
@@ -847,21 +936,61 @@ Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 i_icon/U0/iUPDATE_OUT|    1.086|         |         |         |
 ---------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock top_tb/_n0153
-------------------------------+---------+---------+---------+---------+
-                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------+---------+---------+---------+---------+
-top_tb/clk40_display/clock_out|         |         |    0.983|         |
-------------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock top_tb/PRBS_error<4>
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+top_tb/PRBS_error<4>|    1.102|         |         |         |
+top_tb/_n0148       |         |    1.158|         |         |
+--------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock top_tb/_n0154
+Clock to Setup on destination clock top_tb/PRBS_error<5>
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+top_tb/PRBS_error<5>|    1.102|         |         |         |
+top_tb/_n0148       |         |    1.158|         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/PRBS_error<6>
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+top_tb/PRBS_error<6>|    1.102|         |         |         |
+top_tb/_n0148       |         |    1.158|         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/PRBS_error<7>
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+top_tb/PRBS_error<7>|    1.102|         |         |         |
+top_tb/_n0148       |         |    1.158|         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/_n0148
 ------------------------------+---------+---------+---------+---------+
                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
 clk160p                       |         |         |    0.740|         |
-top_tb/clk40_display/clock_out|         |         |    1.122|         |
+top_tb/PRBS_error<4>          |         |         |    1.084|         |
+top_tb/PRBS_error<5>          |         |         |    1.077|         |
+top_tb/PRBS_error<6>          |         |         |    0.956|         |
+top_tb/PRBS_error<7>          |         |         |    0.956|         |
+top_tb/clk40_display/clock_out|         |         |    1.416|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock top_tb/_n0185
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+top_tb/clk40_display/clock_out|         |         |    0.978|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock top_tb/clk40_display/clock_out
@@ -870,7 +999,7 @@ Clock to Setup on destination clock top_tb/clk40_display/clock_out
 Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------+---------+---------+---------+---------+
 i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|         |         |    2.812|         |
-top_tb/_n0154                                |         |    1.055|    0.685|         |
+top_tb/_n0148                                |         |    1.055|    0.685|         |
 top_tb/clk40_display/clock_out               |    1.746|    1.060|    1.546|         |
 ---------------------------------------------+---------+---------+---------+---------+
 
@@ -942,13 +1071,13 @@ i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|    
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.22 secs
+Total CPU time to Xst completion: 8.55 secs
  
 --> 
 
 Total memory usage is 4520796 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   60 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
 Number of infos    :   69 (   0 filtered)
 

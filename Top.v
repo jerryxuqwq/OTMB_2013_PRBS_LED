@@ -118,8 +118,8 @@ module Top(
 	
 	wire ttc_bx0_dec        = ccb_cmd_dec['h01];  // Bunch Crossing Zero   
 	wire ttc_resync          = ccb_cmd_dec['h03];  // Reset L1 readout buffers and resynchronize optical links   
-  
-  
+	
+
   
   
 	IBUFDS #(
@@ -137,7 +137,6 @@ module Top(
 	begin
 		blinker = ~blinker;
 	end
-	
 
 	clock_divider clk40_display(clk40,slow_clk40);
 	// counter
@@ -145,6 +144,14 @@ module Top(
 			boot_up_counter_rst,
 			counter_out);
 			
+	genvar j;
+	wire  [0:5]error_counter_out[0:3];
+	generate
+		for(j= 0; j<4; j = j+1) begin
+		counter error_counter(PRBS_error[j+4] ,PRBS_reset,error_counter_out[j][0:5]);
+		end
+	endgenerate
+	
 	// boot state machine
 	localparam RESET	         = 3'd0;
 	localparam EN_TX     	     = 3'd1;    
@@ -253,9 +260,12 @@ module Top(
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				PRBS_error_inject <= inject; //connect to inject later
-				led_fp[0:3] <= 4'b1010;
-				
-				led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
+				//led_fp[0:3] <= 4'b1010;
+				//led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
+				led_fp[0:1] <= error_counter_out[0][0:1] | blinker[0:1];
+				led_fp[2:3] <= error_counter_out[1][0:1] | blinker[0:1];
+				led_fp[4:5] <= error_counter_out[2][0:1] | blinker[0:1];
+				led_fp[6:7] <= error_counter_out[3][0:1] | blinker[0:1];
 			end
 		endcase
 	end
