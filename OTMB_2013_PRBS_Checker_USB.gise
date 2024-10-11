@@ -140,7 +140,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1727137003" xil_pn:in_ck="8624927440504010908" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-8324664766030706434" xil_pn:start_ts="1727136993">
+    <transform xil_pn:end_ts="1727142296" xil_pn:in_ck="8624927440504010908" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-8324664766030706434" xil_pn:start_ts="1727142286">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -163,7 +163,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1727137008" xil_pn:in_ck="-4198336854277899114" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4445756675322435822" xil_pn:start_ts="1727137003">
+    <transform xil_pn:end_ts="1727142302" xil_pn:in_ck="-4198336854277899114" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4445756675322435822" xil_pn:start_ts="1727142296">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ChipScope_TB.bld"/>
@@ -172,10 +172,12 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1727137038" xil_pn:in_ck="6115184244021446366" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-3620940180722748406" xil_pn:start_ts="1727137008">
+    <transform xil_pn:end_ts="1727142331" xil_pn:in_ck="6115184244021446366" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-3620940180722748406" xil_pn:start_ts="1727142302">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ChipScope_TB.pcf"/>
       <outfile xil_pn:name="ChipScope_TB_map.map"/>
       <outfile xil_pn:name="ChipScope_TB_map.mrp"/>
@@ -186,7 +188,7 @@
       <outfile xil_pn:name="ChipScope_TB_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1727137093" xil_pn:in_ck="-187864352689257104" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-5681724733713920722" xil_pn:start_ts="1727137038">
+    <transform xil_pn:end_ts="1727142388" xil_pn:in_ck="-187864352689257104" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-5681724733713920722" xil_pn:start_ts="1727142331">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -202,7 +204,7 @@
       <outfile xil_pn:name="ChipScope_TB_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1727137204" xil_pn:in_ck="-6886468896277210004" xil_pn:name="TRANEXT_bitFile_virtex6" xil_pn:prop_ck="-3618303722886493866" xil_pn:start_ts="1727137161">
+    <transform xil_pn:end_ts="1727142433" xil_pn:in_ck="-6886468896277210004" xil_pn:name="TRANEXT_bitFile_virtex6" xil_pn:prop_ck="-3618303722886493866" xil_pn:start_ts="1727142388">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -214,7 +216,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1727137093" xil_pn:in_ck="5359366008798836310" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1727137082">
+    <transform xil_pn:end_ts="1727142388" xil_pn:in_ck="5359366008798836310" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1727142376">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ChipScope_TB.twr"/>

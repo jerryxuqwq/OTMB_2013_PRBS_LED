@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-7PSUJGG::  Mon Sep 23 19:17:19 2024
+DESKTOP-7PSUJGG::  Mon Sep 23 20:45:32 2024
 
 par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry
 Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off
@@ -169,26 +169,26 @@ WARNING:Par:288 - The signal shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL
 Starting Router
 
 
-Phase  1  : 5658 unrouted;      REAL time: 11 secs 
+Phase  1  : 5380 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 5226 unrouted;      REAL time: 12 secs 
+Phase  2  : 4952 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 46 unrouted;      REAL time: 32 secs 
+Phase  3  : 0 unrouted;      REAL time: 32 secs 
 
-Phase  4  : 46 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
-Total REAL time to Router completion: 39 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+Total REAL time to Router completion: 40 secs 
 Total CPU time to Router completion: 39 secs 
 
   SmartGuide Results
@@ -198,14 +198,14 @@ Total CPU time to Router completion: 39 secs
   and the guide design.
 
   Number of Components in the input design    |    266
-    Number of guided Components               |    252 out of    266  94.7%
-    Number of re-implemented Components       |      4 out of    266   1.5%
-    Number of new/changed Components          |     10 out of    266   3.8%
+    Number of guided Components               |    266 out of    266 100.0%
+    Number of re-implemented Components       |      0 out of    266   0.0%
+    Number of new/changed Components          |      0 out of    266   0.0%
   Number of Nets in the input design          |    465
-    Number of guided Nets                     |    375 out of    465  80.6%
-    Number of partially guided Nets           |     13 out of    465   2.8%
-    Number of re-routed Nets                  |     41 out of    465   8.8%
-    Number of new/changed Nets                |     36 out of    465   7.7%
+    Number of guided Nets                     |    465 out of    465 100.0%
+    Number of partially guided Nets           |      0 out of    465   0.0%
+    Number of re-routed Nets                  |      0 out of    465   0.0%
+    Number of new/changed Nets                |      0 out of    465   0.0%
 
 Partition Implementation Status
 -------------------------------
@@ -270,8 +270,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 41 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 41 secs 
-Total CPU time to PAR completion: 41 secs 
+Total REAL time to PAR completion: 43 secs 
+Total CPU time to PAR completion: 43 secs 
 
 Peak Memory Usage:  4917 MB
 

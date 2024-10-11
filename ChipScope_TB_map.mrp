@@ -12,7 +12,7 @@ Target Device  : xc6vlx240t
 Target Package : ff1156
 Target Speed   : -2
 Mapper Version : virtex6 -- $Revision: 1.55 $
-Mapped Date    : Mon Sep 23 19:16:49 2024
+Mapped Date    : Mon Sep 23 20:45:03 2024
 
 Design Summary
 --------------
@@ -97,7 +97,7 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.13
 
-Peak Memory Usage:  5143 MB
+Peak Memory Usage:  5159 MB
 Total REAL time to MAP completion:  27 secs 
 Total CPU time to MAP completion:   27 secs 
 
@@ -535,7 +535,7 @@ Section 7 - RPMs
 Section 8 - Guide Report
 ------------------------
 
-Mon Sep 23 19:17:15 2024
+Mon Sep 23 20:45:28 2024
 
   Estimated SmartGuide Results
   ----------------------------
@@ -543,11 +543,11 @@ Mon Sep 23 19:17:15 2024
   components are components that were guided, but moved in order to satisfy
   timing requirements.
 
-    Estimated Percentage of guided Components                 |  83.5%
+    Estimated Percentage of guided Components                 | 100.0%
     Estimated Percentage of re-implemented Components         |   0.0%
-    Estimated Percentage of new/changed Components            |  16.5%
-    Estimated Percentage of fully guided Nets                 |  80.6%
-    Estimated Percentage of partially guided or unrouted Nets |  19.4%
+    Estimated Percentage of new/changed Components            |   0.0%
+    Estimated Percentage of fully guided Nets                 | 100.0%
+    Estimated Percentage of partially guided or unrouted Nets |   0.0%
 
   A detailed SmartGuide report (.GRF) can be generated during PAR by
   specifying the [-smartguide <guidefile[.ncd]>] switch on the PAR

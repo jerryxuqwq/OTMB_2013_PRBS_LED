@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 23 19:17:58 2024
+Mon Sep 23 20:46:12 2024
 
   SmartGuide Results
   ------------------
@@ -10,135 +10,31 @@ Mon Sep 23 19:17:58 2024
   and the guide design.
 
   Number of Components in the input design    |    266
-    Number of guided Components               |    252 out of    266  94.7%
-    Number of re-implemented Components       |      4 out of    266   1.5%
-    Number of new/changed Components          |     10 out of    266   3.8%
+    Number of guided Components               |    266 out of    266 100.0%
+    Number of re-implemented Components       |      0 out of    266   0.0%
+    Number of new/changed Components          |      0 out of    266   0.0%
   Number of Nets in the input design          |    465
-    Number of guided Nets                     |    375 out of    465  80.6%
-    Number of partially guided Nets           |     13 out of    465   2.8%
-    Number of re-routed Nets                  |     41 out of    465   8.8%
-    Number of new/changed Nets                |     36 out of    465   7.7%
+    Number of guided Nets                     |    465 out of    465 100.0%
+    Number of partially guided Nets           |      0 out of    465   0.0%
+    Number of re-routed Nets                  |      0 out of    465   0.0%
+    Number of new/changed Nets                |      0 out of    465   0.0%
 
 
 The following Components were re-implemented.
 ---------------------------------------------
- top_tb/led_fp_7 : SLICE_X142Y81.
- top_tb/latched_error<7> : SLICE_X146Y73.
- top_tb/state_FSM_FFd2 : SLICE_X147Y79.
- top_tb/state_FSM_FFd4 : SLICE_X150Y79.
 
 
 The following Components are new/changed.
 -----------------------------------------
- top_tb/led_fp_1 : SLICE_X142Y77.
- top_tb/led_fp_4 : SLICE_X142Y79.
- top_tb/blinker<0> : SLICE_X146Y78.
- top_tb/[2].error_counter/out<5> : SLICE_X146Y86.
- top_tb/[3].error_counter/out<5> : SLICE_X146Y89.
- top_tb/PRBS_reset : SLICE_X148Y73.
- top_tb/boot_up_counter_rst : SLICE_X148Y77.
- top_tb/[1].error_counter/out<5> : SLICE_X148Y81.
- top_tb/[0].error_counter/out<5> : SLICE_X150Y72.
- top_tb/full_tx_reset_0 : SLICE_X153Y75.
 
 
 The following Nets were re-routed.
 ----------------------------------
- top_tb/PRBS_error<7>.
- top_tb/PRBS_reset.
- top_tb/PRBS_error<6>.
- top_tb/PRBS_error<5>.
- top_tb/PRBS_error<4>.
- top_tb/boot_up_counter_rst.
- top_tb/state_FSM_FFd3.
- top_tb/state_FSM_FFd6.
- top_tb/q1_clk1_refclk_i_bufg.
- top_tb/tx_reset_done<2>.
- top_tb/tx_reset_done<1>.
- top_tb/tx_reset_done<0>.
- top_tb/latched_error<5>.
- top_tb/state_FSM_FFd4.
- top_tb/led_fp_2.
- top_tb/state_FSM_FFd2.
- n0007<0>.
- top_tb/PRBS_error_inject.
- top_tb/rx_reset_done<2>.
- top_tb/rx_reset_done<1>.
- top_tb/rx_reset_done<0>.
- top_tb/latched_error<4>.
- top_tb/latched_error<7>.
- top_tb/latched_error<6>.
- top_tb/led_fp_6.
- top_tb/led_fp_5.
- top_tb/led_fp_4.
- top_tb/led_fp_7.
- top_tb/led_fp_0.
- top_tb/led_fp_1.
- top_tb/led_fp_3.
- top_tb/counter_out[0]_GND_2_o_equal_77_o.
- top_tb/n0009.
- top_tb/tx_reset_done<5>.
- top_tb/tx_reset_done<3>.
- top_tb/tx_reset_done<6>.
- top_tb/tx_reset_done<4>.
- top_tb/tx_reset_done<7>.
- N6.
- N2.
- top_tb/tx_reset_done[0]_PWR_2_o_equal_71_o.
 
 
 The following Nets are new/changed.
 -----------------------------------
- top_tb/[3].error_counter/out<1>.
- top_tb/[2].error_counter/out<1>.
- top_tb/[1].error_counter/out<1>.
- top_tb/[0].error_counter/out<1>.
- top_tb/_n0148.
- top_tb/full_rx_reset_1.
- N8.
- top_tb/[1].error_counter/out<0>.
- top_tb/blinker<0>.
- top_tb/_n0218<4>.
- top_tb/state[0]_PWR_2_o_Select_99_o.
- N10.
- top_tb/_n0261<0>.
- top_tb/[0].error_counter/out<0>.
- top_tb/[2].error_counter/out<0>.
- top_tb/state__n0218<5>1.
- top_tb/[3].error_counter/out<0>.
- top_tb/full_tx_reset_0.
- top_tb/_n0185.
- top_tb/[2].error_counter/out<5>.
- top_tb/[2].error_counter/out<4>.
- top_tb/[2].error_counter/out<3>.
- top_tb/[2].error_counter/out<2>.
- top_tb/[3].error_counter/out<5>.
- top_tb/[3].error_counter/out<4>.
- top_tb/[3].error_counter/out<3>.
- top_tb/[3].error_counter/out<2>.
- top_tb/state[0]_PWR_2_o_select_101_OUT<5>.
- top_tb/[1].error_counter/out<5>.
- top_tb/[1].error_counter/out<4>.
- top_tb/[1].error_counter/out<3>.
- top_tb/[1].error_counter/out<2>.
- top_tb/[0].error_counter/out<5>.
- top_tb/[0].error_counter/out<4>.
- top_tb/[0].error_counter/out<3>.
- top_tb/[0].error_counter/out<2>.
 
 
 The following Nets were partially guided.
 -----------------------------------------
- top_tb/boot_up_counter/out<5>.
- top_tb/boot_up_counter/out<4>.
- top_tb/boot_up_counter/out<3>.
- top_tb/boot_up_counter/out<0>.
- top_tb/boot_up_counter/out<2>.
- top_tb/boot_up_counter/out<1>.
- top_tb/clk40_display/clock_out_BUFG.
- top_tb/state_FSM_FFd7.
- top_tb/state_FSM_FFd1.
- top_tb/state_FSM_FFd8.
- top_tb/state_FSM_FFd5.
- n0007<1>.
- top_tb/rx_reset_done[0]_PWR_2_o_equal_75_o.

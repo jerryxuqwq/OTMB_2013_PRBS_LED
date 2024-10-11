@@ -12,7 +12,7 @@ Target Device  : xc6vlx240t
 Target Package : ff1156
 Target Speed   : -2
 Mapper Version : virtex6 -- $Revision: 1.55 $
-Mapped Date    : Mon Sep 23 19:16:49 2024
+Mapped Date    : Mon Sep 23 20:45:03 2024
 
 Loading device for application Rf_Device from file '6vlx240t.nph' in environment
 C:\Xilinx\14.7\ISE_DS\ISE\.
@@ -35,49 +35,47 @@ Total CPU  time at the beginning of Placer: 21 secs
 
 
 Phase 1.7  Design Feasibility Check
-Phase 1.7  Design Feasibility Check (Checksum:8cb6186a) REAL time: 21 secs 
+Phase 1.7  Design Feasibility Check (Checksum:c1512c89) REAL time: 21 secs 
 
 Phase 2.31  Local Placement Optimization
-Phase 2.31  Local Placement Optimization (Checksum:f526b2d4) REAL time: 21 secs 
+Phase 2.31  Local Placement Optimization (Checksum:a5ffe996) REAL time: 21 secs 
 
 Phase 3.37  Local Placement Optimization
-Phase 3.37  Local Placement Optimization (Checksum:f526b2d4) REAL time: 21 secs 
+Phase 3.37  Local Placement Optimization (Checksum:a5ffe996) REAL time: 21 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:f526b2d4) REAL time: 24 secs 
+(Checksum:a5ffe996) REAL time: 24 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:f526b2d4) REAL time: 24 secs 
+Phase 5.36  Local Placement Optimization (Checksum:a5ffe996) REAL time: 24 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:f526b2d4) REAL time: 24 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:a5ffe996) REAL time: 24 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:f526b2d4) REAL time: 25 secs 
+Phase 7.3  Local Placement Optimization (Checksum:a5ffe996) REAL time: 24 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:f526b2d4) REAL time: 25 secs 
+Phase 8.5  Local Placement Optimization (Checksum:a5ffe996) REAL time: 24 secs 
 
 Phase 9.8  Global Placement
-..
-................
-Phase 9.8  Global Placement (Checksum:bff62704) REAL time: 25 secs 
+Phase 9.8  Global Placement (Checksum:c78ba391) REAL time: 25 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:bff62704) REAL time: 25 secs 
+Phase 10.5  Local Placement Optimization (Checksum:c78ba391) REAL time: 25 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:bff62704) REAL time: 25 secs 
+Phase 11.18  Placement Optimization (Checksum:c78ba391) REAL time: 25 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:bff62704) REAL time: 25 secs 
+Phase 12.5  Local Placement Optimization (Checksum:c78ba391) REAL time: 25 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:9ab7fab2) REAL time: 26 secs 
+Phase 13.34  Placement Validation (Checksum:1e87b756) REAL time: 25 secs 
 
-Total REAL time to Placer completion: 26 secs 
-Total CPU  time to Placer completion: 26 secs 
+Total REAL time to Placer completion: 25 secs 
+Total CPU  time to Placer completion: 25 secs 
 Running post-placement packing...
 Updating route info ...
 Writing output files...
@@ -194,7 +192,7 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.13
 
-Peak Memory Usage:  5143 MB
+Peak Memory Usage:  5159 MB
 Total REAL time to MAP completion:  27 secs 
 Total CPU time to MAP completion:   27 secs 
 
