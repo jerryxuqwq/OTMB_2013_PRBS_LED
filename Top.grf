@@ -1,7 +1,7 @@
-Release 14.7 - par P.20131013 (nt64)
+Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Sep 05 23:13:27 2024
+Mon Oct 21 15:36:41 2024
 
   SmartGuide Results
   ------------------
@@ -9,59 +9,123 @@ Thu Sep 05 23:13:27 2024
   report accurately reflects the differences between the input design
   and the guide design.
 
-  Number of Components in the input design    |    106
-    Number of guided Components               |    102 out of    106  96.2%
-    Number of re-implemented Components       |      0 out of    106   0.0%
-    Number of new/changed Components          |      4 out of    106   3.8%
-  Number of Nets in the input design          |    153
-    Number of guided Nets                     |    130 out of    153  85.0%
-    Number of partially guided Nets           |     13 out of    153   8.5%
-    Number of re-routed Nets                  |      5 out of    153   3.3%
-    Number of new/changed Nets                |      5 out of    153   3.3%
+  Number of Components in the input design    |    135
+    Number of guided Components               |    119 out of    135  88.1%
+    Number of re-implemented Components       |      4 out of    135   3.0%
+    Number of new/changed Components          |     12 out of    135   8.9%
+  Number of Nets in the input design          |    209
+    Number of guided Nets                     |    134 out of    209  64.1%
+    Number of partially guided Nets           |     33 out of    209  15.8%
+    Number of re-routed Nets                  |     18 out of    209   8.6%
+    Number of new/changed Nets                |     24 out of    209  11.5%
 
 
 The following Components were re-implemented.
 ---------------------------------------------
+ state_FSM_FFd2 : SLICE_X98Y89.
+ boot_up_counter_rst : SLICE_X100Y86.
+ state_FSM_FFd4-In1 : SLICE_X100Y88.
+ state[0]_GND_1_o_equal_90_o : SLICE_X153Y67.
 
 
 The following Components are new/changed.
 -----------------------------------------
- _n0176<6> : SLICE_X100Y90.
- N12 : SLICE_X104Y87.
- _n0176<4> : SLICE_X105Y86.
- N8 : SLICE_X108Y88.
+ Mcompar_n0041_cy<3> : SLICE_X98Y84.
+ Mcompar_n0038_cy<3> : SLICE_X98Y88.
+ Mcompar_n0024_cy<3> : SLICE_X96Y86.
+ Mcompar_n0024_cy<4> : SLICE_X96Y87.
+ Mcompar_n0041_cy<4> : SLICE_X98Y85.
+ Mcompar_n0029_cy<3> : SLICE_X97Y87.
+ Mcompar_n0034_cy<3> : SLICE_X98Y86.
+ Mcompar_n0029_cy<4> : SLICE_X97Y88.
+ Mcompar_n0034_cy<4> : SLICE_X98Y87.
+ clk40_BUFG : BUFGCTRL_X0Y0.
+ ccb_cmd_dec<2> : SLICE_X96Y99.
+ Mcompar_n0024_cy<5> : SLICE_X98Y90.
 
 
 The following Nets were re-routed.
 ----------------------------------
- _n0136.
- _n0176<3>.
- _n0176<4>.
- _n0160.
+ ccb_rx_iobff_a<2>.
+ ccb_rx_iobff_a<4>.
+ ccb_rx_iobff_a<5>.
+ ccb_rx_iobff_a<6>.
+ ccb_rx_iobff_a<7>.
+ ccb_cmd_dec<2>.
+ ccb_rx_iobff_a<10>.
+ ccb_rx_iobff_a<3>.
+ state_FSM_FFd2.
+ state_FSM_FFd1.
+ boot_up_counter_rst.
+ inject_IBUF.
+ ccb_cmd_dec<0>.
+ state_FSM_FFd4-In1.
+ ccb_cmd_dec<1>.
+ state[0]_GND_1_o_equal_90_o.
+ GND_1_o_ccb_cmd_strobe_AND_2_o1.
  N8.
 
 
 The following Nets are new/changed.
 -----------------------------------
- _n0176<6>.
- _n0176<7>.
- _n0176<8>.
- N12.
- N10.
+ Mcompar_n0041_cy<3>.
+ clk40_BUFG.
+ Mcompar_n0038_cy<4>.
+ Mcompar_n0038_cy<5>.
+ Mcompar_n0038_cy<3>.
+ PRBS_error<7>.
+ txusrclk2.
+ PRBS_error<6>.
+ PRBS_error<5>.
+ PRBS_error<4>.
+ Mcompar_n0024_cy<3>.
+ _n0190.
+ Mcompar_n0024_cy<4>.
+ Mcompar_n0024_cy<5>.
+ Mcompar_n0029_cy<5>.
+ Mcompar_n0041_cy<5>.
+ Mcompar_n0034_cy<5>.
+ Mcompar_n0041_cy<4>.
+ Mcompar_n0029_cy<3>.
+ Mcompar_n0034_cy<3>.
+ Mcompar_n0029_cy<4>.
+ Mcompar_n0034_cy<4>.
+ clk40.
+ _n0188.
 
 
 The following Nets were partially guided.
 -----------------------------------------
- state_FSM_FFd4.
- blinker<7>.
- state_FSM_FFd1.
- state_FSM_FFd2.
- latched_error<7>.
- state_FSM_FFd5.
+ boot_up_counter/out<25>.
+ boot_up_counter/out<26>.
+ boot_up_counter/out<27>.
+ boot_up_counter/out<28>.
+ boot_up_counter/out<20>.
+ boot_up_counter/out<24>.
+ boot_up_counter/out<21>.
+ boot_up_counter/out<22>.
+ boot_up_counter/out<23>.
+ boot_up_counter/out<15>.
+ boot_up_counter/out<16>.
+ boot_up_counter/out<17>.
+ boot_up_counter/out<18>.
+ boot_up_counter/out<19>.
+ boot_up_counter/out<10>.
+ boot_up_counter/out<11>.
+ boot_up_counter/out<12>.
+ boot_up_counter/out<13>.
+ boot_up_counter/out<14>.
+ boot_up_counter/out<1>.
+ boot_up_counter/out<0>.
+ boot_up_counter/out<7>.
+ boot_up_counter/out<8>.
+ boot_up_counter/out<9>.
  state_FSM_FFd3.
- state_FSM_FFd6.
- state_FSM_FFd7.
- state_FSM_FFd8.
- state[0]_PWR_1_o_Select_35_o.
- latched_error<6>.
- latched_error<5>.
+ state_FSM_FFd4.
+ clk40_display/clock_out.
+ boot_up_counter/out<5>.
+ boot_up_counter/out<6>.
+ reset_IBUF.
+ boot_up_counter/out<4>.
+ boot_up_counter/out<2>.
+ boot_up_counter/out<3>.

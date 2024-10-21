@@ -34,14 +34,19 @@ module Top(
 		   
 	input wire reset,
 	input wire inject,
-	output wire slow_clk40,
-	output wire clk40,
-	input wire   [50:0] _ccb_rx,
-	output 	wire txusrclk2,
-	output wire [0:7]PRBS_error,
-	output wire [0:4] state_status
+	//output wire slow_clk40,
+	//output wire clk40,
+	input wire   [50:0] _ccb_rx
+	//output 	wire txusrclk2,
+	//output wire [0:7]PRBS_error,
+	//output wire [0:4] state_status
 	
     );
+	wire slow_clk40;
+	wire clk40;
+	wire txusrclk2;
+	wire [0:7]PRBS_error;
+	wire [0:4] state_status;
 	
 	reg PRBS_error_inject;
 	// parameter setting
@@ -173,7 +178,7 @@ module Top(
 	reg [0:4] state, nxtState;
 	assign state_status = state;
 	// reset 
-    always @ (posedge clk40)
+    always @ (posedge clk40 or posedge ttc_resync)
 		if (reset|ttc_resync)
 			state <= RESET;
 		else
