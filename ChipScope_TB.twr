@@ -151,8 +151,8 @@ Clock to Setup on destination clock clk40n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk40n         |    5.760|         |         |         |
-clk40p         |    5.760|         |         |         |
+clk40n         |    5.607|         |         |         |
+clk40p         |    5.607|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk40p
@@ -160,8 +160,8 @@ Clock to Setup on destination clock clk40p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk40n         |    5.760|         |         |         |
-clk40p         |    5.760|         |         |         |
+clk40n         |    5.607|         |         |         |
+clk40p         |    5.607|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk160n
@@ -183,7 +183,7 @@ clk160p        |    0.640|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Oct 20 21:56:42 2024 
+Analysis completed Mon Oct 21 05:04:36 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -145,7 +145,7 @@ Elaborating module <counter>.
 WARNING:HDLCompiler:413 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter.v" Line 31: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <counter_noover>.
-WARNING:HDLCompiler:413 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter_noover.v" Line 33: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter_noover.v" Line 36: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 Elaborating module <IBUFDS_GTXE1>.
 
@@ -257,7 +257,7 @@ INFO:Xst:3210 - "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v
     | Inputs             | 4                                              |
     | Outputs            | 27                                             |
     | Clock              | clk40 (rising_edge)                            |
-    | Reset              | reset_ttc_resync_OR_33_o (positive)            |
+    | Reset              | reset_ttc_resync_OR_32_o (positive)            |
     | Reset type         | synchronous                                    |
     | Reset State        | 0000                                           |
     | Encoding           | auto                                           |
@@ -324,10 +324,12 @@ Unit <counter> synthesized.
 Synthesizing Unit <counter_noover>.
     Related source file is "C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter_noover.v".
     Found 2-bit register for signal <out>.
-    Found 2-bit adder for signal <out[0]_GND_6_o_add_2_OUT> created at line 33.
+    Found 2-bit adder for signal <out[1]_GND_6_o_add_1_OUT> created at line 36.
+    Found 2-bit comparator lessequal for signal <out[1]_PWR_6_o_LessThan_1_o> created at line 35
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <counter_noover> synthesized.
 
 Synthesizing Unit <Fiber_gtx>.
@@ -357,7 +359,8 @@ Macro Statistics
  8-bit register                                        : 2
 # Latches                                              : 27
  1-bit latch                                           : 27
-# Comparators                                          : 3
+# Comparators                                          : 7
+ 2-bit comparator lessequal                            : 4
  28-bit comparator greater                             : 2
  6-bit comparator greater                              : 1
 # FSMs                                                 : 1
@@ -466,7 +469,8 @@ Macro Statistics
  6-bit up counter                                      : 1
 # Registers                                            : 21
  Flip-Flops                                            : 21
-# Comparators                                          : 3
+# Comparators                                          : 7
+ 2-bit comparator lessequal                            : 4
  28-bit comparator greater                             : 2
  6-bit comparator greater                              : 1
 # FSMs                                                 : 1
@@ -554,12 +558,12 @@ Top Level Output File Name         : ChipScope_TB.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 705
+# BELS                             : 709
 #      GND                         : 17
-#      INV                         : 20
+#      INV                         : 24
 #      LUT1                        : 89
-#      LUT2                        : 52
-#      LUT3                        : 67
+#      LUT2                        : 48
+#      LUT3                        : 71
 #      LUT4                        : 135
 #      LUT5                        : 24
 #      LUT6                        : 49
@@ -574,10 +578,10 @@ Primitive and Black Box Usage:
 # FlipFlops/Latches                : 660
 #      FD                          : 114
 #      FDC                         : 27
-#      FDCE                        : 18
+#      FDCE                        : 26
 #      FDE                         : 143
 #      FDP                         : 102
-#      FDR                         : 117
+#      FDR                         : 109
 #      FDRE                        : 114
 #      FDS                         : 11
 #      LD                          : 13
@@ -609,16 +613,16 @@ Selected Device : 6vlx240tff1156-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             653  out of  301440     0%  
- Number of Slice LUTs:                  558  out of  150720     0%  
-    Number used as Logic:               436  out of  150720     0%  
+ Number of Slice LUTs:                  562  out of  150720     0%  
+    Number used as Logic:               440  out of  150720     0%  
     Number used as Memory:              122  out of  58400     0%  
        Number used as SRL:              122
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    968
-   Number with an unused Flip Flop:     315  out of    968    32%  
-   Number with an unused LUT:           410  out of    968    42%  
-   Number of fully used LUT-FF pairs:   243  out of    968    25%  
+ Number of LUT Flip Flop pairs used:    972
+   Number with an unused Flip Flop:     319  out of    972    32%  
+   Number with an unused LUT:           410  out of    972    42%  
+   Number of fully used LUT-FF pairs:   243  out of    972    25%  
    Number of unique control sets:       132
 
 IO Utilization: 
@@ -652,6 +656,7 @@ Clock Information:
 --------------------------------------------------------------------------+------------------------------------------------------------------+-------+
 Clock Signal                                                              | Clock buffer(FF name)                                            | Load  |
 --------------------------------------------------------------------------+------------------------------------------------------------------+-------+
+top_tb/txoutclk                                                           | BUFG                                                             | 8     |
 clk40p                                                                    | IBUFDS+BUFG                                                      | 409   |
 top_tb/clk40_display/clock_out                                            | BUFG                                                             | 106   |
 top_tb/_n0202(top_tb/state__n0202:O)                                      | NONE(*)(top_tb/full_rx_reset_0)                                  | 12    |
@@ -668,10 +673,6 @@ top_tb/led_fp_6                                                           | NONE
 top_tb/led_fp_7                                                           | NONE(shared_vio_i/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/U_FALLING)| 2     |
 i_icon/CONTROL1<13>(i_icon/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE:O)| NONE(*)(ccb_data_mon/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)         | 1     |
 i_icon/U0/iUPDATE_OUT                                                     | NONE(i_icon/U0/U_ICON/U_iDATA_CMD)                               | 1     |
-top_tb/PRBS_error<4>                                                      | NONE(top_tb/counter_noover_0/out_0)                              | 2     |
-top_tb/PRBS_error<5>                                                      | NONE(top_tb/counter_noover_1/out_0)                              | 2     |
-top_tb/PRBS_error<7>                                                      | NONE(top_tb/counter_noover_3/out_0)                              | 2     |
-top_tb/PRBS_error<6>                                                      | NONE(top_tb/counter_noover_2/out_0)                              | 2     |
 --------------------------------------------------------------------------+------------------------------------------------------------------+-------+
 (*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -689,7 +690,7 @@ ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V
 ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N0(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_GND:G) | NONE(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 72    |
 ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N0(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_GND:G) | NONE(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 72    |
 ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/N0(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/XST_GND:G) | NONE(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 72    |
-ccb_data_mon/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(ccb_data_mon/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 12    |
+ccb_data_mon/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(ccb_data_mon/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(ccb_data_mon/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 12    |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -704,6 +705,28 @@ Speed Grade: -2
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_tb/txoutclk'
+  Clock period: 1.361ns (frequency: 734.538MHz)
+  Total number of paths / destination ports: 28 / 16
+-------------------------------------------------------------------------
+Delay:               1.361ns (Levels of Logic = 1)
+  Source:            top_tb/counter_noover_0/out_0 (FF)
+  Destination:       top_tb/counter_noover_0/out_1 (FF)
+  Source Clock:      top_tb/txoutclk rising
+  Destination Clock: top_tb/txoutclk rising
+
+  Data Path: top_tb/counter_noover_0/out_0 to top_tb/counter_noover_0/out_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.317   0.443  top_tb/counter_noover_0/out_0 (top_tb/counter_noover_0/out_0)
+     LUT3:I1->O            2   0.061   0.344  top_tb/counter_noover_0/_n0015_inv1 (top_tb/counter_noover_0/_n0015_inv)
+     FDCE:CE                   0.196          top_tb/counter_noover_0/out_0
+    ----------------------------------------
+    Total                      1.361ns (0.574ns logic, 0.787ns route)
+                                       (42.2% logic, 57.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk40p'
@@ -828,94 +851,6 @@ Delay:               1.086ns (Levels of Logic = 1)
     ----------------------------------------
     Total                      1.086ns (0.396ns logic, 0.690ns route)
                                        (36.5% logic, 63.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<4>'
-  Clock period: 0.816ns (frequency: 1225.415MHz)
-  Total number of paths / destination ports: 4 / 2
--------------------------------------------------------------------------
-Delay:               0.816ns (Levels of Logic = 1)
-  Source:            top_tb/counter_noover_0/out_0 (FF)
-  Destination:       top_tb/counter_noover_0/out_0 (FF)
-  Source Clock:      top_tb/PRBS_error<4> rising
-  Destination Clock: top_tb/PRBS_error<4> rising
-
-  Data Path: top_tb/counter_noover_0/out_0 to top_tb/counter_noover_0/out_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.317   0.438  top_tb/counter_noover_0/out_0 (top_tb/counter_noover_0/out_0)
-     LUT2:I0->O            1   0.061   0.000  top_tb/counter_noover_0/out_0_glue_set (top_tb/counter_noover_0/out_0_glue_set)
-     FDR:D                    -0.002          top_tb/counter_noover_0/out_0
-    ----------------------------------------
-    Total                      0.816ns (0.378ns logic, 0.438ns route)
-                                       (46.3% logic, 53.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<5>'
-  Clock period: 0.816ns (frequency: 1225.415MHz)
-  Total number of paths / destination ports: 4 / 2
--------------------------------------------------------------------------
-Delay:               0.816ns (Levels of Logic = 1)
-  Source:            top_tb/counter_noover_1/out_0 (FF)
-  Destination:       top_tb/counter_noover_1/out_0 (FF)
-  Source Clock:      top_tb/PRBS_error<5> rising
-  Destination Clock: top_tb/PRBS_error<5> rising
-
-  Data Path: top_tb/counter_noover_1/out_0 to top_tb/counter_noover_1/out_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.317   0.438  top_tb/counter_noover_1/out_0 (top_tb/counter_noover_1/out_0)
-     LUT2:I0->O            1   0.061   0.000  top_tb/counter_noover_1/out_0_glue_set (top_tb/counter_noover_1/out_0_glue_set)
-     FDR:D                    -0.002          top_tb/counter_noover_1/out_0
-    ----------------------------------------
-    Total                      0.816ns (0.378ns logic, 0.438ns route)
-                                       (46.3% logic, 53.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<7>'
-  Clock period: 0.816ns (frequency: 1225.415MHz)
-  Total number of paths / destination ports: 4 / 2
--------------------------------------------------------------------------
-Delay:               0.816ns (Levels of Logic = 1)
-  Source:            top_tb/counter_noover_3/out_0 (FF)
-  Destination:       top_tb/counter_noover_3/out_0 (FF)
-  Source Clock:      top_tb/PRBS_error<7> rising
-  Destination Clock: top_tb/PRBS_error<7> rising
-
-  Data Path: top_tb/counter_noover_3/out_0 to top_tb/counter_noover_3/out_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.317   0.438  top_tb/counter_noover_3/out_0 (top_tb/counter_noover_3/out_0)
-     LUT2:I0->O            1   0.061   0.000  top_tb/counter_noover_3/out_0_glue_set (top_tb/counter_noover_3/out_0_glue_set)
-     FDR:D                    -0.002          top_tb/counter_noover_3/out_0
-    ----------------------------------------
-    Total                      0.816ns (0.378ns logic, 0.438ns route)
-                                       (46.3% logic, 53.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'top_tb/PRBS_error<6>'
-  Clock period: 0.816ns (frequency: 1225.415MHz)
-  Total number of paths / destination ports: 4 / 2
--------------------------------------------------------------------------
-Delay:               0.816ns (Levels of Logic = 1)
-  Source:            top_tb/counter_noover_2/out_0 (FF)
-  Destination:       top_tb/counter_noover_2/out_0 (FF)
-  Source Clock:      top_tb/PRBS_error<6> rising
-  Destination Clock: top_tb/PRBS_error<6> rising
-
-  Data Path: top_tb/counter_noover_2/out_0 to top_tb/counter_noover_2/out_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.317   0.438  top_tb/counter_noover_2/out_0 (top_tb/counter_noover_2/out_0)
-     LUT2:I0->O            1   0.061   0.000  top_tb/counter_noover_2/out_0_glue_set (top_tb/counter_noover_2/out_0_glue_set)
-     FDR:D                    -0.002          top_tb/counter_noover_2/out_0
-    ----------------------------------------
-    Total                      0.816ns (0.378ns logic, 0.438ns route)
-                                       (46.3% logic, 53.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk40p'
@@ -1090,42 +1025,6 @@ Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 i_icon/U0/iUPDATE_OUT|    1.086|         |         |         |
 ---------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock top_tb/PRBS_error<4>
---------------------+---------+---------+---------+---------+
-                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------+---------+---------+---------+---------+
-top_tb/PRBS_error<4>|    0.816|         |         |         |
-top_tb/_n0202       |         |    1.143|         |         |
---------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock top_tb/PRBS_error<5>
---------------------+---------+---------+---------+---------+
-                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------+---------+---------+---------+---------+
-top_tb/PRBS_error<5>|    0.816|         |         |         |
-top_tb/_n0202       |         |    1.143|         |         |
---------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock top_tb/PRBS_error<6>
---------------------+---------+---------+---------+---------+
-                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------+---------+---------+---------+---------+
-top_tb/PRBS_error<6>|    0.816|         |         |         |
-top_tb/_n0202       |         |    1.143|         |         |
---------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock top_tb/PRBS_error<7>
---------------------+---------+---------+---------+---------+
-                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------+---------+---------+---------+---------+
-top_tb/PRBS_error<7>|    0.816|         |         |         |
-top_tb/_n0202       |         |    1.143|         |         |
---------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock top_tb/_n0202
 ------------------------------+---------+---------+---------+---------+
                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
@@ -1133,11 +1032,8 @@ Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
 clk160p                       |         |         |    0.740|         |
 clk40p                        |         |         |    1.673|         |
-top_tb/PRBS_error<4>          |         |         |    1.084|         |
-top_tb/PRBS_error<5>          |         |         |    0.902|         |
-top_tb/PRBS_error<6>          |         |         |    1.084|         |
-top_tb/PRBS_error<7>          |         |         |    1.084|         |
 top_tb/clk40_display/clock_out|         |         |    0.989|         |
+top_tb/txoutclk               |         |         |    1.089|         |
 ------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock top_tb/_n0239
@@ -1223,11 +1119,20 @@ Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest
 i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.151|         |    1.151|         |
 ---------------------------------------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock top_tb/txoutclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+top_tb/_n0202  |         |    1.143|         |         |
+top_tb/txoutclk|    1.361|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.60 secs
+Total CPU time to Xst completion: 9.78 secs
  
 --> 
 

@@ -146,10 +146,10 @@ module Top(
 			
 	genvar j;
 	wire  [0:1]error_counter_out[0:3];
-	counter_noover counter_noover_0(PRBS_error[4] ,PRBS_reset,error_counter_out[0][0:1]);
-	counter_noover counter_noover_1(PRBS_error[5] ,PRBS_reset,error_counter_out[1][0:1]);
-	counter_noover counter_noover_2(PRBS_error[6] ,PRBS_reset,error_counter_out[2][0:1]);
-	counter_noover counter_noover_3(PRBS_error[7] ,PRBS_reset,error_counter_out[3][0:1]);
+	counter_noover counter_noover_0(txusrclk2,PRBS_error[4],PRBS_reset,error_counter_out[0][0:1]);
+	counter_noover counter_noover_1(txusrclk2,PRBS_error[5],PRBS_reset,error_counter_out[1][0:1]);
+	counter_noover counter_noover_2(txusrclk2,PRBS_error[6],PRBS_reset,error_counter_out[2][0:1]);
+	counter_noover counter_noover_3(txusrclk2,PRBS_error[7],PRBS_reset,error_counter_out[3][0:1]);
 	// boot state machine
 	localparam RESET	         = 3'd0;
 	localparam EN_TX     	     = 3'd1;    

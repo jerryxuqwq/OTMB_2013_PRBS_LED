@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Oct 20 21:56:27 2024
+Mon Oct 21 05:04:22 2024
 
   SmartGuide Results
   ------------------
@@ -9,124 +9,100 @@ Sun Oct 20 21:56:27 2024
   report accurately reflects the differences between the input design
   and the guide design.
 
-  Number of Components in the input design    |    442
-    Number of guided Components               |    434 out of    442  98.2%
-    Number of re-implemented Components       |      5 out of    442   1.1%
-    Number of new/changed Components          |      3 out of    442   0.7%
-  Number of Nets in the input design          |   1019
-    Number of guided Nets                     |    935 out of   1019  91.8%
-    Number of partially guided Nets           |     19 out of   1019   1.9%
-    Number of re-routed Nets                  |     55 out of   1019   5.4%
-    Number of new/changed Nets                |     10 out of   1019   1.0%
+  Number of Components in the input design    |    443
+    Number of guided Components               |    435 out of    443  98.2%
+    Number of re-implemented Components       |      2 out of    443   0.5%
+    Number of new/changed Components          |      6 out of    443   1.4%
+  Number of Nets in the input design          |   1023
+    Number of guided Nets                     |    963 out of   1023  94.1%
+    Number of partially guided Nets           |      9 out of   1023   0.9%
+    Number of re-routed Nets                  |     44 out of   1023   4.3%
+    Number of new/changed Nets                |      7 out of   1023   0.7%
 
 
 The following Components were re-implemented.
 ---------------------------------------------
- top_tb/ccb_cmd_dec<1> : SLICE_X32Y32.
- top_tb/led_fp_7 : SLICE_X138Y80.
- top_tb/led_fp_1 : SLICE_X140Y77.
- top_tb/latched_error<7> : SLICE_X144Y72.
- top_tb/state_FSM_FFd4 : SLICE_X147Y79.
+ top_tb/latched_error<7> : SLICE_X144Y69.
+ top_tb/state_FSM_FFd7 : SLICE_X148Y77.
 
 
 The following Components are new/changed.
 -----------------------------------------
- top_tb/PRBS_reset : SLICE_X132Y69.
- top_tb/led_fp_4 : SLICE_X140Y79.
- top_tb/state_FSM_FFd7 : SLICE_X146Y80.
+ top_tb/counter_noover_0/out<1> : SLICE_X140Y67.
+ top_tb/led_fp_1 : SLICE_X140Y76.
+ top_tb/counter_noover_2/out<1> : SLICE_X140Y82.
+ top_tb/counter_noover_3/out<1> : SLICE_X140Y84.
+ top_tb/led_fp_2 : SLICE_X142Y78.
+ top_tb/counter_noover_1/out<1> : SLICE_X144Y81.
 
 
 The following Nets were re-routed.
 ----------------------------------
+ top_tb/PRBS_error<6>.
+ top_tb/counter_noover_2/out<1>.
+ top_tb/counter_noover_2/out<0>.
  top_tb/q1_clk1_refclk_i_bufg.
  top_tb/tx_reset_done<2>.
  top_tb/tx_reset_done<1>.
  top_tb/tx_reset_done<0>.
  top_tb/latched_error<5>.
+ top_tb/PRBS_error<5>.
  N6.
- top_tb/PRBS_reset.
- top_tb/counter_noover_0/out<0>.
+ top_tb/PRBS_error<7>.
+ top_tb/counter_noover_3/out<1>.
+ top_tb/counter_noover_3/out<0>.
  top_tb/rx_reset_done<2>.
  top_tb/rx_reset_done<1>.
  top_tb/rx_reset_done<0>.
  top_tb/latched_error<4>.
+ top_tb/PRBS_error<4>.
  N8.
- top_tb/counter_noover_2/out<0>.
+ top_tb/counter_noover_0/out<1>.
+ top_tb/counter_noover_0/out<0>.
+ top_tb/_n0202.
  top_tb/state_FSM_FFd5.
- top_tb/state_FSM_FFd3.
  top_tb/state_FSM_FFd8.
- top_tb/state_FSM_FFd6.
  top_tb/state_FSM_FFd1.
- top_tb/state_FSM_FFd4.
+ top_tb/counter_noover_1/out<1>.
+ top_tb/state_state[0]_PWR_2_o_Select_96_o1.
  top_tb/led_fp_2.
  top_tb/state_FSM_FFd7.
  top_tb/latched_error<6>.
- top_tb/state[0]_PWR_2_o_Select_99_o.
- top_tb/ccb_rx_iobff_a<2>.
- top_tb/ccb_rx_iobff_a<3>.
- top_tb/ccb_rx_iobff_a<6>.
- top_tb/ccb_rx_iobff_a<7>.
- top_tb/ccb_cmd_dec<0>.
- top_tb/ccb_cmd_dec<1>.
+ top_tb/counter_noover_1/out<0>.
+ top_tb/_n0255<4>.
  top_tb/led_fp_1.
- top_tb/full_rx_reset_0.
- top_tb/counter_noover_3/out<0>.
- top_tb/ccb_rx_iobff_a<10>.
- top_tb/ccb_rx_iobff_a<4>.
- top_tb/ccb_rx_iobff_a<5>.
- top_tb/led_fp_6.
- top_tb/led_fp_5.
- top_tb/led_fp_4.
- top_tb/led_fp_7.
+ top_tb/_n0239.
  top_tb/led_fp_0.
  top_tb/led_fp_3.
- top_tb/rx_reset_done[0]_PWR_2_o_equal_75_o.
  top_tb/latched_error<7>.
+ top_tb/rx_reset_done[0]_PWR_2_o_equal_75_o.
  top_tb/rx_reset_done<6>.
- top_tb/tx_reset_done<5>.
  top_tb/rx_reset_done<4>.
- top_tb/tx_reset_done<3>.
  top_tb/rx_reset_done<3>.
  top_tb/rx_reset_done<7>.
- top_tb/tx_reset_done<6>.
  top_tb/rx_reset_done<5>.
- top_tb/tx_reset_done<4>.
- top_tb/tx_reset_done<7>.
- top_tb/tx_reset_done[0]_PWR_2_o_equal_71_o.
+ N4.
 
 
 The following Nets are new/changed.
 -----------------------------------
- top_tb/_n0202.
- top_tb/state_state[0]_PWR_2_o_Select_96_o1.
  top_tb/_n0315<0>.
- top_tb/_n0255<4>.
- top_tb/ccb_cmd_dec<2>.
- top_tb/_n0239.
- top_tb/n0025.
- top_tb/GND_2_o_ccb_cmd_strobe_AND_51_o1.
+ top_tb/reset_ttc_resync_OR_32_o.
+ top_tb/counter_noover_0/_n0015_inv.
  top_tb/state__n0255<5>1.
- N4.
+ top_tb/counter_noover_2/_n0015_inv.
+ top_tb/counter_noover_3/_n0015_inv.
+ top_tb/counter_noover_1/_n0015_inv.
 
 
 The following Nets were partially guided.
 -----------------------------------------
- top_tb/boot_up_counter/out<5>.
- top_tb/boot_up_counter/out<4>.
- top_tb/boot_up_counter/out<3>.
- top_tb/boot_up_counter/out<0>.
- top_tb/boot_up_counter/out<2>.
- top_tb/boot_up_counter/out<1>.
- top_tb/PRBS_error<5>.
- top_tb/counter_noover_0/out<1>.
- top_tb/PRBS_error<4>.
- top_tb/counter_noover_2/out<1>.
- top_tb/PRBS_error<6>.
+ top_tb/PRBS_reset.
  clk40_BUFG.
+ top_tb/state_FSM_FFd3.
+ top_tb/state_FSM_FFd6.
+ top_tb/state_FSM_FFd4.
  top_tb/blinker<0>.
- top_tb/counter_noover_1/out<0>.
  top_tb/state_FSM_FFd2.
- top_tb/counter_noover_1/out<1>.
- top_tb/reset_ttc_resync_OR_33_o.
- top_tb/counter_noover_3/out<1>.
- top_tb/PRBS_error<7>.
+ top_tb/counter_out[0]_GND_2_o_equal_77_o.
+ top_tb/n0025.
