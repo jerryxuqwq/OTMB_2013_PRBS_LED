@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 20 21:55:44 2024
+// Written by: Map P.20131013 on Mon Oct 21 04:47:02 2024
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -59,11 +59,11 @@ COMP "_ccb_rx<17>" LOCATE = SITE "AK31" LEVEL 1;
 COMP "_ccb_rx<25>" LOCATE = SITE "AK32" LEVEL 1;
 COMP "_ccb_rx<33>" LOCATE = SITE "AP33" LEVEL 1;
 COMP "_ccb_rx<41>" LOCATE = SITE "Y29" LEVEL 1;
-COMP "_ccb_rx<50>" LOCATE = SITE "AH32" LEVEL 1;
 COMP "_ccb_rx<18>" LOCATE = SITE "AB28" LEVEL 1;
 COMP "_ccb_rx<26>" LOCATE = SITE "AL34" LEVEL 1;
 COMP "_ccb_rx<34>" LOCATE = SITE "AA26" LEVEL 1;
 COMP "_ccb_rx<42>" LOCATE = SITE "Y26" LEVEL 1;
+COMP "_ccb_rx<50>" LOCATE = SITE "AH32" LEVEL 1;
 COMP "_ccb_rx<19>" LOCATE = SITE "AH30" LEVEL 1;
 COMP "_ccb_rx<27>" LOCATE = SITE "AJ30" LEVEL 1;
 COMP "_ccb_rx<35>" LOCATE = SITE "AB27" LEVEL 1;

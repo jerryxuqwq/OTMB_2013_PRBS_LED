@@ -5,571 +5,481 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 57: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 261: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">6</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 57: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 279: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">6</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter.v" Line 31: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 296: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">6</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\counter_noover.v" Line 33: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 61: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\fiber_gtx.v" Line 152: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 61: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 351: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\fiber_gtx.v" Line 152: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 403: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 420: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 455: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 472: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 507: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 524: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 559: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 576: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 611: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 617: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RXN_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 663: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 618: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RXP_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 714: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 628: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 765: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 669: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RXN_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 817: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 670: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">RXP_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 65: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">SYNC_OUT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 680: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 71: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TRIG0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">50</arg>-bit while actual signal size is <arg fmt="%d" index="1">51</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 732: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">_ccb_rx&lt;35:34&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 783: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 834: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 886: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 56: Assignment to <arg fmt="%s" index="1">slow_clk40</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 57: Assignment to <arg fmt="%s" index="1">clk40</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 71: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">SYNC_OUT</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">3</arg>-bit.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v" Line 77: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TRIG0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">50</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">slow_clk40</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">top_tb</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">clk40</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">top_tb</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">_ccb_rx&lt;35:34&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">434</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">486</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">486</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">486</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">486</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">538</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">451</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">538</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">503</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">538</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">503</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">538</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">503</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">538</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">503</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">538</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">555</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">590</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">555</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">590</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">555</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">590</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">555</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">590</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">607</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">590</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">607</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">590</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">607</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">642</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">607</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">642</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">607</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">642</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">607</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">642</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">659</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">693</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">659</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">693</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">659</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">693</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">659</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">693</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">659</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">744</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">659</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">744</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">711</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">744</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">711</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">744</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">711</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">796</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">711</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">796</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">762</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">796</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">762</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">796</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">762</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">PRBS_reset</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">762</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">boot_up_counter_rst</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">813</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">813</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">813</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">813</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">865</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">865</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">865</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">865</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_tx_reset&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">full_rx_reset&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_fp&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">PRBS_error_inject</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36</arg> in unit <arg fmt="%s" index="2">U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">blinker_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">blinker_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_cmd_dec_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_tb</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_cmd_dec_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">latched_error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">blinker_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">blinker_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">full_tx_reset_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;full_tx_reset_0&gt; &lt;full_tx_reset_2&gt; &lt;full_tx_reset_3&gt; &lt;full_tx_reset_4&gt; &lt;full_tx_reset_5&gt; &lt;full_tx_reset_6&gt; &lt;full_tx_reset_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">full_rx_reset_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;full_rx_reset_3&gt; &lt;full_rx_reset_1&gt; &lt;full_rx_reset_2&gt; &lt;full_rx_reset_6&gt; &lt;full_rx_reset_4&gt; &lt;full_rx_reset_5&gt; &lt;full_rx_reset_7&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">top_tb/clk40_display/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ChipScope_TB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">top_tb/blinker_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ChipScope_TB</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;top_tb/blinker_1&gt; &lt;top_tb/blinker_4&gt; &lt;top_tb/blinker_5&gt; &lt;top_tb/blinker_6&gt; &lt;top_tb/blinker_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">shared_vio_i</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0&gt; &lt;U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

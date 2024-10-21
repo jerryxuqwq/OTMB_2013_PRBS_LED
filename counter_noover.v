@@ -20,17 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 module counter_noover(
 	input clk,
+	input trig,
 	input rst,
 	output reg [0:1] out
     );
-	always @(posedge clk) begin
-	if (rst)
+	always @(posedge trig or posedge rst) begin
+	if (rst) begin
 		out <= 2'b00;
-	else
-		if(out == 2'b11)
-			out <= 2'b11;
-		else
-			out <= out + 1;
+	end
+	else if (trig) begin
+		if(out < 2'b11) begin
+			out <= out + 1'b1;
+			end
+		end
 	end
 
 endmodule

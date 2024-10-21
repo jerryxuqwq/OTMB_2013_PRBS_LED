@@ -1,19 +1,37 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Oct 20 21:56:49 2024
+Mon Oct 21 04:48:16 2024
 
 drc -z ChipScope_TB.ncd ChipScope_TB.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0202 is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0239 is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<0> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net data_ila_control<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<4> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<7> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<6> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<2> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<5> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<1> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<3> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete.
    The signal does not drive any load pins in the design.
@@ -32,8 +50,5 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete.
    The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete.
-   The signal does not drive any load pins in the design.
-DRC detected 0 errors and 10 warnings.  Please see the previously displayed
+DRC detected 0 errors and 15 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

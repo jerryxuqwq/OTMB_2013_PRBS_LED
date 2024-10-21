@@ -36,7 +36,10 @@ module Top(
 	input wire inject,
 	output wire slow_clk40,
 	output wire clk40,
-	input wire   [50:0] _ccb_rx
+	output wire [0:7] PRBS_error,
+	output wire txusrclk2,
+	input wire   [50:0] _ccb_rx,
+	input wire PRBS_counter_reset_user
 	
     );
 	
@@ -50,6 +53,7 @@ module Top(
 								 // 011: PRBS-23
 								 // 100: PRBS-31
 								
+	wire[0:7] tied_to_ground_vec_i;
 	//  Static signal Assigments    
     assign tied_to_ground_i             = 1'b0;
     assign tied_to_ground_vec_i         = 64'h0000000000000000;
@@ -65,11 +69,11 @@ module Top(
 	
 
 	wire txoutclk;
-	wire txusrclk2;
+	//wire txusrclk2;
 	wire [0:7] tx_reset_done;
 	wire [0:7] rx_reset_done;
-	wire [0:7] PRBS_error;
-	wire [0:5] counter_out;
+	
+	wire [0:31] counter_out;
 
 	
 	// temp tie off
@@ -81,6 +85,7 @@ module Top(
 	reg [0:7] full_rx_reset;
 	reg [0:7] latched_error;	
 	reg [0:7] blinker;
+	reg PRBS_counter_reset;
 
 	// Deal with ccb
 	
@@ -144,26 +149,47 @@ module Top(
 			boot_up_counter_rst,
 			counter_out);
 			
-	genvar j;
-	wire  [0:1]error_counter_out[0:3];
-	counter_noover counter_noover_0(PRBS_error[4] ,PRBS_reset,error_counter_out[0][0:1]);
-	counter_noover counter_noover_1(PRBS_error[5] ,PRBS_reset,error_counter_out[1][0:1]);
-	counter_noover counter_noover_2(PRBS_error[6] ,PRBS_reset,error_counter_out[2][0:1]);
-	counter_noover counter_noover_3(PRBS_error[7] ,PRBS_reset,error_counter_out[3][0:1]);
-	// boot state machine
-	localparam RESET	         = 3'd0;
-	localparam EN_TX     	     = 3'd1;    
-	localparam EN_RX             = 3'd2;
-	localparam EN_PRBS_CK        = 3'd3;
-	localparam EN_TX_DONE     	 = 3'd4;    
-	localparam EN_RX_DONE        = 3'd5;
-	localparam PRBS_INJECT 	     = 3'd6;
-	localparam PRBS_INJECT_CLEAR = 3'd7;
+	wire  [0:1]error_counter_out_0;
+	wire  [0:1]error_counter_out_1;
+	wire  [0:1]error_counter_out_2;
+	wire  [0:1]error_counter_out_3;
 	
-	reg [0:3] state, nxtState;
+	counter_noover counter_noover_0(
+									.clk(txusrclk2),
+									.trig(PRBS_error[4]),
+									.rst(PRBS_counter_reset),
+									.out(error_counter_out_0[0:1]));
+	counter_noover counter_noover_1(
+									.clk(txusrclk2),
+									.trig(PRBS_error[5]),
+									.rst(PRBS_counter_reset),
+									.out(error_counter_out_1[0:1]));
+	counter_noover counter_noover_2(
+									.clk(txusrclk2),
+									.trig(PRBS_error[6]),
+									.rst(PRBS_counter_reset),
+									.out(error_counter_out_2[0:1]));
+	counter_noover counter_noover_3(
+									.clk(txusrclk2),
+									.trig(PRBS_error[7]),
+									.rst(PRBS_counter_reset),
+									.out(error_counter_out_3[0:1]));
+									
+	// boot state machine
+	localparam RESET	         = 4'd0;
+	localparam EN_TX     	     = 4'd1;    
+	localparam EN_RX             = 4'd2;
+	localparam EN_PRBS_CK        = 4'd3;
+	localparam EN_TX_DONE     	 = 4'd4;    
+	localparam EN_RX_DONE        = 4'd5;
+	localparam PRBS_INJECT 	     = 4'd6;
+	localparam PRBS_INJECT_DONE  = 4'd7;
+	localparam PRBS_INJECT_CLEAR = 4'd8;
+	
+	reg [0:4] state, nxtState;
 	
 	// reset 
-    always @ (posedge clk40)
+    always @ (posedge clk40 or posedge reset or posedge ttc_resync)
 		if (reset|ttc_resync)
 			state <= RESET;
 		else
@@ -174,22 +200,23 @@ module Top(
 		case (state)
 			RESET : begin
 				nxtState <= EN_TX;
-				
+
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b1;
+				PRBS_error_inject <= 1'b0;
+				PRBS_counter_reset <= 1'b1;
 				full_tx_reset[0:7] <= 8'b1111_1111;
-				//full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b1111_1111;
-				//full_rx_reset[0:7] <= 8'b0000_0000;
-
 				led_fp[0:7] <= 8'b001_0000;
 			end 
 			EN_TX : begin
-				if (counter_out >= 6'b1111)
+				if (counter_out >= 6'd20)
 					nxtState <= EN_TX_DONE;
 				
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b0;
+				PRBS_error_inject <= 1'b0;
+				PRBS_counter_reset <= 1'b1;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b1111_1111;
 				led_fp[0:7] <= 8'b0010_0000;
@@ -200,16 +227,20 @@ module Top(
 				
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b1;
+				PRBS_error_inject <= 1'b0;
+				PRBS_counter_reset <= 1'b1;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b1111_1111;
 				led_fp[0:7] <= 8'b0011_0000;
 			end
 			EN_RX : begin
-				if (counter_out >= 6'b1111)
+				if (counter_out >= 6'd40)
 					nxtState <= EN_RX_DONE;
 				
 				PRBS_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b0;
+				PRBS_error_inject <= 1'b0;
+				PRBS_counter_reset <= 1'b1;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				led_fp[0:7] <= 8'b0100_0000;
@@ -219,54 +250,92 @@ module Top(
 					nxtState <= PRBS_INJECT;
 				
 				PRBS_reset <= 1'b0;
-				PRBS_error_inject <= 1'b1;
+				PRBS_error_inject <= 1'b0;
+				PRBS_counter_reset <= 1'b0;
 				boot_up_counter_rst <= 1'b1;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				led_fp[0:7] <= 8'b0101_0000;
 			end
 			PRBS_INJECT :  begin
-				if (counter_out == 6'b11111)
-					nxtState <= PRBS_INJECT_CLEAR;
+				if (counter_out >= 6'd120)
+					nxtState <= PRBS_INJECT_DONE;
 				
 				PRBS_reset <= 1'b0;
 				PRBS_error_inject <= 1'b1;
+				PRBS_counter_reset <= 1'b0;
 				boot_up_counter_rst <= 1'b0;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				led_fp[0:3] <= 4'b0110;
-				led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
+				led_fp[4] <= error_counter_out_0[0];
+				led_fp[5] <= error_counter_out_1[0];
+				led_fp[6] <= error_counter_out_2[0];
+				led_fp[7] <= error_counter_out_3[0]; 
 			end
 			
-			PRBS_INJECT_CLEAR :  begin
-				nxtState <= EN_PRBS_CK;
+			PRBS_INJECT_DONE: begin
+			
+				if (counter_out >= 6'd140)
+					nxtState <= PRBS_INJECT_CLEAR;
 				
 				PRBS_reset <= 1'b1;
-				PRBS_error_inject <= 1'b0;
+				PRBS_error_inject <= 1'b1;
+				PRBS_counter_reset <= 1'b1;
 				boot_up_counter_rst <= 1'b0;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				led_fp[0:3] <= 4'b0111;
-				led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
+				led_fp[4] <= error_counter_out_0[0];
+				led_fp[5] <= error_counter_out_1[0];
+				led_fp[6] <= error_counter_out_2[0];
+				led_fp[7] <= error_counter_out_3[0]; 
+			end
+			
+			PRBS_INJECT_CLEAR :  begin
+				if (counter_out >= 6'd160)
+					nxtState <= EN_PRBS_CK;
+				
+				PRBS_reset <= 1'b0;
+				PRBS_counter_reset <= 1'b0;
+				PRBS_error_inject <= 1'b0;
+				boot_up_counter_rst <= 1'b0;
+				full_tx_reset[0:7] <= 8'b0000_0000;
+				full_rx_reset[0:7] <= 8'b0000_0000;
+				led_fp[0:3] <= 4'b1000;
+				led_fp[4] <= error_counter_out_0[0];
+				led_fp[5] <= error_counter_out_1[0];
+				led_fp[6] <= error_counter_out_2[0];
+				led_fp[7] <= error_counter_out_3[0]; 
 			end
 			
 			EN_PRBS_CK : begin
 				nxtState <= EN_PRBS_CK;
 				
-				PRBS_reset <= 0;
-				if(ttc_bxreset==1)
-					PRBS_reset <= 1;
-					
+				PRBS_reset <= 1'b0;
+				PRBS_counter_reset <= 1'b0| PRBS_counter_reset_user;
 				boot_up_counter_rst <= 1'b0;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
 				PRBS_error_inject <= inject|ttc_bx0_dec; //connect to inject later
 				//led_fp[0:3] <= 4'b1010;
 				//led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
-				led_fp[0:1] <= error_counter_out[0][0:1] | blinker[0:1];
-				led_fp[2:3] <= error_counter_out[1][0:1] | blinker[0:1];
-				led_fp[4:5] <= error_counter_out[2][0:1] | blinker[0:1];
-				led_fp[6:7] <= error_counter_out[3][0:1] | blinker[0:1]; 
+				led_fp[0:1] <= error_counter_out_0[0:1];
+				led_fp[2:3] <= error_counter_out_1[0:1];
+				led_fp[4:5] <= error_counter_out_2[0:1];
+				led_fp[6:7] <= error_counter_out_3[0:1]; 
+			end
+			
+			default : begin
+				nxtState <= EN_TX;
+				
+				PRBS_reset <= 1'b0;
+				PRBS_counter_reset <= 1'b1;
+				boot_up_counter_rst <= 1'b0;
+				PRBS_error_inject <= 1'b0;
+				full_tx_reset[0:7] <= 8'b0000_0000;
+				full_rx_reset[0:7] <= 8'b0000_0000;
+				led_fp[0:7] <= 8'b000_0000;
 			end
 		endcase
 	end

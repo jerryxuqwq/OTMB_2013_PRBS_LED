@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/counter_tb_isim_beh.exe" -prj "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/counter_tb_beh.prj" "work.counter_tb" "work.glbl" 
