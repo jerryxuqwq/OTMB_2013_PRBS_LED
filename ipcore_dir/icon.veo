@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : icon.veo
-// /___/   /\     Timestamp  : Mon Sep 23 01:59:19 Central Daylight Time 2024
+// /___/   /\     Timestamp  : Sun Oct 20 18:46:37 Central Daylight Time 2024
 // \   \  /  \
 //  \___\/\___\
 //
@@ -21,7 +21,8 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 icon YourInstanceName (
-    .CONTROL0(CONTROL0) // INOUT BUS [35:0]
+    .CONTROL0(CONTROL0), // INOUT BUS [35:0]
+    .CONTROL1(CONTROL1) // INOUT BUS [35:0]
 );
 
 // INST_TAG_END ------ End INSTANTIATION Template ---------

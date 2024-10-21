@@ -37,6 +37,7 @@ module ChipScope_TB(
 	wire reset;
 	wire inject;
 	wire slow_clk40;
+	wire clk40;
 Top top_tb(
 	.rxn(rxn),
 	.rxp(rxp),
@@ -50,11 +51,12 @@ Top top_tb(
 	.clk40p(clk40p),
 	.clk40n(clk40n),
 	.slow_clk40(slow_clk40),
+	.clk40(clk40),
 	._ccb_rx(_ccb_rx)
     );
 	
 	wire [35:0] data_vio_control;
-	
+	wire [35:0] data_ila_control;
     data_vio shared_vio_i
     (
 	.CONTROL                        (data_vio_control),
@@ -63,9 +65,16 @@ Top top_tb(
 	.SYNC_OUT							({reset,inject})
     );
 	
+	i_ila ccb_data_mon (
+    .CONTROL(data_ila_control), // INOUT BUS [35:0]
+    .CLK(clk40), // IN
+    .TRIG0(_ccb_rx) // IN BUS [49:0]
+);
+	
     icon i_icon
     (
-      .CONTROL0                         (data_vio_control)
+      .CONTROL0                         (data_vio_control),
+	  .CONTROL1                         (data_ila_control)
     );
 
 endmodule

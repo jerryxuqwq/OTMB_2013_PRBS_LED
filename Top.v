@@ -35,6 +35,7 @@ module Top(
 	input wire reset,
 	input wire inject,
 	output wire slow_clk40,
+	output wire clk40,
 	input wire   [50:0] _ccb_rx
 	
     );
@@ -60,7 +61,7 @@ module Top(
 	
 	// misc wire
 	wire q1_clk1_refclk_i_bufg;
-	wire clk40;
+	//wire clk40;
 	
 
 	wire txoutclk;
@@ -86,6 +87,7 @@ module Top(
 	reg   [33:0]  ccb_rx_iobff_a = {34{1'b1}}; // synthesis attribute IOB of ccb_rx_iobff_a is "true";
 	reg   [50:36] ccb_rx_iobff_b = {15{1'b1}}; // synthesis attribute IOB of ccb_rx_iobff_b is "true";
 	wire [50:0]   ccb_rx;
+	wire [50:0]   ccb_rx_iobff;
 	
 	always @(posedge clk40) begin
 		ccb_rx_iobff_a[33:0]  <= _ccb_rx[33:0];
@@ -95,7 +97,7 @@ module Top(
 	assign ccb_rx[50:0] = ccb_rx_iobff;
 	
 	wire  [7:0]      ccb_cmd;
-	assign ccb_cmd[5:0] = ~ccb_rx[7:2];
+	assign ccb_cmd[5:0] = ccb_rx[7:2];
 	assign  ccb_cmd_strobe =  ccb_rx[10];
 	assign  ccb_evcntres    =  ccb_rx[ 8];
 	assign  ccb_bcntres      =  ccb_rx[ 9];
@@ -117,11 +119,9 @@ module Top(
 	end
 	
 	wire ttc_bx0_dec        = ccb_cmd_dec['h01];  // Bunch Crossing Zero   
-	wire ttc_resync          = ccb_cmd_dec['h03];  // Reset L1 readout buffers and resynchronize optical links   
-	
+	wire ttc_resync          = ccb_cmd_dec['h03];  // Reset L1 readout buffers and resynchronize optical links  
+	wire ttc_bxreset        = ccb_cmd_dec['h32];  // Resets bxn, does not reset l1a count or buffers	
 
-  
-  
 	IBUFDS #(
 		.DIFF_TERM("FALSE"),       // Differential Termination
 		.IBUF_LOW_PWR("TRUE"),     // Low power="TRUE", Highest performance="FALSE"
@@ -145,13 +145,11 @@ module Top(
 			counter_out);
 			
 	genvar j;
-	wire  [0:5]error_counter_out[0:3];
-	generate
-		for(j= 0; j<4; j = j+1) begin
-		counter error_counter(PRBS_error[j+4] ,PRBS_reset,error_counter_out[j][0:5]);
-		end
-	endgenerate
-	
+	wire  [0:1]error_counter_out[0:3];
+	counter_noover counter_noover_0(PRBS_error[4] ,PRBS_reset,error_counter_out[0][0:1]);
+	counter_noover counter_noover_1(PRBS_error[5] ,PRBS_reset,error_counter_out[1][0:1]);
+	counter_noover counter_noover_2(PRBS_error[6] ,PRBS_reset,error_counter_out[2][0:1]);
+	counter_noover counter_noover_3(PRBS_error[7] ,PRBS_reset,error_counter_out[3][0:1]);
 	// boot state machine
 	localparam RESET	         = 3'd0;
 	localparam EN_TX     	     = 3'd1;    
@@ -165,8 +163,8 @@ module Top(
 	reg [0:3] state, nxtState;
 	
 	// reset 
-    always @ (posedge slow_clk40)
-		if (reset)
+    always @ (posedge clk40)
+		if (reset|ttc_resync)
 			state <= RESET;
 		else
 			state <= nxtState;
@@ -187,7 +185,7 @@ module Top(
 				led_fp[0:7] <= 8'b001_0000;
 			end 
 			EN_TX : begin
-				if (counter_out >= 6'b0011)
+				if (counter_out >= 6'b1111)
 					nxtState <= EN_TX_DONE;
 				
 				PRBS_reset <= 1'b1;
@@ -207,7 +205,7 @@ module Top(
 				led_fp[0:7] <= 8'b0011_0000;
 			end
 			EN_RX : begin
-				if (counter_out >= 6'b0011)
+				if (counter_out >= 6'b1111)
 					nxtState <= EN_RX_DONE;
 				
 				PRBS_reset <= 1'b1;
@@ -255,17 +253,20 @@ module Top(
 			EN_PRBS_CK : begin
 				nxtState <= EN_PRBS_CK;
 				
-				PRBS_reset <= 1'b0;
+				PRBS_reset <= 0;
+				if(ttc_bxreset==1)
+					PRBS_reset <= 1;
+					
 				boot_up_counter_rst <= 1'b0;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
-				PRBS_error_inject <= inject; //connect to inject later
+				PRBS_error_inject <= inject|ttc_bx0_dec; //connect to inject later
 				//led_fp[0:3] <= 4'b1010;
 				//led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
 				led_fp[0:1] <= error_counter_out[0][0:1] | blinker[0:1];
 				led_fp[2:3] <= error_counter_out[1][0:1] | blinker[0:1];
 				led_fp[4:5] <= error_counter_out[2][0:1] | blinker[0:1];
-				led_fp[6:7] <= error_counter_out[3][0:1] | blinker[0:1];
+				led_fp[6:7] <= error_counter_out[3][0:1] | blinker[0:1]; 
 			end
 		endcase
 	end

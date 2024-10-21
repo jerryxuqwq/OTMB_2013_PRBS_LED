@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-10-11T16:19:32</DateModified>
+  <DateModified>2024-10-20T21:07:21</DateModified>
   <ModuleName>ChipScope_TB</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2024-10-20T21:04:13</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/iseconfig/ChipScope_TB.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB\</ImplementationReportsDirectory>
   <DateInitialized>2024-10-11T16:19:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="ChipScope_TB_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="ChipScope_TB_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="ChipScope_TB_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="ChipScope_TB_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="ChipScope_TB_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="ChipScope_TB.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
