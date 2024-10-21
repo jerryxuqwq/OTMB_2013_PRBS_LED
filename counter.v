@@ -21,7 +21,7 @@
 module counter(
 	input clk,
 	input rst,
-	output reg [0:5] out
+	output reg [0:31] out
     );
 	
 	always @(posedge clk) begin

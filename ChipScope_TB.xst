@@ -7,7 +7,7 @@ run
 -p xc6vlx240t-2-ff1156
 -top ChipScope_TB
 -opt_mode Speed
--opt_level 1
+-opt_level 0
 -power NO
 -iuc NO
 -keep_hierarchy No

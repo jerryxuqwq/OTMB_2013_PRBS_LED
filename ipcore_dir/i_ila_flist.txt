@@ -1,9 +1,9 @@
 # Output products list for <i_ila>
-_xmsgs\pn_parser.xmsgs
+_xmsgs/pn_parser.xmsgs
 i_ila.asy
 i_ila.cdc
-i_ila.constraints\i_ila.ucf
-i_ila.constraints\i_ila.xdc
+i_ila.constraints/i_ila.ucf
+i_ila.constraints/i_ila.xdc
 i_ila.gise
 i_ila.ncf
 i_ila.ngc

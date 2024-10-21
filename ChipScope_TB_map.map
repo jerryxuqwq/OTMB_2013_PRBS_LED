@@ -1,23 +1,29 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (lin64)
 Xilinx Map Application Log File for Design 'ChipScope_TB'
 
 Design Information
 ------------------
 Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol
-high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
--pr off -lc off -smartguide "C:/Users/Jerry
-Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o
+std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -smartguide
+/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd -power off -o
 ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
 Target Device  : xc6vlx240t
 Target Package : ff1156
 Target Speed   : -2
 Mapper Version : virtex6 -- $Revision: 1.55 $
-Mapped Date    : Mon Oct 21 05:03:10 2024
+Mapped Date    : Mon Oct 21 14:41:28 2024
 
 Loading device for application Rf_Device from file '6vlx240t.nph' in environment
-C:\Xilinx\14.7\ISE_DS\ISE\.
+/data/Xilinx/14.7/ISE_DS/ISE/.
    "ChipScope_TB" is an NCD, version 3.2, device xc6vlx240t, package ff1156,
 speed -2
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
 Mapping design into LUTs...
 Running directed packing...
 Constraining slice packing based on guide NCD.
@@ -30,66 +36,87 @@ WARNING:Pack:2609 - SmartGuide is more efficient (better guiding and runtime)
    when used with explicit timing constraints. If you want the full benefit of
    the SmartGuide flow, please add timing constraints to your design, then
    re-create your guide file.
-Total REAL time at the beginning of Placer: 23 secs 
-Total CPU  time at the beginning of Placer: 23 secs 
+Total REAL time at the beginning of Placer: 32 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
 
 
 Phase 1.7  Design Feasibility Check
-Phase 1.7  Design Feasibility Check (Checksum:7be03e99) REAL time: 23 secs 
+Phase 1.7  Design Feasibility Check (Checksum:5024351) REAL time: 32 secs 
 
 Phase 2.31  Local Placement Optimization
-Phase 2.31  Local Placement Optimization (Checksum:a35e442e) REAL time: 23 secs 
+Phase 2.31  Local Placement Optimization (Checksum:e2ae78f0) REAL time: 32 secs 
 
 Phase 3.37  Local Placement Optimization
-Phase 3.37  Local Placement Optimization (Checksum:a35e442e) REAL time: 23 secs 
+Phase 3.37  Local Placement Optimization (Checksum:e2ae78f0) REAL time: 32 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:a35e442e) REAL time: 26 secs 
+(Checksum:e2ae78f0) REAL time: 36 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:a35e442e) REAL time: 26 secs 
+Phase 5.36  Local Placement Optimization (Checksum:e2ae78f0) REAL time: 36 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:a35e442e) REAL time: 26 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:e2ae78f0) REAL time: 36 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:a35e442e) REAL time: 27 secs 
+Phase 7.3  Local Placement Optimization (Checksum:e2ae78f0) REAL time: 36 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:a35e442e) REAL time: 27 secs 
+Phase 8.5  Local Placement Optimization (Checksum:e2ae78f0) REAL time: 36 secs 
 
 Phase 9.8  Global Placement
-..
-................
-Phase 9.8  Global Placement (Checksum:2f187de2) REAL time: 28 secs 
+...................................
+.....................................
+Phase 9.8  Global Placement (Checksum:24508890) REAL time: 40 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:2f187de2) REAL time: 28 secs 
+Phase 10.5  Local Placement Optimization (Checksum:24508890) REAL time: 40 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:2f187de2) REAL time: 28 secs 
+Phase 11.18  Placement Optimization (Checksum:1aee6f18) REAL time: 47 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:2f187de2) REAL time: 28 secs 
+Phase 12.5  Local Placement Optimization (Checksum:1aee6f18) REAL time: 47 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:cfe09268) REAL time: 28 secs 
+Phase 13.34  Placement Validation (Checksum:d94fe630) REAL time: 47 secs 
 
-Total REAL time to Placer completion: 28 secs 
-Total CPU  time to Placer completion: 28 secs 
+Total REAL time to Placer completion: 47 secs 
+Total CPU  time to Placer completion: 4 secs 
 Running post-placement packing...
 Updating route info ...
 Writing output files...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0202 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<1> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<0> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0170 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net top_tb/_n0239 is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<7> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<3> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net data_ila_control<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<6> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<4> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<5> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net led_fp<2> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete.
    The signal does not drive any load pins in the design.
@@ -117,18 +144,18 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   11
+Number of warnings:   18
 Slice Logic Utilization:
-  Number of Slice Registers:                   641 out of 301,440    1%
-    Number used as Flip Flops:                 627
-    Number used as Latches:                     14
+  Number of Slice Registers:                   703 out of 301,440    1%
+    Number used as Flip Flops:                 701
+    Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        412 out of 150,720    1%
-    Number used as logic:                      276 out of 150,720    1%
-      Number using O6 output only:             143
-      Number using O5 output only:              79
-      Number using O5 and O6:                   54
+  Number of Slice LUTs:                        553 out of 150,720    1%
+    Number used as logic:                      420 out of 150,720    1%
+      Number using O6 output only:             211
+      Number using O5 output only:             127
+      Number using O5 and O6:                   82
       Number used as ROM:                        0
     Number used as Memory:                      98 out of  58,400    1%
       Number used as Dual Port RAM:              0
@@ -137,20 +164,20 @@ Slice Logic Utilization:
         Number using O6 output only:            73
         Number using O5 output only:             1
         Number using O5 and O6:                 24
-    Number used exclusively as route-thrus:     38
-      Number with same-slice register load:     29
-      Number with same-slice carry load:         9
+    Number used exclusively as route-thrus:     35
+      Number with same-slice register load:     25
+      Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   318 out of  37,680    1%
-  Number of LUT Flip Flop pairs used:          717
-    Number with an unused Flip Flop:           158 out of     717   22%
-    Number with an unused LUT:                 305 out of     717   42%
-    Number of fully used LUT-FF pairs:         254 out of     717   35%
-    Number of unique control sets:             124
+  Number of occupied Slices:                   401 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          875
+    Number with an unused Flip Flop:           252 out of     875   28%
+    Number with an unused LUT:                 322 out of     875   36%
+    Number of fully used LUT-FF pairs:         301 out of     875   34%
+    Number of unique control sets:             125
     Number of slice register sites lost
-      to control set restrictions:             749 out of 301,440    1%
+      to control set restrictions:             759 out of 301,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -170,12 +197,12 @@ IO Utilization:
       Number of LOCed OPADs:                    16 out of      16  100%
 
 Specific Feature Utilization:
-  Number of RAMB36E1/FIFO36E1s:                  3 out of     416    1%
-    Number using RAMB36E1 only:                  3
+  Number of RAMB36E1/FIFO36E1s:                204 out of     416   49%
+    Number using RAMB36E1 only:                204
     Number using FIFO36E1 only:                  0
   Number of RAMB18E1/FIFO18E1s:                  0 out of     832    0%
-  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
-    Number used as BUFGs:                        5
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
     Number used as BUFGCTRLs:                    0
   Number of ILOGICE1/ISERDESE1s:                 7 out of     720    1%
     Number used as ILOGICE1s:                    7
@@ -201,11 +228,11 @@ Specific Feature Utilization:
   Number of TEMAC_SINGLEs:                       0 out of       4    0%
 
   Number of RPM macros:            4
-Average Fanout of Non-Clock Nets:                2.41
+Average Fanout of Non-Clock Nets:                13.36
 
-Peak Memory Usage:  5182 MB
-Total REAL time to MAP completion:  30 secs 
-Total CPU time to MAP completion:   30 secs 
+Peak Memory Usage:  1581 MB
+Total REAL time to MAP completion:  50 secs 
+Total CPU time to MAP completion:   4 secs 
 
 Mapping completed.
 See MAP report file "ChipScope_TB_map.mrp" for details.

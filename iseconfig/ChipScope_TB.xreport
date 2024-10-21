@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-10-21T04:52:45</DateModified>
+  <DateModified>2024-10-21T14:31:10</DateModified>
   <ModuleName>ChipScope_TB</ModuleName>
-  <SummaryTimeStamp>2024-10-20T21:04:13</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/iseconfig/ChipScope_TB.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2024-10-21T13:03:59</SummaryTimeStamp>
+  <SavedFilePath>/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/iseconfig/ChipScope_TB.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/</ImplementationReportsDirectory>
   <DateInitialized>2024-10-11T16:19:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -38,6 +38,9 @@ module ChipScope_TB(
 	wire inject;
 	wire slow_clk40;
 	wire clk40;
+		wire txusrclk2;
+		wire [0:7]PRBS_error;
+		wire [0:3]state_status;
 Top top_tb(
 	.rxn(rxn),
 	.rxp(rxp),
@@ -52,7 +55,10 @@ Top top_tb(
 	.clk40n(clk40n),
 	.slow_clk40(slow_clk40),
 	.clk40(clk40),
-	._ccb_rx(_ccb_rx)
+	._ccb_rx(_ccb_rx),
+	.txusrclk2(txusrclk2),
+	.PRBS_error(PRBS_error),
+	.state_status(state_status)
     );
 	
 	wire [35:0] data_vio_control;
@@ -60,15 +66,15 @@ Top top_tb(
     data_vio shared_vio_i
     (
 	.CONTROL                        (data_vio_control),
-	.CLK							(slow_clk40),
+	.CLK							(txusrclk2),
 	.SYNC_IN							(led_fp),
 	.SYNC_OUT							({reset,inject})
     );
 	
 	i_ila ccb_data_mon (
     .CONTROL(data_ila_control), // INOUT BUS [35:0]
-    .CLK(clk40), // IN
-    .TRIG0(_ccb_rx) // IN BUS [49:0]
+    .CLK(txusrclk2), // IN
+    .TRIG0({state_status,PRBS_error}) // IN BUS [49:0]
 );
 	
     icon i_icon

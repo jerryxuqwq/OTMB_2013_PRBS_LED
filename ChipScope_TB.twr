@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+/data/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2
 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr
 ChipScope_TB.pcf -ucf otmb2019.ucf
 
@@ -37,56 +37,13 @@ Setup/Hold to clock clk40n
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-_ccb_rx<0>  |    0.371(R)|      FAST  |    0.604(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<1>  |    0.815(R)|      SLOW  |    0.063(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<2>  |    0.950(R)|      SLOW  |    0.137(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<3>  |    0.911(R)|      SLOW  |    0.673(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<4>  |    0.976(R)|      SLOW  |    1.002(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<5>  |    0.893(R)|      SLOW  |    0.881(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<6>  |    1.016(R)|      SLOW  |    0.142(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<7>  |    0.963(R)|      SLOW  |    0.160(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<8>  |   -0.451(R)|      FAST  |    1.849(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<9>  |    1.005(R)|      SLOW  |   -0.093(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<10> |    0.898(R)|      SLOW  |    0.408(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<11> |    0.471(R)|      FAST  |    0.495(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<12> |    0.641(R)|      FAST  |    0.258(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<13> |    1.484(R)|      SLOW  |   -0.513(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<14> |   -0.673(R)|      FAST  |    2.089(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<15> |   -0.744(R)|      FAST  |    2.195(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<16> |   -0.659(R)|      FAST  |    2.086(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<17> |    1.343(R)|      SLOW  |   -0.384(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<18> |    0.164(R)|      FAST  |    0.923(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<19> |    0.850(R)|      SLOW  |    0.032(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<20> |    0.822(R)|      SLOW  |    0.054(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<21> |    0.408(R)|      FAST  |    0.605(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<22> |    0.897(R)|      SLOW  |   -0.003(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<23> |    0.738(R)|      SLOW  |    0.131(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<24> |    0.840(R)|      SLOW  |    0.032(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<25> |    0.635(R)|      FAST  |    0.271(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<26> |    0.324(R)|      FAST  |    0.713(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<27> |    0.681(R)|      FAST  |    0.188(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<28> |    0.586(R)|      FAST  |    0.327(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<29> |    0.376(R)|      FAST  |    0.634(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<30> |    0.757(R)|      FAST  |    0.135(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<31> |    0.437(R)|      FAST  |    0.572(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<32> |    0.785(R)|      FAST  |    0.092(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<33> |    1.556(R)|      SLOW  |   -0.560(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<34> |    0.370(R)|      FAST  |    0.625(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<35> |    0.281(R)|      FAST  |    0.744(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<36> |    0.497(R)|      FAST  |    0.545(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<37> |    0.941(R)|      FAST  |   -0.037(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<38> |    0.537(R)|      FAST  |    0.489(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<39> |    0.968(R)|      FAST  |   -0.064(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<40> |    0.833(R)|      FAST  |    0.087(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<41> |    1.064(R)|      FAST  |   -0.185(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<42> |    0.623(R)|      FAST  |    0.354(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<43> |    0.881(R)|      FAST  |    0.050(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<44> |    1.218(R)|      SLOW  |   -0.310(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<45> |    1.216(R)|      SLOW  |   -0.308(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<46> |    0.913(R)|      FAST  |   -0.027(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<47> |    1.017(R)|      FAST  |   -0.110(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<48> |    1.085(R)|      SLOW  |   -0.197(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<49> |    0.734(R)|      FAST  |    0.224(R)|      SLOW  |clk40_BUFG        |   0.000|
+_ccb_rx<2>  |    0.950(R)|      SLOW  |    0.137(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<3>  |    0.911(R)|      SLOW  |    0.179(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<4>  |    0.976(R)|      SLOW  |    0.154(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<5>  |    0.893(R)|      SLOW  |    0.197(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<6>  |    0.957(R)|      SLOW  |    0.142(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<7>  |    0.936(R)|      SLOW  |    0.160(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<10> |    0.898(R)|      SLOW  |    0.192(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock clk40p
@@ -94,56 +51,13 @@ Setup/Hold to clock clk40p
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-_ccb_rx<0>  |    0.371(R)|      FAST  |    0.604(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<1>  |    0.815(R)|      SLOW  |    0.063(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<2>  |    0.950(R)|      SLOW  |    0.137(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<3>  |    0.911(R)|      SLOW  |    0.673(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<4>  |    0.976(R)|      SLOW  |    1.002(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<5>  |    0.893(R)|      SLOW  |    0.881(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<6>  |    1.016(R)|      SLOW  |    0.142(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<7>  |    0.963(R)|      SLOW  |    0.160(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<8>  |   -0.451(R)|      FAST  |    1.849(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<9>  |    1.005(R)|      SLOW  |   -0.093(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<10> |    0.898(R)|      SLOW  |    0.408(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<11> |    0.471(R)|      FAST  |    0.495(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<12> |    0.641(R)|      FAST  |    0.258(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<13> |    1.484(R)|      SLOW  |   -0.513(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<14> |   -0.673(R)|      FAST  |    2.089(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<15> |   -0.744(R)|      FAST  |    2.195(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<16> |   -0.659(R)|      FAST  |    2.086(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<17> |    1.343(R)|      SLOW  |   -0.384(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<18> |    0.164(R)|      FAST  |    0.923(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<19> |    0.850(R)|      SLOW  |    0.032(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<20> |    0.822(R)|      SLOW  |    0.054(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<21> |    0.408(R)|      FAST  |    0.605(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<22> |    0.897(R)|      SLOW  |   -0.003(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<23> |    0.738(R)|      SLOW  |    0.131(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<24> |    0.840(R)|      SLOW  |    0.032(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<25> |    0.635(R)|      FAST  |    0.271(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<26> |    0.324(R)|      FAST  |    0.713(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<27> |    0.681(R)|      FAST  |    0.188(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<28> |    0.586(R)|      FAST  |    0.327(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<29> |    0.376(R)|      FAST  |    0.634(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<30> |    0.757(R)|      FAST  |    0.135(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<31> |    0.437(R)|      FAST  |    0.572(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<32> |    0.785(R)|      FAST  |    0.092(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<33> |    1.556(R)|      SLOW  |   -0.560(R)|      FAST  |clk40_BUFG        |   0.000|
-_ccb_rx<34> |    0.370(R)|      FAST  |    0.625(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<35> |    0.281(R)|      FAST  |    0.744(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<36> |    0.497(R)|      FAST  |    0.545(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<37> |    0.941(R)|      FAST  |   -0.037(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<38> |    0.537(R)|      FAST  |    0.489(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<39> |    0.968(R)|      FAST  |   -0.064(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<40> |    0.833(R)|      FAST  |    0.087(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<41> |    1.064(R)|      FAST  |   -0.185(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<42> |    0.623(R)|      FAST  |    0.354(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<43> |    0.881(R)|      FAST  |    0.050(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<44> |    1.218(R)|      SLOW  |   -0.310(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<45> |    1.216(R)|      SLOW  |   -0.308(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<46> |    0.913(R)|      FAST  |   -0.027(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<47> |    1.017(R)|      FAST  |   -0.110(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<48> |    1.085(R)|      SLOW  |   -0.197(R)|      SLOW  |clk40_BUFG        |   0.000|
-_ccb_rx<49> |    0.734(R)|      FAST  |    0.224(R)|      SLOW  |clk40_BUFG        |   0.000|
+_ccb_rx<2>  |    0.950(R)|      SLOW  |    0.137(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<3>  |    0.911(R)|      SLOW  |    0.179(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<4>  |    0.976(R)|      SLOW  |    0.154(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<5>  |    0.893(R)|      SLOW  |    0.197(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<6>  |    0.957(R)|      SLOW  |    0.142(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<7>  |    0.936(R)|      SLOW  |    0.160(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
+_ccb_rx<10> |    0.898(R)|      SLOW  |    0.192(R)|      FAST  |top_tb/clk40_BUFG |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk40n
@@ -151,8 +65,8 @@ Clock to Setup on destination clock clk40n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk40n         |    5.607|         |         |         |
-clk40p         |    5.607|         |         |         |
+clk40n         |    5.269|         |         |         |
+clk40p         |    5.269|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk40p
@@ -160,37 +74,19 @@ Clock to Setup on destination clock clk40p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk40n         |    5.607|         |         |         |
-clk40p         |    5.607|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock clk160n
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk160n        |    0.640|         |         |         |
-clk160p        |    0.640|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock clk160p
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk160n        |    0.640|         |         |         |
-clk160p        |    0.640|         |         |         |
+clk40n         |    5.269|         |         |         |
+clk40p         |    5.269|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Oct 21 05:04:36 2024 
+Analysis completed Mon Oct 21 14:43:30 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 5017 MB
+Peak Memory Usage: 856 MB
 
 
 

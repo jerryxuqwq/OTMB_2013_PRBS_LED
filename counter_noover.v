@@ -21,7 +21,7 @@
 
 module counter_noover (
     input clk,            // Clock signal
-	input enable,         // Enable signal
+	 input enable,         // Enable signal
     input rst,          // Active-high Reset signal
     output reg [1:0] out    // 2-bit output counter
 );
@@ -29,12 +29,13 @@ module counter_noover (
     // Always block triggered on clock edge or reset
     always @(posedge clk or posedge rst) begin
         if (rst) begin
-            out <= 2'b00;  // Asynchronous reset: reset the counter to 0
+            out <= 2'b00;  
         end
         else if (enable) begin
-            if (out < 2'b11) begin
-                out <= out + 1;  // Increment the counter when enabled, but limit to 2'b11
-            end
+            if (out == 2'b11)
+                out <= 2'b11 ;
+				else
+					out <= out + 2'b01;  // Increment the counter when enabled, but limit to 2'b11
         end
     end
 

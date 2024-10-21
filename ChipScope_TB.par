@@ -1,19 +1,24 @@
-Release 14.7 par P.20131013 (nt64)
+Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-7PSUJGG::  Mon Oct 21 05:03:42 2024
+cmslab1.physics.tamu.edu::  Mon Oct 21 14:42:19 2024
 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry
-Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off
+par -w -intstyle ise -ol std -smartguide
+/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd -mt off
 ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 
 
 Constraints file: ChipScope_TB.pcf.
-Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment /data/Xilinx/14.7/ISE_DS/ISE/.
    "ChipScope_TB" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -2
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
 
-Loading database for application par from file: "C:/Users/Jerry
-Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd"
+----------------------------------------------------------------------
+
+Loading database for application par from file: "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd"
    "ChipScope_TB" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -2
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -36,16 +41,16 @@ INFO:Par:402 - SmartGuide was run during Map. Since all guiding (mapping, packin
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   641 out of 301,440    1%
-    Number used as Flip Flops:                 627
-    Number used as Latches:                     14
+  Number of Slice Registers:                   703 out of 301,440    1%
+    Number used as Flip Flops:                 701
+    Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        412 out of 150,720    1%
-    Number used as logic:                      276 out of 150,720    1%
-      Number using O6 output only:             143
-      Number using O5 output only:              79
-      Number using O5 and O6:                   54
+  Number of Slice LUTs:                        553 out of 150,720    1%
+    Number used as logic:                      420 out of 150,720    1%
+      Number using O6 output only:             211
+      Number using O5 output only:             127
+      Number using O5 and O6:                   82
       Number used as ROM:                        0
     Number used as Memory:                      98 out of  58,400    1%
       Number used as Dual Port RAM:              0
@@ -54,17 +59,17 @@ Slice Logic Utilization:
         Number using O6 output only:            73
         Number using O5 output only:             1
         Number using O5 and O6:                 24
-    Number used exclusively as route-thrus:     38
-      Number with same-slice register load:     29
-      Number with same-slice carry load:         9
+    Number used exclusively as route-thrus:     35
+      Number with same-slice register load:     25
+      Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   318 out of  37,680    1%
-  Number of LUT Flip Flop pairs used:          717
-    Number with an unused Flip Flop:           158 out of     717   22%
-    Number with an unused LUT:                 305 out of     717   42%
-    Number of fully used LUT-FF pairs:         254 out of     717   35%
+  Number of occupied Slices:                   401 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          875
+    Number with an unused Flip Flop:           252 out of     875   28%
+    Number with an unused LUT:                 322 out of     875   36%
+    Number of fully used LUT-FF pairs:         301 out of     875   34%
     Number of slice register sites lost
       to control set restrictions:               0 out of 301,440    0%
 
@@ -86,12 +91,12 @@ IO Utilization:
       Number of LOCed OPADs:                    16 out of      16  100%
 
 Specific Feature Utilization:
-  Number of RAMB36E1/FIFO36E1s:                  3 out of     416    1%
-    Number using RAMB36E1 only:                  3
+  Number of RAMB36E1/FIFO36E1s:                204 out of     416   49%
+    Number using RAMB36E1 only:                204
     Number using FIFO36E1 only:                  0
   Number of RAMB18E1/FIFO18E1s:                  0 out of     832    0%
-  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
-    Number used as BUFGs:                        5
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
     Number used as BUFGCTRLs:                    0
   Number of ILOGICE1/ISERDESE1s:                 7 out of     720    1%
     Number used as ILOGICE1s:                    7
@@ -117,13 +122,56 @@ Specific Feature Utilization:
   Number of TEMAC_SINGLEs:                       0 out of       4    0%
 
 
-Overall effort level (-ol):   High 
-Router effort level (-rl):    High 
+Overall effort level (-ol):   Standard 
+Router effort level (-rl):    Standard 
 
-Starting initial Timing Analysis.  REAL time: 10 secs 
-Finished initial Timing Analysis.  REAL time: 10 secs 
+Starting initial Timing Analysis.  REAL time: 14 secs 
+Finished initial Timing Analysis.  REAL time: 14 secs 
 
+WARNING:Par:288 - The signal _ccb_rx<11>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<21>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<22>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<30>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<23>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<31>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<16>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<24>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<32>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<40>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<25>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<33>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<41>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<26>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<34>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<42>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal _ccb_rx<50>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<27>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<35>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<43>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<28>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<36>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<44>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<29>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<37>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<45>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<38>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<46>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<39>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<47>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<48>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<49>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<8>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal _ccb_rx<9>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to route this
    signal.
 WARNING:Par:288 - The signal shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to route this
@@ -141,27 +189,27 @@ WARNING:Par:288 - The signal shared_vio_i/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL
 Starting Router
 
 
-Phase  1  : 6251 unrouted;      REAL time: 12 secs 
+Phase  1  : 43848 unrouted;      REAL time: 16 secs 
 
-Phase  2  : 5101 unrouted;      REAL time: 12 secs 
+Phase  2  : 20636 unrouted;      REAL time: 17 secs 
 
-Phase  3  : 48 unrouted;      REAL time: 32 secs 
+Phase  3  : 167 unrouted;      REAL time: 38 secs 
 
-Phase  4  : 48 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Phase  4  : 597 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 51 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 51 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 51 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 51 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
-Total REAL time to Router completion: 39 secs 
-Total CPU time to Router completion: 39 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 53 secs 
+Total REAL time to Router completion: 53 secs 
+Total CPU time to Router completion: 4 secs 
 
   SmartGuide Results
   ------------------
@@ -169,15 +217,15 @@ Total CPU time to Router completion: 39 secs
   report accurately reflects the differences between the input design
   and the guide design.
 
-  Number of Components in the input design    |    443
-    Number of guided Components               |    435 out of    443  98.2%
-    Number of re-implemented Components       |      2 out of    443   0.5%
-    Number of new/changed Components          |      6 out of    443   1.4%
-  Number of Nets in the input design          |   1023
-    Number of guided Nets                     |    963 out of   1023  94.1%
-    Number of partially guided Nets           |      9 out of   1023   0.9%
-    Number of re-routed Nets                  |     44 out of   1023   4.3%
-    Number of new/changed Nets                |      7 out of   1023   0.7%
+  Number of Components in the input design    |    726
+    Number of guided Components               |    426 out of    726  58.7%
+    Number of re-implemented Components       |     18 out of    726   2.5%
+    Number of new/changed Components          |    282 out of    726  38.8%
+  Number of Nets in the input design          |   1330
+    Number of guided Nets                     |    773 out of   1330  58.1%
+    Number of partially guided Nets           |     74 out of   1330   5.6%
+    Number of re-routed Nets                  |    211 out of   1330  15.9%
+    Number of new/changed Nets                |    272 out of   1330  20.5%
 
 Partition Implementation Status
 -------------------------------
@@ -188,7 +236,7 @@ Partition Implementation Status
 
 Generating "PAR" statistics.
 INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
-Timing Score: 0 (Setup: 0, Hold: 0)
+Timing Score: 177494 (Setup: 177494, Hold: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -197,21 +245,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net dat | SETUP       |         N/A|     4.618ns|     N/A|           0
+  Autotimespec constraint for clock net dat | SETUP       |         N/A|    10.663ns|     N/A|       10294
   a_ila_control<0>                          | HOLD        |     0.102ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net top | SETUP       |         N/A|     3.572ns|     N/A|           0
-  _tb/txusrclk2                             | HOLD        |     0.114ns|            |       0|           0
+  Autotimespec constraint for clock net top | SETUP       |         N/A|     5.269ns|     N/A|           0
+  _tb/clk40_BUFG                            | HOLD        |     0.099ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net top | SETUP       |         N/A|     2.312ns|     N/A|           0
-  _tb/clk40_display/clock_out_BUFG          | HOLD        |     0.095ns|            |       0|           0
+  Autotimespec constraint for clock net txu | SETUP       |         N/A|    10.181ns|     N/A|      167200
+  srclk2                                    | HOLD        |     0.016ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net top | SETUP       |         N/A|     0.640ns|     N/A|           0
-  _tb/q1_clk1_refclk_i_bufg                 | HOLD        |     0.111ns|            |       0|           0
-                                            | MINPERIOD   |         N/A|     0.728ns|     N/A|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.607ns|     N/A|           0
-  40_BUFG                                   | HOLD        |     0.057ns|            |       0|           0
+  Autotimespec constraint for clock net top | SETUP       |         N/A|     1.673ns|     N/A|           0
+  _tb/clk40_display/clock_out_BUFG          | HOLD        |     0.143ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net i_i | SETUP       |         N/A|     0.577ns|     N/A|           0
   con/U0/iUPDATE_OUT                        | HOLD        |     0.131ns|            |       0|           0
@@ -219,7 +263,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
 
 
-All constraints were met.
+2 constraints not met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 
@@ -231,18 +275,18 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 8 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 42 secs 
-Total CPU time to PAR completion: 42 secs 
+Total REAL time to PAR completion: 56 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  4920 MB
+Peak Memory Usage:  1254 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 11
+Number of warning messages: 54
 Number of info messages: 3
 
 Writing design to file ChipScope_TB.ncd

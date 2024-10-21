@@ -1,168 +1,99 @@
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -timing -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol high -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol high -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol high -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol high -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol high -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol high -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
-trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
-bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-xst -intstyle ise -ifn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.xst" -ofn "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 "ChipScope_TB.ngc" ChipScope_TB.ngd  
-map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
-par -w -intstyle ise -ol high -smartguide "C:/Users/Jerry Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+xst -intstyle ise -ifn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.xst" -ofn "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc otmb2019.ucf -p xc6vlx240t-ff1156-2 ChipScope_TB.ngc ChipScope_TB.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-2 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -power off -o ChipScope_TB_map.ncd ChipScope_TB.ngd ChipScope_TB.pcf 
+par -w -intstyle ise -ol std -smartguide "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_guide.ncd" -mt off ChipScope_TB_map.ncd ChipScope_TB.ncd ChipScope_TB.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ChipScope_TB.twx ChipScope_TB.ncd -o ChipScope_TB.twr ChipScope_TB.pcf -ucf otmb2019.ucf 
 bitgen -intstyle ise -f ChipScope_TB.ut ChipScope_TB.ncd 
