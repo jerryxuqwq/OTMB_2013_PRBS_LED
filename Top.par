@@ -1,24 +1,19 @@
-Release 14.7 par P.20131013 (lin64)
+Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-cmslab1.physics.tamu.edu::  Mon Oct 21 15:35:48 2024
+DESKTOP-7PSUJGG::  Fri Oct 25 00:47:46 2024
 
-par -w -intstyle ise -ol std -smartguide
-/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top_guide.ncd -mt off Top_map.ncd
+par -w -intstyle ise -ol std -smartguide "C:/Users/Jerry
+Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/Top_guide.ncd" -mt off Top_map.ncd
 Top.ncd Top.pcf 
 
 
 Constraints file: Top.pcf.
-Loading device for application Rf_Device from file '6vlx240t.nph' in environment /data/Xilinx/14.7/ISE_DS/ISE/.
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "Top" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -2
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
-to function, but you no longer qualify for Xilinx software updates or new releases.
 
-----------------------------------------------------------------------
-
-Loading database for application par from file: "/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top_guide.ncd"
+Loading database for application par from file: "C:/Users/Jerry
+Xu/Desktop/OTMB/OTMB_2013_PRBS_Checker_USB/Top_guide.ncd"
    "Top" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -2
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -41,29 +36,35 @@ INFO:Par:402 - SmartGuide was run during Map. Since all guiding (mapping, packin
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    76 out of 301,440    1%
-    Number used as Flip Flops:                  75
+  Number of Slice Registers:                    79 out of 301,440    1%
+    Number used as Flip Flops:                  78
     Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        131 out of 150,720    1%
+  Number of Slice LUTs:                        134 out of 150,720    1%
     Number used as logic:                      129 out of 150,720    1%
       Number using O6 output only:              35
       Number using O5 output only:              50
       Number using O5 and O6:                   44
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of  58,400    0%
+    Number used as Memory:                       3 out of  58,400    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             3
+        Number using O6 output only:             3
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
     Number used exclusively as route-thrus:      2
       Number with same-slice register load:      0
       Number with same-slice carry load:         2
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    50 out of  37,680    1%
-  Number of LUT Flip Flop pairs used:          131
-    Number with an unused Flip Flop:            60 out of     131   45%
-    Number with an unused LUT:                   0 out of     131    0%
-    Number of fully used LUT-FF pairs:          71 out of     131   54%
+  Number of occupied Slices:                    55 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          134
+    Number with an unused Flip Flop:            60 out of     134   44%
+    Number with an unused LUT:                   0 out of     134    0%
+    Number of fully used LUT-FF pairs:          74 out of     134   55%
     Number of slice register sites lost
       to control set restrictions:               0 out of 301,440    0%
 
@@ -114,33 +115,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   Standard 
 Router effort level (-rl):    Standard 
 
-Starting initial Timing Analysis.  REAL time: 9 secs 
-Finished initial Timing Analysis.  REAL time: 9 secs 
+Starting initial Timing Analysis.  REAL time: 10 secs 
+Finished initial Timing Analysis.  REAL time: 10 secs 
 
 Starting Router
 
 
-Phase  1  : 5596 unrouted;      REAL time: 12 secs 
+Phase  1  : 5661 unrouted;      REAL time: 12 secs 
 
-Phase  2  : 5202 unrouted;      REAL time: 12 secs 
+Phase  2  : 5257 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 52 unrouted;      REAL time: 47 secs 
+Phase  3  : 65 unrouted;      REAL time: 1 mins 1 secs 
 
-Phase  4  : 52 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
+Phase  4  : 65 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 52 secs 
-Total REAL time to Router completion: 52 secs 
-Total CPU time to Router completion: 46 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
+Total REAL time to Router completion: 1 mins 8 secs 
+Total CPU time to Router completion: 1 mins 8 secs 
 
   SmartGuide Results
   ------------------
@@ -148,15 +149,15 @@ Total CPU time to Router completion: 46 secs
   report accurately reflects the differences between the input design
   and the guide design.
 
-  Number of Components in the input design    |    135
-    Number of guided Components               |    119 out of    135  88.1%
-    Number of re-implemented Components       |      4 out of    135   3.0%
-    Number of new/changed Components          |     12 out of    135   8.9%
-  Number of Nets in the input design          |    209
-    Number of guided Nets                     |    134 out of    209  64.1%
-    Number of partially guided Nets           |     33 out of    209  15.8%
-    Number of re-routed Nets                  |     18 out of    209   8.6%
-    Number of new/changed Nets                |     24 out of    209  11.5%
+  Number of Components in the input design    |    140
+    Number of guided Components               |    116 out of    140  82.9%
+    Number of re-implemented Components       |      7 out of    140   5.0%
+    Number of new/changed Components          |     17 out of    140  12.1%
+  Number of Nets in the input design          |    212
+    Number of guided Nets                     |    122 out of    212  57.5%
+    Number of partially guided Nets           |     44 out of    212  20.8%
+    Number of re-routed Nets                  |     25 out of    212  11.8%
+    Number of new/changed Nets                |     21 out of    212   9.9%
 
 Partition Implementation Status
 -------------------------------
@@ -176,14 +177,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.493ns|     N/A|           0
-  40_BUFG                                   | HOLD        |     0.122ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.433ns|     N/A|           0
+  40_BUFG                                   | HOLD        |     0.119ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net txu | SETUP       |         N/A|     3.270ns|     N/A|           0
+  Autotimespec constraint for clock net txu | SETUP       |         N/A|     3.272ns|     N/A|           0
   srclk2                                    | HOLD        |     0.085ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.501ns|     N/A|           0
-  40_display/clock_out_BUFG                 | HOLD        |     0.127ns|            |       0|           0
+  40_display/clock_out_BUFG                 | HOLD        |     0.123ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -199,10 +200,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 55 secs 
-Total CPU time to PAR completion: 49 secs 
+Total REAL time to PAR completion: 1 mins 11 secs 
+Total CPU time to PAR completion: 1 mins 10 secs 
 
-Peak Memory Usage:  1197 MB
+Peak Memory Usage:  4871 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

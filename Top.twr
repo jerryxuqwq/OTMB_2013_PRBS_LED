@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/data/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf
 
 Design file:              Top.ncd
@@ -43,7 +43,7 @@ _ccb_rx<5>  |    1.163(R)|      SLOW  |    0.006(R)|      FAST  |clk40_BUFG     
 _ccb_rx<6>  |    1.177(R)|      SLOW  |   -0.006(R)|      FAST  |clk40_BUFG        |   0.000|
 _ccb_rx<7>  |    1.168(R)|      SLOW  |    0.002(R)|      FAST  |clk40_BUFG        |   0.000|
 _ccb_rx<10> |    1.204(R)|      SLOW  |   -0.020(R)|      FAST  |clk40_BUFG        |   0.000|
-reset       |    2.815(R)|      SLOW  |   -1.139(R)|      SLOW  |clk40_BUFG        |   0.000|
+reset       |    2.815(R)|      SLOW  |   -1.213(R)|      FAST  |clk40_BUFG        |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock clk40p
@@ -58,7 +58,7 @@ _ccb_rx<5>  |    1.163(R)|      SLOW  |    0.006(R)|      FAST  |clk40_BUFG     
 _ccb_rx<6>  |    1.177(R)|      SLOW  |   -0.006(R)|      FAST  |clk40_BUFG        |   0.000|
 _ccb_rx<7>  |    1.168(R)|      SLOW  |    0.002(R)|      FAST  |clk40_BUFG        |   0.000|
 _ccb_rx<10> |    1.204(R)|      SLOW  |   -0.020(R)|      FAST  |clk40_BUFG        |   0.000|
-reset       |    2.815(R)|      SLOW  |   -1.139(R)|      SLOW  |clk40_BUFG        |   0.000|
+reset       |    2.815(R)|      SLOW  |   -1.213(R)|      FAST  |clk40_BUFG        |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk40n to Pad
@@ -66,14 +66,14 @@ Clock clk40n to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-led_fp<0>   |         8.976(R)|      SLOW  |         4.114(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<1>   |         8.748(R)|      SLOW  |         4.254(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<2>   |         8.849(R)|      SLOW  |         4.173(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<3>   |         9.646(R)|      SLOW  |         4.751(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<4>   |        10.080(R)|      SLOW  |         4.693(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<5>   |         9.906(R)|      SLOW  |         4.828(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<6>   |         9.981(R)|      SLOW  |         4.657(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<7>   |        10.001(R)|      SLOW  |         4.658(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<0>   |         8.973(R)|      SLOW  |         4.143(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<1>   |         8.745(R)|      SLOW  |         4.194(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<2>   |         8.876(R)|      SLOW  |         4.053(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<3>   |         9.656(R)|      SLOW  |         4.740(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<4>   |        10.095(R)|      SLOW  |         4.698(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<5>   |         9.922(R)|      SLOW  |         4.834(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<6>   |         9.794(R)|      SLOW  |         4.646(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<7>   |        10.016(R)|      SLOW  |         4.691(R)|      FAST  |clk40_BUFG        |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock clk40p to Pad
@@ -81,14 +81,14 @@ Clock clk40p to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-led_fp<0>   |         8.976(R)|      SLOW  |         4.114(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<1>   |         8.748(R)|      SLOW  |         4.254(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<2>   |         8.849(R)|      SLOW  |         4.173(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<3>   |         9.646(R)|      SLOW  |         4.751(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<4>   |        10.080(R)|      SLOW  |         4.693(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<5>   |         9.906(R)|      SLOW  |         4.828(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<6>   |         9.981(R)|      SLOW  |         4.657(R)|      FAST  |clk40_BUFG        |   0.000|
-led_fp<7>   |        10.001(R)|      SLOW  |         4.658(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<0>   |         8.973(R)|      SLOW  |         4.143(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<1>   |         8.745(R)|      SLOW  |         4.194(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<2>   |         8.876(R)|      SLOW  |         4.053(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<3>   |         9.656(R)|      SLOW  |         4.740(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<4>   |        10.095(R)|      SLOW  |         4.698(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<5>   |         9.922(R)|      SLOW  |         4.834(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<6>   |         9.794(R)|      SLOW  |         4.646(R)|      FAST  |clk40_BUFG        |   0.000|
+led_fp<7>   |        10.016(R)|      SLOW  |         4.691(R)|      FAST  |clk40_BUFG        |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk40n
@@ -96,8 +96,8 @@ Clock to Setup on destination clock clk40n
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk40n         |    4.493|         |         |         |
-clk40p         |    4.493|         |         |         |
+clk40n         |    4.433|         |         |         |
+clk40p         |    4.433|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk40p
@@ -105,19 +105,19 @@ Clock to Setup on destination clock clk40p
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk40n         |    4.493|         |         |         |
-clk40p         |    4.493|         |         |         |
+clk40n         |    4.433|         |         |         |
+clk40p         |    4.433|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Oct 21 15:36:54 2024 
+Analysis completed Fri Oct 25 00:49:09 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 804 MB
+Peak Memory Usage: 4997 MB
 
 
 

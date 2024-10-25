@@ -133,6 +133,27 @@ module Top(
 	wire ttc_resync          = ccb_cmd_dec['h03];  // Reset L1 readout buffers and resynchronize optical links  
 	wire ttc_bxreset        = ccb_cmd_dec['h32];  // Resets bxn, does not reset l1a count or buffers	
 
+	reg ttc_bx0_dec_sync1;
+	reg ttc_resync_sync1;
+	reg ttc_bxreset_sync1;
+	
+	reg ttc_bx0_dec_sync;
+	reg ttc_resync_sync;
+	reg ttc_bxreset_sync;
+	
+	// Cross time domain sync, go from Clk40 to txusrclk2
+	always @(posedge txusrclk2)
+	begin
+	
+	ttc_bx0_dec_sync1 <= ttc_bx0_dec;
+	ttc_resync_sync1  <= ttc_resync ;
+	ttc_bxreset_sync1 <=  ttc_bxreset;
+	 
+    ttc_bx0_dec_sync  <= ttc_bx0_dec_sync1;
+	ttc_resync_sync   <= ttc_resync_sync1;
+	ttc_bxreset_sync  <= ttc_bxreset_sync1;
+	
+	end
 	IBUFDS #(
 		.DIFF_TERM("FALSE"),       // Differential Termination
 		.IBUF_LOW_PWR("TRUE"),     // Low power="TRUE", Highest performance="FALSE"
@@ -178,8 +199,8 @@ module Top(
 	reg [0:4] state, nxtState;
 	assign state_status = state;
 	// reset 
-    always @ (posedge clk40 or posedge ttc_resync)
-		if (reset|ttc_resync)
+    always @ (posedge clk40 or posedge ttc_resync_sync)
+		if (reset|ttc_resync_sync)
 			state <= RESET;
 		else
 			state <= nxtState;
@@ -289,11 +310,11 @@ module Top(
 				nxtState <= EN_PRBS_CK;
 				
 				PRBS_reset <= 1'b0|ttc_bxreset;
-				PRBS_counter_reset <= 1'b0|ttc_bxreset;
+				PRBS_counter_reset <= 1'b0|ttc_bxreset_sync;
 				boot_up_counter_rst <= 1'b1;
 				full_tx_reset[0:7] <= 8'b0000_0000;
 				full_rx_reset[0:7] <= 8'b0000_0000;
-				PRBS_error_inject <= inject|ttc_bx0_dec; //connect to inject later
+				PRBS_error_inject <= inject|ttc_bx0_dec_sync; //connect to inject later
 				//led_fp[0:3] <= 4'b1010;
 				//led_fp[4:7] <= latched_error[4:7] | blinker[4:7];
 				led_fp[0:1] <= error_counter_out_0[0:1] | blinker[0:1];

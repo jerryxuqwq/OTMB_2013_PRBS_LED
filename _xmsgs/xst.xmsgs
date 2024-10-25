@@ -5,199 +5,199 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 65: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 65: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 65: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 65: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 179: Assignment to <arg fmt="%s" index="1">state_status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 202: Assignment to <arg fmt="%s" index="1">state_status</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 340: Assignment to <arg fmt="%s" index="1">q1_clk1_refclk_i_bufg</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 363: Assignment to <arg fmt="%s" index="1">q1_clk1_refclk_i_bufg</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/fiber_gtx.v" Line 152: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\fiber_gtx.v" Line 152: Assignment to <arg fmt="%s" index="1">tied_to_vcc_vec_i</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 394: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 417: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 446: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 469: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 498: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 521: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 550: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 573: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 602: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 625: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 654: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 677: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 706: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 729: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 757: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 780: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 808: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 831: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v" Line 860: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v" Line 883: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TXDATA_IN</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">_ccb_rx&lt;35:34&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">373</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">396</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">373</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">396</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">373</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">396</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">373</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">396</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">373</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">396</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">373</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">396</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx0_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">TXN_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">TXP_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">425</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">448</arg>: Output port &lt;<arg fmt="%s" index="3">TXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx1_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx2_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">529</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">552</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">529</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">552</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">529</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">552</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">529</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">552</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx3_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">581</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">581</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">581</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">581</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">581</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">581</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx4_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">656</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">656</arg>: Output port &lt;<arg fmt="%s" index="3">RXPRBSERR_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">656</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">656</arg>: Output port &lt;<arg fmt="%s" index="3">RXRESETDONE_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">656</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">656</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx7_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">685</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">708</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">685</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">708</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">685</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">708</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">685</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">708</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx8_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">736</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">759</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">736</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">759</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">736</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">759</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">736</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">759</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx9_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">787</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">810</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">787</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">810</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">787</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">810</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">787</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">810</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx10_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">839</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">862</arg>: Output port &lt;<arg fmt="%s" index="3">RXDATA_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">839</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">862</arg>: Output port &lt;<arg fmt="%s" index="3">RXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">839</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">862</arg>: Output port &lt;<arg fmt="%s" index="3">TXOUTCLK_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/Top.v</arg>&quot; line <arg fmt="%s" index="2">839</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\Top.v</arg>&quot; line <arg fmt="%s" index="2">862</arg>: Output port &lt;<arg fmt="%s" index="3">TXPLLLKDET_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gtx11_Fiber_i</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">PRBS_error_inject</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -383,6 +383,12 @@
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ccb_rx_iobff_a_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">blinker_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">blinker_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">latched_error_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
@@ -393,12 +399,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">latched_error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">blinker_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">blinker_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">clk40_display/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

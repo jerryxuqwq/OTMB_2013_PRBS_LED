@@ -53,11 +53,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="ChipScope_TB_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ChipScope_TB_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ChipScope_TB_xst.xrpt"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="Top.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Top.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Top.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="Top.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GUIDERESULTS_REPORT" xil_pn:name="Top.grf" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Top.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Top.ncd" xil_pn:subbranch="Par"/>
@@ -101,6 +98,9 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/i_ila_readme.txt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="top.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="top.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -142,7 +142,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1729542918" xil_pn:in_ck="2497943630077968009" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-2422864157534311645" xil_pn:start_ts="1729542911">
+    <transform xil_pn:end_ts="1729835227" xil_pn:in_ck="2497943630077968009" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-2422864157534311645" xil_pn:start_ts="1729835216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -164,7 +164,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1729542922" xil_pn:in_ck="-3706852669459500599" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2943884505916076238" xil_pn:start_ts="1729542918">
+    <transform xil_pn:end_ts="1729835233" xil_pn:in_ck="-3706852669459500599" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2943884505916076238" xil_pn:start_ts="1729835227">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Top.bld"/>
@@ -173,7 +173,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1729542947" xil_pn:in_ck="6115184244021446366" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-4463829581597625941" xil_pn:start_ts="1729542922">
+    <transform xil_pn:end_ts="1729835265" xil_pn:in_ck="6115184244021446366" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-4463829581597625941" xil_pn:start_ts="1729835233">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -187,8 +187,9 @@
       <outfile xil_pn:name="Top_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1729543014" xil_pn:in_ck="-187864352689257104" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-643229935068339825" xil_pn:start_ts="1729542947">
+    <transform xil_pn:end_ts="1729835351" xil_pn:in_ck="-187864352689257104" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-643229935068339825" xil_pn:start_ts="1729835265">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Top.grf"/>
       <outfile xil_pn:name="Top.ncd"/>
@@ -202,19 +203,19 @@
       <outfile xil_pn:name="Top_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1729543044" xil_pn:in_ck="-6886468896277210004" xil_pn:name="TRANEXT_bitFile_virtex6" xil_pn:prop_ck="-3618303722886493866" xil_pn:start_ts="1729543014">
+    <transform xil_pn:end_ts="1729835396" xil_pn:in_ck="-6886468896277210004" xil_pn:name="TRANEXT_bitFile_virtex6" xil_pn:prop_ck="-3618303722886493866" xil_pn:start_ts="1729835351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Top.bgn"/>
-      <outfile xil_pn:name="Top.bit"/>
-      <outfile xil_pn:name="Top.drc"/>
       <outfile xil_pn:name="Top.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="top.bgn"/>
+      <outfile xil_pn:name="top.bit"/>
+      <outfile xil_pn:name="top.drc"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1729543014" xil_pn:in_ck="5359366008798836310" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1729543004">
+    <transform xil_pn:end_ts="1729835351" xil_pn:in_ck="5359366008798836310" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1729835339">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Top.twr"/>
