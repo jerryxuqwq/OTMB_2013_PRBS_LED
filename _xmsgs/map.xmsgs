@@ -20,16 +20,13 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
-<msg type="info" file="MapLib" num="980" delta="old" >The following NGM file is used during SmartGuide: &quot;<arg fmt="%s" index="1">/home/cscdev/JerryX/OTMB/OTMB_2013_PRBS_LED/ChipScope_TB_map.ngm</arg>&quot;. The NGM file contains information on how the guide file was originally mapped. It is required for the best SmartGuide results.
+<msg type="info" file="MapLib" num="980" delta="old" >The following NGM file is used during SmartGuide: &quot;<arg fmt="%s" index="1">C:\Users\Jerry Xu\Desktop\OTMB\OTMB_2013_PRBS_Checker_USB\ChipScope_TB_map.ngm</arg>&quot;. The NGM file contains information on how the guide file was originally mapped. It is required for the best SmartGuide results.
 </msg>
 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
 <msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
-</msg>
-
-<msg type="warning" file="Pack" num="2609" delta="old" >SmartGuide is more efficient (better guiding and runtime) when used with explicit timing constraints. If you want the full benefit of the SmartGuide flow, please add timing constraints to your design, then re-create your guide file.
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
@@ -41,13 +38,13 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">led_fp&lt;0&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">top_tb/_n0170</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">led_fp&lt;7&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">top_tb/_n0178</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">led_fp&lt;3&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">led_fp&lt;7&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">data_ila_control&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.

@@ -122,3 +122,13 @@ NET "_ccb_rx<47>"	LOC = "Y28";	# I/O_487
 NET "_ccb_rx<48>"	LOC = "AH33";	# I/O_488
 NET "_ccb_rx<49>"	LOC = "AA25";	# I/O_489
 NET "_ccb_rx<50>"	LOC = "AH32";	# I/O_490
+
+#NET "q1_clk1_refclk_i" 	TNM_NET = "q1_clk1_refclk_i";	# GTX clock
+#TIMESPEC "TS_clock_160"  = PERIOD "q1_clk1_refclk_i" 6.25 ns HIGH 50%;
+
+NET "top_tb/q1_clk1_refclk_i" TNM_NET = "top_tb/q1_clk1_refclk_i";
+TIMESPEC "TS_q4_clk1_refclk_i" = PERIOD "q1_clk1_refclk_i" 6.25;
+
+# User Clock Constraints
+NET "txusrclk2" TNM_NET = "txusrclk2";
+TIMESPEC "TS_txusrclk2" = PERIOD "txusrclk2" 6.25;
